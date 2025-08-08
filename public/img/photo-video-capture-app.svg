@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
+    <path stroke="#F0F0F0" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M54.092 60.56H27.977c-2.15 0-3.908-1.738-3.908-3.861V5.86C24.069 3.737 25.827 2 27.977 2h26.115c2.149 0 3.907 1.737 3.907 3.861v50.902c0 2.124-1.758 3.797-3.907 3.797z"/>
+    <path fill="#F0F0F0" d="M38.258 42.26c0 1.348 1.105 2.44 2.468 2.44s2.467-1.092 2.467-2.44c0-1.348-1.104-2.44-2.467-2.44s-2.468 1.092-2.468 2.44z"/>
+    <path fill="#202020" stroke="#F0F0F0" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M61.084 27.58v25.59c0 2.105-1.76 3.828-3.91 3.828H5.705c-2.15 0-3.91-1.723-3.91-3.829V27.58c0-2.106 1.76-3.829 3.91-3.829H57.24c2.15 0 3.844 1.723 3.844 3.83z"/>
+    <path stroke="#F0F0F0" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M7.332 35.876v-6.19h6.32M40.821 29.686h6.255v6.19M7.332 45.129v6.19h6.32M40.821 51.319h6.255v-6.19M20.428 44.363v-7.721l6.841 3.892v7.658l-6.84-3.83z"/>
+    <path stroke="#F0F0F0" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M27.204 48.192v-7.658l6.841-3.892v7.72l-6.84 3.83z"/>
+    <path stroke="#F0F0F0" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M20.428 36.642l6.776-3.893 6.841 3.893-6.776 3.892-6.84-3.892z"/>
+    <path fill="#F0F0F0" d="M54.243 43.214c1.44 0 2.606-1.142 2.606-2.552 0-1.41-1.167-2.553-2.606-2.553-1.44 0-2.606 1.143-2.606 2.553s1.166 2.552 2.606 2.552z"/>
+</svg>

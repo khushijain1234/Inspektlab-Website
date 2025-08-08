@@ -1,0 +1,192 @@
+{
+    "Automate Inspections with AI": {
+        "en": "Automate Inspections with AI",
+        "es": "Automatice las inspecciones con AI",
+        "pt": "Automatize Inspeções com IA"
+    },
+    "featureText": {
+        "en": "Eliminate the need for physical inspections with Inspektlabs’ “AI-powered” Vehicle Damage Inspection solutions. Get a detailed inspection report within a few minutes",
+        "es": "Elimine la necesidad de inspecciones físicas con las soluciones de inspección de daños de vehículos “impulsadas por IA” de Inspektlabs. Obtenga un informe de inspección detallado en unos minutos",
+        "pt": "Elimine a necessidade de inspeções físicas com as soluções de inspeção de danos a veículos “alimentadas por IA” da Inspektlabs. Obtenha um relatório de inspeção detalhado em poucos minutos"
+    },
+    "Request a demo": {
+        "en": "Request a demo",
+        "es": "Solicitar una demostración",
+        "pt": "Solicite uma demonstração"
+    },
+    "Watch Demo Video": {
+        "en": "Watch Demo Video",
+        "es": "Ver vídeo de demostración",
+        "pt": "Assista ao Vídeo de Demonstração"
+    },
+    "Our Clients": {
+        "en": "Our Clients",
+        "es": "Nuestros Clientes",
+        "pt": "Nossos Clientes"
+    },
+    "Features": {
+        "en": "Features",
+        "es": "Características",
+        "pt": "Características"
+    },
+    "Why Choose Our AI Inspection Solution?": {
+        "en": "Why Choose Our AI Inspection Solution?",
+        "es": "Por qué elegir nuestra solución de inspección con IA?",
+        "pt": "Por que escolher nossa solução de inspeção com IA?"
+    },
+    "Request a Demo": {
+        "en": "Request a Demo",
+        "es": "Solicitar una demostración",
+        "pt": "Solicitar uma Demonstração"
+    },
+    "Our Partners": {
+        "en": "Our Partners",
+        "es": "Nuestros socios",
+        "pt": "Nossos Parceiros"
+    },
+    "Awards": {
+        "en": "Awards",
+        "es": "Premios",
+        "pt": "Prêmios"
+    },
+    "Read More": {
+        "en": "Read More",
+        "es": "Leer más",
+        "pt": "Leia Mais"
+    },
+    "What our clients are saying": {
+        "en": "What our clients are saying",
+        "es": "Lo que nuestros clientes están diciendo",
+        "pt": "O que nossos clientes estão dizendo"
+    },
+    "Inspektlabs' vehicle inspection tools are in the News": {
+        "en": "Inspektlabs' vehicle inspection tools are in the News",
+        "es": "Nuestras apariciones en las noticias",
+        "pt": "As ferramentas de inspeção veicular da Inspektlabs que viraram notícia"
+    },
+    "Latest Blogs": {
+        "en": "Latest Blogs",
+        "es": "Últimos blogs",
+        "pt": "Novidades no Blog"
+    },
+    "Subsidiaries": {
+        "en": "Subsidiaries",
+        "es": "Subsidiarias",
+        "pt": "Filiais"
+    },
+    "Partners": {
+        "en": "Partners",
+        "es": "Socios",
+        "pt": "Parceiros"
+    },
+    "Clients": {
+        "en": "Clients",
+        "es": "Clientes",
+        "pt": "Clientes"
+    },
+    "Our success says everything about our digital vehicle inspections": {
+        "en": "Our success says everything about our digital vehicle inspections",
+        "es": "Nuestro éxito lo dice todo sobre nuestras inspecciones digitales de vehículos",
+        "pt": "Nosso sucesso fala tudo sobre nossas inspeções digitais de veículos"
+    },
+    "Enterprise Customers": {
+        "en": "Enterprise Customers",
+        "es": "Clientes empresariales",
+        "pt": "Clientes Corporativos"
+    },
+    "Inspections Passed": {
+        "en": "Inspections Passed",
+        "es": "Inspecciones aprobadas",
+        "pt": "Inspeções Aprovadas"
+    },
+    "Countries": {
+        "en": "Countries",
+        "es": "Países",
+        "pt": "Países"
+    },
+    "Damage assessment text": {
+        "en": "Damage assessment, car valuation, claim value estimation, odometer-VIN reading etc.",
+        "es": "Evaluación de daños, tasación de automóviles, estimación del valor de siniestro, lectura del odómetro-VIN, entre otros",
+        "pt": "Avaliação de danos, avaliação de carros, estimativa de valor de sinistro, leitura de odômetro, NIV, etc."
+    },
+    "360 damage text": {
+        "en": "Any customer can capture a 360° video of a car using our guidance system on a smartphone, and within a few seconds, we respond back with an inspection report e.g. dent on front door, $ claim value etc.",
+        "es": "Cualquier cliente con un smartphone puede capturar un vídeo de 360° de su automóvil utilizando nuestro sistema de guía y, en unos segundos, le respondemos con un informe de inspección, con información de daños (ej: Abolladura en la puerta principal), valor del siniestro en dólares y tiempo de reparación, entre otros contenidos.",
+        "pt": "Qualquer cliente pode capturar um vídeo 360° de um carro usando nosso sistema de apoio em um smartphone e, em poucos segundos, responderemos com um relatório de inspeção, trazendo por exemplo. amassado na porta da frente, valor de orçamento, etc."
+    },
+    "enter email text": {
+        "en": "Enter your email address to get the web link and API key to test our product",
+        "es": "Ingrese su correo electrónico para obtener el enlace web y la clave API para probar nuestro producto",
+        "pt": "Digite seu endereço de e-mail para receber o link da web e a chave da API para testar nosso produto"
+    },
+    "please use company id": {
+        "en": "Please use your company email id for faster API access approval",
+        "es": "Utilice la identificación de correo electrónico de su empresa para una aprobación de acceso más rápida a la API",
+        "pt": "Use o ID com o e-mail da sua empresa para uma aprovação mais rápida do acesso à API"
+    },
+    "Get API Key": {
+        "en": "Get API Key",
+        "es": "Obtener clave API",
+        "pt": "Obter Chave da API"
+    },
+    "Message Sent": {
+        "en": "Message Sent",
+        "es": "Mensaje enviado",
+        "pt": "Mensagem Enviada"
+    },
+    "seo title": {
+        "en": "AI Based Digital Vehicle Inspection - Visual Assessment System by InspektLabs",
+        "es": "Inspección digital de vehículos basada en IA: sistema de evaluación visual de InspektLabs",
+        "pt": "Inspeção Digital de Veículos Baseada em IA - Sistema de Avaliação Visual da InspektLabs"
+    },
+    "seo desc": {
+        "en": "Inspektlabs' AI-assisted technology is quick, easy and 95%-99% accurate in detecting vehicle damage. Eliminate the hassle of a physical inspection with our automated digital system!",
+        "es": "La tecnología asistida por IA de Inspektlabs es rápida, sencilla y tiene una precisión del 95% al ​​99% en la detección de daños en vehículos. ¡Elimine la molestia de una inspección física con nuestro sistema digital automatizado!",
+        "pt": "A tecnologia assistida por IA da Inspektlabs é rápida, fácil e tem uma precisão de 95% a 99% na detecção de danos em veículos. Elimine o incômodo de uma inspeção física com nosso sistema digital automatizado!"
+    },
+    "seo keywords": {
+        "en": "AI Inspection tool, Visual inspection tool, Automate Inspections with AI, Visual Intelligence for Motor, vehicle inspection system, vehicle inspection app, ai inspection, car inspection tool, Digital Vehicle Inspections, vehicle inspection tools",
+        "es": "Herramienta de inspección de IA, herramienta de inspección visual, automatización de inspecciones con IA, inteligencia visual para motores, sistema de inspección de vehículos, app de inspección de vehículos, inspección de IA, herramienta de inspección de automóviles, inspecciones digitales de vehículos, herramientas de inspección de vehículos",
+        "pt": "Ferramenta de inspeção de IA, ferramenta de inspeção visual, automatizar inspeções com IA, inteligência visual para motores, sistema de inspeção de veículos, aplicativo de inspeção de veículos, inspeção de IA, ferramenta de inspeção de automóveis, inspeções digitais de veículos, ferramentas de inspeção de veículos"
+    },
+    "Frequently Asked Questions": {
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas Frecuentes",
+        "pt": "Perguntas Frequentes"
+    },
+    "General": {
+        "en": "General",
+        "es": "General",
+        "pt": "Geral"
+    },
+    "Damage Detection": {
+        "en": "Damage Detection",
+        "es": "Detección de Daños",
+        "pt": "Detecção de Danos"
+    },
+    "Workflow": {
+        "en": "Workflow",
+        "es": "Flujo de Trabajo",
+        "pt": "Fluxo de Trabalho"
+    },
+    "Our Core Technology": {
+        "en": "Our Core Technology",
+        "es": "Nuestra Tecnología Principal",
+        "pt": "Nossa Tecnologia Principal"
+    },
+    "Claim Assessment": {
+        "en": "Claim Assessment",
+        "es": "Evaluación de Reclamaciones",
+        "pt": "Avaliação de Reivindicações"
+    },
+    "Photo and Video Capture": {
+        "en": "Photo and Video Capture",
+        "es": "Captura de Fotos y Videos",
+        "pt": "Captura de Fotos e Vídeos"
+    },
+    "Fraud Detection": {
+        "en": "Fraud Detection",
+        "es": "Detección de Fraude",
+        "pt": "Detecção de Fraude"
+    }
+}

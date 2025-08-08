@@ -1,0 +1,268 @@
+.container {
+  display: flex;
+  margin-top: 70px;
+  width: 100vw;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.featured {
+  padding: 5rem;
+  background: var(--black-bg);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.featuredTitle {
+  font-size: 64px;
+  font-weight: bold;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.featuredText {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.4px;
+  max-width: 900px;
+  /* padding-bottom: 20vw; */
+}
+
+.featureVideo {
+  position: relative;
+  top: -18vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.featureVideo video {
+  width: 90%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  padding: 4rem;
+}
+
+.features h2 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: -0.56px;
+  max-width: 800px;
+}
+
+.features p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -0.36px;
+  max-width: 800px;
+}
+
+.feature {
+  display: flex;
+  padding: 2rem 0;
+  gap: 80px;
+  width: 100%;
+  justify-content: space-evenly;
+  background: var(--black-bg);
+  color: var(--white);
+  border-radius: 10px;
+}
+
+.feature > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 200px;
+}
+
+.feature > div > h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flow > div:first-child {
+  position: relative;
+  width: 90vw;
+  height: 50vw;
+}
+
+.flow > div:last-child {
+  position: relative;
+  width: 90vw;
+  height: 70vw;
+}
+
+.caseSection {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  gap: 60px;
+  padding: 6rem;
+  background: var(--black-bg);
+  color: var(--white);
+  width: 100%;
+}
+
+.caseSectionTitle {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: -0.9px;
+  text-align: center;
+}
+
+.caseContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.case {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 80px;
+  border-radius: 8px;
+  background-color: #2d2d2d;
+  max-width: 500px;
+  transition: box-shadow 0.6s ease-out;
+}
+
+.case:hover {
+  box-shadow: 1px 8px 20px rgba(0, 0, 0, 0.8);
+  transition: box-shadow 0.6s ease-in;
+}
+
+.case h3 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.case p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -0.4px;
+}
+
+.caseAction {
+  display: flex;
+  justify-content: center;
+  padding: 14px 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  font-size: 15px;
+  font-weight: 600;
+  color: #313131;
+  max-width: 140px;
+}
+
+.caseAction:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: auto;
+  }
+
+  .featured {
+    padding: 4rem 1rem;
+  }
+
+  .featuredTitle {
+    font-size: 36px;
+  }
+
+  .featuredText {
+    font-size: 16px;
+    /* padding-bottom: 25vw; */
+  }
+
+  .featureVideo {
+    top: -25vw;
+  }
+
+  .features {
+    padding: 4rem 1rem;
+  }
+
+  .features h2 {
+    font-size: 22px;
+  }
+
+  .features p {
+    font-size: 16px;
+  }
+
+  .feature {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .caseSection {
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+
+  .caseSectionTitle {
+    font-size: 32px;
+  }
+
+  .caseContainer {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .case {
+    padding: 40px 20px;
+  }
+
+  .case h3 {
+    font-size: 20px;
+  }
+
+  .case p {
+    font-size: 15px;
+  }
+
+  .caseAction {
+    max-width: 100%;
+  }
+}

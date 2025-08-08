@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="165" fill="none" viewBox="0 0 164 165">
+    <path stroke="#000" stroke-linecap="square" d="M16 17h48.75M81 17h65"/>
+    <path stroke="#D3D3D3" stroke-linecap="square" d="M48.5 33.25H81"/>
+    <path stroke="#000" stroke-linecap="square" d="M113.5 33.25h16.25M32.25 49.5H81M129.75 49.5H146"/>
+    <path stroke="#D3D3D3" stroke-linecap="square" d="M16 65.75h32.5"/>
+    <path stroke="#000" stroke-linecap="square" d="M64.75 65.75h32.5M113.5 65.75h16.25M48.5 82h48.75"/>
+    <path stroke="#D3D3D3" stroke-linecap="square" d="M113.5 82H146"/>
+    <path stroke="#000" stroke-linecap="square" d="M48.5 98.25h16.25"/>
+    <path stroke="#EEE" stroke-linecap="square" d="M97.25 98.25h16.25"/>
+    <path stroke="#000" stroke-linecap="square" d="M16 114.5h16.25M64.75 114.5h65M32.25 130.75H48.5"/>
+    <path stroke="#EEE" stroke-linecap="square" d="M81 130.75h48.75"/>
+    <path stroke="#000" stroke-linecap="square" d="M16 147h65M97.25 147H146M16 17v130M32.25 17v32.5"/>
+    <path stroke="#D3D3D3" stroke-linecap="square" d="M32.25 65.75v32.5"/>
+    <path stroke="#000" stroke-linecap="square" d="M48.5 82v48.75M64.75 114.5V147"/>
+    <path stroke="#D3D3D3" stroke-linecap="square" d="M81 17v16.25"/>
+    <path stroke="#000" stroke-linecap="square" d="M81 82v32.5M97.25 33.25V82M97.25 130.75V147M113.5 17v48.75"/>
+    <path stroke="#EEE" stroke-linecap="square" d="M113.5 82v16.25"/>
+    <path stroke="#000" stroke-linecap="square" d="M129.75 98.25v16.25M146 17v130"/>
+</svg>

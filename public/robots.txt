@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://inspektlabs.com
+
+# Sitemaps
+Sitemap: https://inspektlabs.com/sitemap.xml
+Sitemap: https://inspektlabs.com/blog/sitemap-posts.xml

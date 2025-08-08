@@ -1,0 +1,112 @@
+{
+    "Our Technology Workflow": {
+        "en": "Our Technology Workflow",
+        "es": "Nuestro flujo de trabajo tecnológico",
+        "pt": "Nosso fluxo de trabalho tecnológico"
+    },
+    "We provide both external APIs": {
+        "en": "We provide both external APIs and on-premise deployment for easy integration with even complex workflows",
+        "es": "Proporcionamos API externas e implementación local para una fácil integración incluso con flujos de trabajo complejos",
+        "pt": "Oferecemos tanto APIs externas quanto implantação local para integração fácil com fluxos de trabalho complexos"
+    },
+    "Our product is easily integrable": {
+        "en": "Our product is easily integrable with any cloud-based storage (e.g. AWS S3) or any other storage within 24-48 hrs",
+        "es": "Nuestro producto se integra fácilmente con cualquier almacenamiento basado en la nube (por ejemplo, AWS S3) o cualquier otro almacenamiento en un plazo de 24 a 48 horas.",
+        "pt": "Nosso produto é facilmente integrável com qualquer armazenamento baseado em nuvem (por exemplo, AWS S3) ou qualquer outro armazenamento em 24-48 horas"
+    },
+    "360 Video Captured": {
+        "en": "360 Video Captured",
+        "es": "Vídeo 360 capturado",
+        "pt": "Vídeo 360 Capturado"
+    },
+    "API Integrated with client workflow": {
+        "en": "API Integrated with client workflow",
+        "es": "API integrada con el flujo de trabajo del cliente",
+        "pt": "API Integrada com o fluxo de trabalho do cliente"
+    },
+    "Insurance Workflow": {
+        "en": "Insurance Workflow",
+        "es": "Flujo de trabajo de seguros",
+        "pt": "Fluxo de Trabalho de Seguros"
+    },
+    "Detect fraudulent inspections": {
+        "en": "Detect fraudulent inspections: prior damages, cause of damage validation, match VIN and license plate numbers",
+        "es": "Detectar inspecciones fraudulentas: daños previos, validación de causa de daño, coincidencia de VIN y números de matrícula.",
+        "pt": "Detecte inspeções fraudulentas: danos anteriores, validação da causa do dano, correspondência de NIV e números de placas"
+    },
+    "Go to Insurance Page": {
+        "en": "Go to Insurance Page",
+        "es": "Ir a la página de seguros",
+        "pt": "Ir para a Página de Seguros"
+    },
+    "API & Documentation": {
+        "en": "API & Documentation",
+        "es": "API y documentación",
+        "pt": "API e Documentação"
+    },
+    "Contact Us": {
+        "en": "Contact Us",
+        "es": "Contacta con nosotros",
+        "pt": "Contate-Nos"
+    },
+    "seo title": {
+        "en": "APIs for Automate Inspection, Damage Assessment, Car Valuation, Fraud Detection - Inspektlabs",
+        "es": "API para automatizar la inspección, evaluación de daños, valoración de automóviles y detección de fraude - Inspektlabs",
+        "pt": "APIs para Inspeção Automatizada, Avaliação de Danos, Valoração de Carros, Detecção de Fraude - Inspektlabs"
+    },
+    "seo desc": {
+        "en": "APIs for Automate Inspection: Inspektlab's Technology WorkFlow helps clients in Damage Assessment, Car Valuation, Fraud Detection with APIs and on-premise deployment for easy integration with even complex.",
+        "es": "API para automatizar la inspección: el flujo de trabajo tecnológico de Inspektlab ayuda a los clientes en la evaluación de daños, valoración de automóviles, detección de fraude con API e implementación local para una fácil integración incluso con complejos.",
+        "pt": "APIs para Inspeção Automatizada: o Fluxo de Trabalho Tecnológico da Inspektlab ajuda os clientes na Avaliação de Danos, Valoração de Carros, Detecção de Fraude com APIs e implantação local para integração fácil, mesmo com fluxos complexos."
+    },
+    "seo keywords": {
+        "en": "Inspektlab's Technology WorkFlow, Damage Assessment, Car Valuation, Fraud Detection",
+        "es": "Flujo de trabajo tecnológico de Inspektlab, evaluación de daños, valoración de vehículos y detección de fraude",
+        "pt": "Fluxo de Trabalho Tecnológico da Inspektlab, Avaliação de Danos, Valoração de Carros, Detecção de Fraude"
+    },
+    "Frequently Asked Questions": {
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas Frecuentes",
+        "pt": "Perguntas Frequentes"
+    },
+    "General": {
+        "en": "General",
+        "es": "General",
+        "pt": "Geral"
+    },
+    "Damage Detection": {
+        "en": "Damage Detection",
+        "es": "Detección de Daños",
+        "pt": "Detecção de Danos"
+    },
+    "Workflow": {
+        "en": "Workflow",
+        "es": "Flujo de Trabajo",
+        "pt": "Fluxo de Trabalho"
+    },
+    "Our Core Technology": {
+        "en": "Our Core Technology",
+        "es": "Nuestra Tecnología Principal",
+        "pt": "Nossa Tecnologia Principal"
+    },
+    "Claim Assessment": {
+        "en": "Claim Assessment",
+        "es": "Evaluación de Reclamaciones",
+        "pt": "Avaliação de Reivindicações"
+    },
+    "Photo and Video Capture": {
+        "en": "Photo and Video Capture",
+        "es": "Captura de Fotos y Videos",
+        "pt": "Captura de Fotos e Vídeos"
+    },
+    "Fraud Detection": {
+        "en": "Fraud Detection",
+        "es": "Detección de Fraude",
+        "pt": "Detecção de Fraude"
+    },
+    "Read More": {
+        "en": "Read More",
+        "es": "Leer más",
+        "pt": "Leia Mais"
+    }
+}

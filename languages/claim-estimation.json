@@ -1,0 +1,87 @@
+{
+    "Claim Assessment using Automation": {
+        "en": "Claim Assessment using Automation",
+        "es": "Evaluación de reclamaciones mediante automatización",
+        "pt": "Avaliação de Reivindicações usando Automação"
+    },
+    "We detect damages": {
+        "en": "We detect damages, take repair vs replace decisions on car parts, and integrate with credible sources of part & labor costs to estimate $ claim value for vehicles",
+        "es": "Detectamos daños, tomamos decisiones de reparación o reemplazo de repuestos de automóviles y nos integramos con fuentes creíbles de costos de repuestos y mano de obra para estimar el valor de reclamo en dólares para vehículos.",
+        "pt": "Detectamos danos, tomamos decisões de reparo ou substituição de peças de carro e integramos com fontes confiáveis de custos de peças e mão de obra para estimar o valor da reivindicação em dólares para veículos"
+    },
+    "Claim Assessment": {
+        "en": "Claim Assessment",
+        "es": "Evaluación de reclamos",
+        "pt": "Avaliação de Reivindicações"
+    },
+    "We utilise 15 modules to estimate claim value of vehicles": {
+        "en": "We utilise 15 modules to estimate claim value of vehicles. These modules can be easily calibrated across markets. We have partnered with leading players around the world to acquire local part costs, labor rate per hour",
+        "es": "Utilizamos 15 módulos para estimar el valor de reclamación de vehículos. Estos módulos se pueden calibrar fácilmente en todos los mercados. Nos hemos asociado con actores líderes en todo el mundo para adquirir costos de piezas locales y tarifa de mano de obra por hora.",
+        "pt": "Utilizamos 15 módulos para estimar o valor da reivindicação de veículos. Esses módulos podem ser facilmente calibrados em diferentes mercados. Fizemos parcerias com players líderes ao redor do mundo para adquirir custos locais de peças e taxa de mão de obra por hora."
+    },
+    "AI Claim Review": {
+        "en": "AI Claim Review",
+        "es": "Revisión de reclamos de IA",
+        "pt": "Revisão de reivindicação com IA"
+    },
+    "Under auto insurance claim review": {
+        "en": "Under auto insurance claim review, the garage and/or adjustor builds an estimate. This estimate is sent to Inspektlabs and claims with high probability errors are flagged (e.g. a part that could have been repaired was replaced, 5 hrs of labor was charged when only 1 hr of labor was required). These claims are then manually reviewed by the insurer.",
+        "es": "En la revisión de reclamaciones de seguros de automóviles, el taller y/o el ajustador elaboran un presupuesto. Esta estimación se envía a Inspektlabs y se marcan los reclamos con errores de alta probabilidad (por ejemplo, se reemplazó una pieza que podría haberse reparado, se cobraron 5 horas de mano de obra cuando solo se requirió 1 hora de mano de obra). Luego, la aseguradora revisa manualmente estas reclamaciones.",
+        "pt": "Na revisão de reivindicações de seguro de automóvel, a oficina e/ou o ajustador elaboram uma estimativa. Esta estimativa é enviada para a Inspektlabs e as reivindicações com alta probabilidade de erros são sinalizadas (por exemplo, uma peça que poderia ter sido reparada foi substituída, 5 horas de trabalho foram cobradas quando apenas 1 hora de trabalho era necessária). Essas reivindicações são então revisadas manualmente pelo segurador."
+    },
+    "seo title": {
+        "en": "Automated AI-based Claim estimation & review products customised for each market's repair practices - Inspektlabs",
+        "es": "Productos automatizados de estimación y revisión de reclamaciones basados ​​en IA personalizados para las prácticas de reparación de cada mercado - Inspektlabs",
+        "pt": "Produtos Automatizados de Estimativa e Revisão de Reivindicações Baseados em IA Personalizados para as Práticas de Reparo de Cada Mercado - Inspektlabs"
+    },
+    "seo desc": {
+        "en": "Damage detection, repair vs replace decision guidance for insurance claim estimation and review with Inspektlabs' AI-based inspection technology.",
+        "es": "Guía de detección de daños, reparación versus reemplazo para la estimación y revisión de reclamos de seguros con la tecnología de inspección basada en inteligencia artificial de Inspektlabs.",
+        "pt": "Detecção de danos, orientação sobre reparo versus substituição para estimativa e revisão de reivindicações de seguros com a tecnologia de inspeção baseada em IA da Inspektlabs."
+    },
+    "seo keywords": {
+        "en": "Claim Estimation, Insurance Claim Estimation, AI Claim Estimation, Vehicle Insurance Claim, Claim Assessment, AI Claim, auto insurance claim, damage detection",
+        "es": "Estimación de reclamos, Estimación de reclamos de seguro, Estimación de reclamos de IA, Reclamo de seguro de vehículos, Evaluación de reclamos, Reclamo de AI, reclamo de seguro de automóvil, detección de daños",
+        "pt": "Estimativa de Reivindicações, Estimativa de Reivindicações de Seguro, Estimativa de Reivindicações com IA, Reivindicação de Seguro de Veículo, Avaliação de Reivindicações, Reivindicação com IA, Reivindicação de Seguro de Automóvel, Detecção de Danos"
+    },
+    "Frequently Asked Questions": {
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas Frecuentes",
+        "pt": "Perguntas Frequentes"
+    },
+    "General": {
+        "en": "General",
+        "es": "General",
+        "pt": "Geral"
+    },
+    "Damage Detection": {
+        "en": "Damage Detection",
+        "es": "Detección de Daños",
+        "pt": "Detecção de Danos"
+    },
+    "Workflow": {
+        "en": "Workflow",
+        "es": "Flujo de Trabajo",
+        "pt": "Fluxo de Trabalho"
+    },
+    "Our Core Technology": {
+        "en": "Our Core Technology",
+        "es": "Nuestra Tecnología Principal",
+        "pt": "Nossa Tecnologia Principal"
+    },
+    "Photo and Video Capture": {
+        "en": "Photo and Video Capture",
+        "es": "Captura de Fotos y Videos",
+        "pt": "Captura de Fotos e Vídeos"
+    },
+    "Fraud Detection": {
+        "en": "Fraud Detection",
+        "es": "Detección de Fraude",
+        "pt": "Detecção de Fraude"
+    },
+    "Read More": {
+        "en": "Read More",
+        "es": "Leer más",
+        "pt": "Leia Mais"
+    }
+}

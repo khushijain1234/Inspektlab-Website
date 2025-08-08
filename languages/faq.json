@@ -1,0 +1,57 @@
+{
+    "Frequently Asked Questions": {
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas Frecuentes",
+        "pt": "Perguntas Frequentes"
+    },
+    "General": {
+        "en": "General",
+        "es": "General",
+        "pt": "Geral"
+    },
+    "Damage Detection": {
+        "en": "Damage Detection",
+        "es": "Detección de Daños",
+        "pt": "Detecção de Danos"
+    },
+    "Workflow": {
+        "en": "Workflow",
+        "es": "Flujo de Trabajo",
+        "pt": "Fluxo de Trabalho"
+    },
+    "Our Core Technology": {
+        "en": "Our Core Technology",
+        "es": "Nuestra Tecnología Principal",
+        "pt": "Nossa Tecnologia Principal"
+    },
+    "Claim Assessment": {
+        "en": "Claim Assessment",
+        "es": "Evaluación de Reclamaciones",
+        "pt": "Avaliação de Reivindicações"
+    },
+    "Photo and Video Capture": {
+        "en": "Photo and Video Capture",
+        "es": "Captura de Fotos y Videos",
+        "pt": "Captura de Fotos e Vídeos"
+    },
+    "Fraud Detection": {
+        "en": "Fraud Detection",
+        "es": "Detección de Fraude",
+        "pt": "Detecção de Fraude"
+    },
+    "seo title": {
+        "en": "Frequently Asked Questions (FAQs) - Inspektlabs",
+        "es": "Preguntas frecuentes (FAQ) - Inspektlabs",
+        "pt": "Perguntas frequentes (FAQs) - Inspektlabs"
+    },
+    "seo desc": {
+        "en": "Discover answers to frequently asked questions about Inspektlab’s automated vehicle inspection solutions, including damage detection and reporting.",
+        "es": "Descubra respuestas a preguntas frecuentes sobre las soluciones de inspección automatizada de vehículos de Inspektlab, incluida la detección y la presentación de informes de daños.",
+        "pt": "Descubra respostas para perguntas frequentes sobre as soluções automatizadas de inspeção de veículos da Inspektlab, incluindo detecção e relatórios de danos."
+    },
+    "seo keywords": {
+        "en": "About Inspektlabs, AI Automated Vehicle Inspection, Damage Assessment Tool",
+        "es": "Acerca de Inspektlabs, herramienta de evaluación de daños y inspección de vehículos automatizada con IA",
+        "pt": "Sobre a Inspektlabs, Inspeção de Veículos Automatizada por IA, Ferramenta de Avaliação de Danos"
+    }
+}

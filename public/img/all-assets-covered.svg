@@ -1,0 +1,14 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M74.7916 65.1986C78.7005 65.1986 81.8693 62.08 81.8693 58.233C81.8693 54.386 78.7005 51.2673 74.7916 51.2673C70.8826 51.2673 67.7138 54.386 67.7138 58.233C67.7138 62.08 70.8826 65.1986 74.7916 65.1986Z" stroke="#212121" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21.3339 65.1986C25.2428 65.1986 28.4116 62.08 28.4116 58.233C28.4116 54.386 25.2428 51.2673 21.3339 51.2673C17.4249 51.2673 14.2561 54.386 14.2561 58.233C14.2561 62.08 17.4249 65.1986 21.3339 65.1986Z" stroke="#212121" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.2561 59.6263H9.50988C9.09355 59.6263 8.67721 59.2985 8.67721 58.8068V53.0704C8.67721 50.2842 9.34335 47.8257 13.0071 46.1048C16.9207 44.22 24.2482 42.9088 28.9112 42.9088C36.5718 42.9088 70.2951 42.9088 70.2951 42.9088L74.7916 38.8933C74.7916 38.8933 78.2055 39.9586 80.4538 41.6796L90.2793 43.2366C90.2793 43.2366 90.2793 49.7105 90.2793 52.7426C90.2793 55.7747 90.1961 56.5942 87.8646 57.8234C85.5331 59.0527 81.7028 59.6263 81.7028 59.6263" stroke="#212121" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27.4957 42.9087C27.4957 42.9087 39.2364 34.7139 53.8082 34.7139C65.9652 34.7139 74.7916 38.8113 74.7916 38.8113" stroke="#212121" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M53.8082 34.7139V59.6262" stroke="#212121" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M48.0627 47.1702H42.4005" stroke="#212121" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M84.6171 47.1702H90.2793" stroke="#212121" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28.4116 59.6262H67.7971" stroke="#212121" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 36.3911V22.8259H15.5652" stroke="#212121" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M15.5652 79.1738L2 79.1738L2 65.6086" stroke="#212121" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M98 65.6086L98 79.1738L84.4348 79.1738" stroke="#212121" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M84.4348 22.8259L98 22.8259L98 36.3911" stroke="#212121" stroke-width="3" stroke-miterlimit="10"/>
+</svg>

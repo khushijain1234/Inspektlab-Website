@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="none" viewBox="0 0 120 120">
+    <g stroke-miterlimit="10" stroke-width="3" clip-path="url(#clip0)">
+        <path stroke="#565656" d="M26.9 99.85H9.8c-2.5 0-4.5-2-4.5-4.5v-17.1c0-2.5 2-4.5 4.5-4.5h17.1c2.5 0 4.5 2 4.5 4.5v17.1c0 2.5-2 4.5-4.5 4.5zM68.5 99.85h-17c-2.5 0-4.5-2-4.5-4.5v-17.1c0-2.5 2-4.5 4.5-4.5h17.1c2.5 0 4.5 2 4.5 4.5v17.1c0 2.5-2.1 4.5-4.6 4.5zM110.2 99.85H93.1c-2.5 0-4.5-2-4.5-4.5v-17.1c0-2.5 2-4.5 4.5-4.5h17.1c2.5 0 4.5 2 4.5 4.5v17.1c0 2.5-2 4.5-4.5 4.5z"/>
+        <path stroke="#D6D6D6" d="M60 58.05v12.6M60 19.15v12.6"/>
+        <path stroke="#D6D6D6" stroke-linecap="round" stroke-linejoin="round" d="M46.9 45.05H18.4v25.4M73.1 45.05h28.5v25.4"/>
+        <path stroke="#565656" d="M68.5 58.05h-17c-2.5 0-4.5-2-4.5-4.5v-17.1c0-2.5 2-4.5 4.5-4.5h17.1c2.5 0 4.5 2 4.5 4.5v17.1c0 2.5-2.1 4.5-4.6 4.5z"/>
+        <path stroke="#D6D6D6" stroke-linecap="round" stroke-linejoin="round" d="M56.3 67.85l3.7 3.8 3.7-3.9M14.7 67.85l3.6 3.8 3.7-3.9M98 67.85l3.6 3.8 3.7-3.9"/>
+    </g>
+    <defs>
+        <clipPath id="clip0">
+            <path fill="#fff" d="M0 0H111.4V81.7H0z" transform="translate(4.30005 19.15)"/>
+        </clipPath>
+    </defs>
+</svg>

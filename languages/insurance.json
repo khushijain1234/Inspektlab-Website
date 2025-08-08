@@ -1,0 +1,37 @@
+{
+    "Car Inspection for Insurance": {
+        "en": "Car Inspection for Insurance",
+        "es": "Inspección de automóviles para seguros",
+        "pt": "Inspeção de Automóvel para Seguros"
+    },
+    "Motor insurers can use Inspektlabs": {
+        "en": "Motor insurers can use Inspektlabs' car insurance inspections to analyze the damage incurred to the vehicle. Our systems can generate an in-depth assessment report outlining the repairable and replaceable vehicle parts along with their estimated costs.",
+        "es": "Las aseguradoras de automóviles pueden utilizar las inspecciones de seguros de automóviles de Inspektlabs para analizar los daños sufridos por el vehículo. Nuestros sistemas pueden generar un informe de evaluación en profundidad que describa las piezas reparables y reemplazables del vehículo junto con sus costos estimados.",
+        "pt": "As seguradoras de automóveis podem usar as inspeções de seguro para automóvel da Inspektlabs para analisar os danos ocorridos ao veículo. Nossos sistemas podem gerar um relatório de avaliação aprofundado descrevendo as peças reparáveis ​​e substituíveis do veículo, juntamente com seus custos estimados."
+    },
+    "Inspektlabs automates inspection": {
+        "en": "Inspektlabs automates inspection for car insurance across the motor insurance value chain",
+        "es": "Inspektlabs automatiza la inspección de seguros de automóviles en toda la cadena de valor del seguro de automóviles",
+        "pt": "A Inspektlabs automatiza a inspeção de seguros de automóveis em toda a cadeia de valor do seguro de automóveis"
+    },
+    "We have experience in integrating": {
+        "en": "We have experience in integrating with complex insurance claims solutions and workflows. Our APIs are easily integrable with any cloud-based storage (e.g. AWS S3) or any other storage within 24-48 hrs.",
+        "es": "Tenemos experiencia en la integración con soluciones y flujos de trabajo complejos de reclamaciones de seguros. Nuestras API se integran fácilmente con cualquier almacenamiento basado en la nube (por ejemplo, AWS S3) o cualquier otro almacenamiento en un plazo de 24 a 48 horas.",
+        "pt": "Temos experiência em integrar com soluções e fluxos de trabalho complexos de reivindicações de seguros. Nossas APIs são facilmente integráveis com qualquer armazenamento baseado em nuvem (por exemplo, AWS S3) ou qualquer outro armazenamento em 24-48 horas."
+    },
+    "seo title": {
+        "en": "AI-assisted Vehicle Inspection Technology - Car Inspection for Insurance by InspektLabs",
+        "es": "Tecnología de inspección de vehículos asistida por IA: inspección de automóviles para seguros por InspektLabs",
+        "pt": "Tecnologia de Inspeção de Veículos Assistida por IA - Inspeção de Carros para Seguros da InspektLabs"
+    },
+    "seo desc": {
+        "en": "Inspektlabs' vehicle inspection system for Insurers to analyze damage and automate the car inspection process across the motor insurance value chain with easily integrable APIs.",
+        "es": "El sistema de inspección de vehículos de Inspektlabs para aseguradoras analiza daños y automatiza el proceso de inspección de automóviles en toda la cadena de valor del seguro de automóviles con API fácilmente integrables.",
+        "pt": "O sistema de inspeção de veículos da Inspektlabs para seguradoras analisa danos e automatiza o processo de inspeção de carros em toda a cadeia de valor do seguro de veículos com APIs facilmente integráveis."
+    },
+    "seo keywords": {
+        "en": "AI based Insurance tool, Vehicle Insurance Inspection Tool, Vehicle Insurance Inspection Tool, AI Based Car Insurance Inspection, car insurance inspections, inspection for car insurance, insurance claims solutions, damage detection",
+        "es": "Herramienta de seguros basada en IA, herramienta de inspección de seguros de vehículos, herramienta de inspección de seguros de vehículos, inspección de seguros de automóviles basada en IA, inspecciones de seguros de automóviles, inspección de seguros de automóviles, soluciones de reclamaciones de seguros, detección de daños",
+        "pt": "Ferramenta de Seguro baseada em IA, Ferramenta de Inspeção de Seguros de Veículos, Inspeção de Seguros de Carros baseada em IA, inspeções de seguros de veículos, inspeção para seguro de carros, soluções de reivindicações de seguros, detecção de danos"
+    }
+}

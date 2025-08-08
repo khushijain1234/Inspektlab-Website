@@ -1,0 +1,481 @@
+.container {
+    display: flex;
+    margin-top: 70px;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: var(--black-bg);
+}
+
+.featured {
+    padding: 5rem;
+    background: #272327;
+    color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.featuredVideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+}
+
+.featuredVideo video {
+    width: 50%;
+}
+
+.featuredContent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.featuredContent img {
+    filter: invert(1);
+}
+
+.featuredTitle {
+    font-size: 64px;
+    font-weight: bold;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.featuredText {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.4px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem;
+    gap: 60px;
+}
+
+.featureVideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+}
+
+.featureVideo video {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.subFeature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    max-width: 700px;
+}
+
+.subFeatureTitle {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -0.56px;
+}
+
+.subFeatureText {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.4px;
+    color: #303030;
+}
+
+.featuresContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+
+.feature {
+   width: 28%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.feature h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.56px;
+}
+
+.feature p {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.14px;
+}
+
+.secondaryFeatures {
+    display: flex;
+    padding: 6rem;
+    justify-content: space-around;
+    background: var(--black-bg);
+    color: var(--white);
+    gap: 60px;
+}
+
+.secondaryFeatures > div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 26%;
+}
+
+.secondaryFeatures > div > div {
+    width: 100px;
+    height: 100px;
+}
+
+.secondaryFeatures > div > p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+}
+
+.miscSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 60px;
+    background-color: #eee;
+    line-height: 1.5;
+}
+
+.faqSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    gap: 2em;
+}
+
+.mainHeading{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 76.8px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.questionContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.searchContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 900px;
+}
+
+.search{
+    border: 1px solid #E4E4E7;
+    width: 750px;
+    height: 67px;
+    padding: 20px 35px 20px 45px;
+    gap: 16px;
+    border-radius: 60px;
+    background: url("/img/search.png") no-repeat 10px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    font-family: Montserrat;
+}
+
+.search:focus{
+    outline: none;
+}
+
+.selectContainer{
+    display: none;
+}
+
+.selectContainer select:focus{
+    outline: none;
+}
+
+.tabs{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.tabs button{
+    background-color: white;
+    color: #27272A;
+    padding: 10px 20px;
+    border: 1px solid #E4E4E7;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    cursor: pointer;
+    font-family: Montserrat;
+}
+
+.allQuestionContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 900px;
+    gap: 1em;
+}
+
+.questionModal{
+    width: 100%;
+    height: auto;
+    padding: 16px 20px 16px 20px;
+    border-radius: 12px;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.question p{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #27272A;
+    width: 100%;
+}
+
+.answer{
+    max-height: 0px;
+    opacity: 0;
+    display: none;
+}
+
+.answer p{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #27272A;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.open{
+    max-height: 400px;
+    opacity: 1;
+    display: block;
+}
+
+.btnBlue,
+.btnTransparent {
+  display: flex;
+  height: 46px;
+  white-space: nowrap;
+  flex-grow: 0;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 20px;
+  width: auto;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnBlue {
+  margin-left: 0;
+  color: var(--white);
+  border: solid 1px var(--blue-bg);
+  background-color: var(--blue-bg);
+}
+
+.btnTransparent {
+  border: solid 1px var(--white);
+}
+
+.btnBlue:hover,
+.btnTransparent:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+
+    .featured {
+        padding: 2rem 1rem;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .featuredVideo{
+        display: none;
+    }
+
+    .featuredVideo video{
+        display: none;
+    }
+
+    .featuredContent{
+        width: 100%;
+    }
+
+    .featuredTitle {
+        font-size: 36px;
+    }
+
+    .features {
+        margin: 4rem 1rem;
+    }
+
+    .subFeatureTitle {
+        font-size: 20px;
+    }
+
+    .subFeatureText {
+        font-size: 16px;
+    }
+    
+    .feature {
+        min-width: 100%;
+        text-align: center;
+        justify-content: center; 
+        gap: 12px;
+    }
+
+    .feature h3 {
+        font-size: 20px;
+    }
+
+    .secondaryFeatures {
+        padding: 4rem 1rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 🈵 0px;
+    }
+    
+    .secondaryFeatures > div {
+        gap: 20px;
+        width: 100%;
+        max-width: 500px;
+        align-items: center;
+    }
+    
+    .secondaryFeatures > div > p {
+        font-size: 15px;
+    }
+
+    .miscSection {
+        padding: 60px 20px;
+    }
+    
+
+    .questionContainer{
+        width: 100%;
+    }
+
+    .mainHeading{
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40.8px;
+    }
+
+    .searchContainer{
+        display: none;
+        width: 0px;
+    }
+
+    .selectContainer{
+        display: flex;
+        width: 100%;
+    }
+
+    .selectContainer select{
+        width: 100%;
+        height: 48px;
+        padding: 12px 20px 12px 20px;
+        border-radius: 8px;
+        border: 1px solid #E4E4E7;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #27272A;
+    }
+
+    .allQuestionContainer{
+        width: 100%;
+    }
+
+    .btnBlue,
+    .btnTransparent {
+        flex: 1;
+        margin-left: 10px;
+    }
+
+}

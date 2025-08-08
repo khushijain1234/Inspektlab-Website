@@ -1,0 +1,87 @@
+{
+    "Our Core Technology": {
+        "en": "Our Core Technology",
+        "es": "Nuestra tecnología principal",
+        "pt": "Nossa tecnologia principal"
+    },
+    "Privacy": {
+        "en": "Privacy",
+        "es": "Privacidad",
+        "pt": "Privacidade"
+    },
+    "We mask all personal information": {
+        "en": "We mask all personal information before processing images or videos, and do not store any personal data.",
+        "es": "Ocultamos toda la información personal antes de procesar imágenes o videos y no almacenamos ningún dato personal.",
+        "pt": "Mascaramos todas as informações pessoais antes de processar imagens ou vídeos e não armazenamos nenhum dado pessoal."
+    },
+    "Resilent Infrastructure": {
+        "en": "Resilent Infrastructure",
+        "es": "Infraestructura resiliente",
+        "pt": "Infraestrutura Resiliente"
+    },
+    "Our infrastructure runs on data centers": {
+        "en": "Our infrastructure runs on data centers provided by Azure and AWS. We host our solution in the same data center as the client's country",
+        "es": "Nuestra infraestructura se ejecuta en centros de datos proporcionados por Azure y AWS. Alojamos nuestra solución en el mismo centro de datos que el país del cliente.",
+        "pt": "Nossa infraestrutura opera em centros de dados fornecidos pela Azure e AWS. Hospedamos nossa solução no mesmo data center do país do cliente."
+    },
+    "Our Secure hosting partner": {
+        "en": "Our Secure hosting partner",
+        "es": "Nuestro socio de alojamiento seguro",
+        "pt": "Nosso Parceiro de Hospedagem Segura"
+    },
+    "seo title": {
+        "en": "Technology - AI for Automation, Car Insurance Inspection, Video Based Inspeciton, Customised Neural Networks",
+        "es": "Tecnología: IA para automatización, inspección de seguros de automóviles, inspección basada en vídeo y redes neuronales personalizadas",
+        "pt": "Tecnologia - IA para Automação, Inspeção de Seguros de Carros, Inspeção Baseada em Vídeo, Redes Neurais Personalizadas"
+    },
+    "seo desc": {
+        "en": "Inspektlabs' uses artificial intelligence for automation of inspections of any physical asset using photos and videos. The company’s current focus is on automating vehicle inspections for Our Core Technology and insurance players.",
+        "es": "Inspektlabs utiliza inteligencia artificial para automatizar las inspecciones de cualquier activo físico mediante fotografías y vídeos. El enfoque actual de la compañía es la automatización de las inspecciones de vehículos para Our Core Technology y los actores de seguros.",
+        "pt": "A Inspektlabs utiliza inteligência artificial para automação de inspeções de qualquer ativo físico usando fotos e vídeos. O foco atual da empresa é automatizar as inspeções de veículos para Nossa Tecnologia Principal e jogadores de seguros."
+    },
+    "seo keywords": {
+        "en": "AI for Automation, Car Insurance Inspeciton, Video Based Inspeciton, Customised Neural Networks, AI based Insuracne Inspection",
+        "es": "IA para automatización, inspección de seguros de automóviles, inspección basada en vídeo, redes neuronales personalizadas, inspección de seguros basada en IA",
+        "pt": "IA para Automação, Inspeção de Seguros de Carros, Inspeção Baseada em Vídeo, Redes Neurais Personalizadas, Inspeção de Seguros Baseada em IA"
+    },
+    "Frequently Asked Questions": {
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas Frecuentes",
+        "pt": "Perguntas Frequentes"
+    },
+    "General": {
+        "en": "General",
+        "es": "General",
+        "pt": "Geral"
+    },
+    "Damage Detection": {
+        "en": "Damage Detection",
+        "es": "Detección de Daños",
+        "pt": "Detecção de Danos"
+    },
+    "Workflow": {
+        "en": "Workflow",
+        "es": "Flujo de Trabajo",
+        "pt": "Fluxo de Trabalho"
+    },
+    "Claim Assessment": {
+        "en": "Claim Assessment",
+        "es": "Evaluación de Reclamaciones",
+        "pt": "Avaliação de Reivindicações"
+    },
+    "Photo and Video Capture": {
+        "en": "Photo and Video Capture",
+        "es": "Captura de Fotos y Videos",
+        "pt": "Captura de Fotos e Vídeos"
+    },
+    "Fraud Detection": {
+        "en": "Fraud Detection",
+        "es": "Detección de Fraude",
+        "pt": "Detecção de Fraude"
+    },
+    "Read More": {
+        "en": "Read More",
+        "es": "Leer más",
+        "pt": "Leia Mais"
+    }
+}

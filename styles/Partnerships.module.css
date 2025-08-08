@@ -1,0 +1,119 @@
+.container {
+    display: flex;
+    margin-top: 70px;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured {
+    padding: 6rem;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.featuredContent {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: var(--black-bg);
+}
+
+.featuredContent h1 {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.9px;
+    max-width: 500px;
+}
+
+.featuredContent p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+}
+
+.contactBtnBlue, .contactBtnWhite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    width: 150px;
+    padding: 16px 28px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contactBtnBlue {
+    background-color: #0f9aff;
+    color: var(--white);
+}
+
+.contactBtnWhite {
+    background-color: var(--white);
+    color: #0f9aff;
+}
+
+.contactBtnBlue:hover, .contactBtnWhite:hover {
+    opacity: 0.8;
+}
+
+.featuredImg {
+    margin: 0 3rem;
+    width: 50vw;
+    height: 25vw;
+    border-radius: 8px;
+    border: solid 1px #dbdbdb;
+    background-color: #f0f0f0;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    background-color: var(--azure);
+    color: var(--white);
+    padding: 4rem calc(100% - 70%);
+}
+
+@media (max-width: 1024px) {
+
+    .featured {
+        padding: 4rem 20px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .featuredContent {
+        align-items: center;
+    }
+
+    
+    .featuredContent h1 {
+        font-size: 28px;
+    }
+
+    .featuredImg {
+        margin: 0 10px;
+        width: 80vw;
+        height: 50vw;
+        border-radius: 8px;
+        border: solid 1px #dbdbdb;
+        background-color: #f0f0f0;
+    }
+
+    .details {
+        padding: 4rem 20px;
+    }
+
+}

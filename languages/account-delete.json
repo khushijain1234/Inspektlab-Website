@@ -1,0 +1,27 @@
+{
+    "Delete Account": {
+        "en": "Delete Account",
+        "es": "Eliminar cuenta",
+        "pt": "Excluir Conta"
+    },
+    "delete account text": {
+        "en": "For the deletion of account, please submit client ID along with the proof of ownership to ",
+        "es": "Para eliminar la cuenta, envíe la identificación del cliente junto con la prueba de propiedad a ",
+        "pt": "Para excluir a conta, envie o ID do cliente junto com a prova de propriedade para "
+    },
+    "seo title": {
+        "en": "Privacy Policy | Inspektlabs",
+        "es": "Política de privacidad | Inspektlabs",
+        "pt": "Política de Privacidade | Inspektlabs"
+    },
+    "seo desc": {
+        "en": "Account deletion",
+        "es": "Eliminación de cuenta",
+        "pt": "Exclusão de conta"
+    },
+    "seo keywords": {
+        "en": "AI Inspection tool, Visual Inspection tool, Automate Inspections with AI, Visual Intelligence for Motor",
+        "es": "Herramienta de inspección AI, herramienta de inspección visual, automatizar inspecciones con AI, inteligencia visual para motores",
+        "pt": "Ferramenta de Inspeção por IA, Ferramenta de Inspeção Visual, Automatizar Inspeções com IA, Inteligência Visual para Motores"
+    }
+}

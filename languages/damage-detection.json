@@ -1,0 +1,107 @@
+{
+    "Vehicle Damage Inspection": {
+        "en": "Vehicle Damage Inspection",
+        "es": "Inspección de daños de vehículos",
+        "pt": "Inspeção de Danos em Veículos"
+    },
+    "patents text": {
+        "en": "Our patent pending technology specializes in damage detection on various vehicles such as cars etc",
+        "es": "Nuestra tecnología de patente pendiente se especializa en la detección de daños en diversos vehículos, como automóviles",
+        "pt": "Nossa tecnologia em processo de patente é especializada na detecção de danos em vários veículos, como carros, etc."
+    },
+    "accuracy text": {
+        "en": "Our product has been trained on 7 MN+ damage asset photos/videos which allows us to achieve a very high level of accuracy (96%+)",
+        "es": "Nuestro producto ha sido entrenado con más de 7 millones de fotografías/vídeos de activos dañados, lo que nos permite alcanzar un nivel muy alto de precisión (96%+)",
+        "pt": "Nosso produto foi treinado em + de 7 Milhões de fotos/vídeos de ativos danificados, o que nos permite atingir um nível muito alto de precisão (96% ou +)"
+    },
+    "Video tag is not supported for the device": {
+        "en": "Video tag is not supported for the device",
+        "es": "La etiqueta de video no es compatible con el dispositivo",
+        "pt": "A tag de vídeo não é suportada pelo dispositivo"
+    },
+    "damage inspection": {
+        "en": "Our car damage inspection system can detect 19 types of damages across 81 metal, plastic, fiber, glass and rubber car parts.",
+        "es": "Nuestro sistema de inspección de daños a automóviles puede detectar 19 tipos de daños en 81 piezas de automóviles de metal, plástico, fibra, vidrio y caucho",
+        "pt": "Nosso sistema de inspeção de danos em carros pode detectar 19 tipos de danos em 81 peças de metal, plástico, fibra, vidro e borracha."
+    },
+    "undercarriage": {
+        "en": "In addition to this, we cover car undercarriage damage, internal and interior damages.",
+        "es": "Además de esto, cubrimos daños en el tren de rodaje y daños internos del vehículo",
+        "pt": "Além disso, cobrimos danos na parte inferior, além de danos na estrutura e no interior."
+    },
+    "Severity score": {
+        "en": "Severity score to measure the extent of damage",
+        "es": "Puntuación de gravedad para medir la magnitud del daño",
+        "pt": "Pontuação de intensidade para medir a extensão do dano"
+    },
+    "probability": {
+        "en": "Predict probability of internal damage based on external damage",
+        "es": "Predicción de probabilidad de daño interior basándose en el daño exterior",
+        "pt": "Prever a probabilidade de dano interno com base no dano externo"
+    },
+    "smartphone text": {
+        "en": "Photos/videos can be captured via smartphones and fixed cameras (or even drones) during the damage inspection process",
+        "es": "Se pueden capturar fotos/vídeos a través de teléfonos inteligentes y cámaras fijas (o incluso drones) durante el proceso de inspección de daños",
+        "pt": "Fotos/vídeos podem ser capturados por smartphones e câmeras fixas (ou até drones) durante o processo de inspeção de danos"
+    },
+    "seo title": {
+        "en": "InspektLabs' vehicle damage detection technology for undercarriage, internal and external car damages",
+        "es": "Tecnología de detección de daños en vehículos de InspektLabs para el tren de rodaje y daños interiores y exteriores del vehículo",
+        "pt": "Tecnologia de detecção de danos em veículos da InspektLabs para danos na parte inferior, na estrutura, parte interna e externa do carro"
+    },
+    "seo desc": {
+        "en": "Undercarriage, internal and external damage detection with 96%+ accuracy - Inpektlabs' AI-powered car inspection technology for 19 types of damages across 81 metals.",
+        "es": "Detección de daños interiores y exteriores en el tren de rodaje con una precisión superior al 96 %: la tecnología de inspección de automóviles basada en IA de Inpektlabs para 19 tipos de daños en 81 metales.",
+        "pt": "Parte inferior, detecção de danos internos e externos com mais de 96% de precisão - tecnologia de inspeção de automóveis alimentada por IA da Inpektlabs para 19 tipos de danos em 81 metais."
+    },
+    "seo keywords": {
+        "en": "AI Car Damage Recognition, Car Damage Recognition, Car Damage Detection, AI Based Car Damage Recognition, vehicle inspection solutions, car damage inspection, car undercarriage damage, damage inspection",
+        "es": "Reconocimiento de daños en automóviles con IA, Reconocimiento de daños en automóviles, Detección de daños en automóviles, Reconocimiento de daños en automóviles basado en IA, soluciones de inspección de vehículos, inspección de daños en automóviles, daños en el chasis del automóvil, inspección de daños",
+        "pt": "Reconhecimento de danos em carros com IA, reconhecimento de danos em carros, detecção de danos em carros, reconhecimento de danos em carros com base em IA, soluções de inspeção de veículos, inspeção de danos em carros, danos no material rodante do carro, inspeção de danos, inteligência artificial para detecção de danos em veículos, inteligência artificial para inspeção de veículos"
+    },
+    "Frequently Asked Questions": {
+        "en": "Frequently Asked Questions",
+        "es": "Preguntas Frecuentes",
+        "pt": "Perguntas Frequentes"
+    },
+    "General": {
+        "en": "General",
+        "es": "General",
+        "pt": "Geral"
+    },
+    "Damage Detection": {
+        "en": "Damage Detection",
+        "es": "Detección de Daños",
+        "pt": "Detecção de Danos"
+    },
+    "Workflow": {
+        "en": "Workflow",
+        "es": "Flujo de Trabajo",
+        "pt": "Fluxo de Trabalho"
+    },
+    "Our Core Technology": {
+        "en": "Our Core Technology",
+        "es": "Nuestra Tecnología Principal",
+        "pt": "Nossa Tecnologia Principal"
+    },
+    "Claim Assessment": {
+        "en": "Claim Assessment",
+        "es": "Evaluación de Reclamaciones",
+        "pt": "Avaliação de Reivindicações"
+    },
+    "Photo and Video Capture": {
+        "en": "Photo and Video Capture",
+        "es": "Captura de Fotos y Videos",
+        "pt": "Captura de Fotos e Vídeos"
+    },
+    "Fraud Detection": {
+        "en": "Fraud Detection",
+        "es": "Detección de Fraude",
+        "pt": "Detecção de Fraude"
+    },
+    "Read More": {
+        "en": "Read More",
+        "es": "Leer más",
+        "pt": "Leia Mais"
+    }
+}
