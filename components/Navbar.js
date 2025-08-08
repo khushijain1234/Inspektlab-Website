@@ -14,12 +14,7 @@ const Navbar = ({ locale }) => {
 
   const navMenu = [
     {
-      name: { en: 'Home', es: 'Hogar', pt: 'Início' },
-      type: 'link',
-      link: '/',
-    },
-    {
-      name: { en: 'Products', es: 'Productos', pt: 'Produtos' },
+      name: { en: 'Product', es: 'Productos', pt: 'Produtos' },
       type: 'dropdown',
       items: [
         {
@@ -57,7 +52,7 @@ const Navbar = ({ locale }) => {
       ],
     },
     {
-      name: { en: 'Industries', es: 'Industrias', pt: 'Indústrias' },
+      name: { en: 'Solutions', es: 'Soluciones', pt: 'Soluções' },
       type: 'dropdown',
       items: [
         {
@@ -79,7 +74,7 @@ const Navbar = ({ locale }) => {
       ],
     },
     {
-      name: { en: 'Technologies', es: 'Tecnologías', pt: 'Tecnologias' },
+      name: { en: 'Enterprise', es: 'Empresa', pt: 'Empresa' },
       type: 'dropdown',
       items: [
         {
@@ -105,28 +100,34 @@ const Navbar = ({ locale }) => {
       type: 'link',
       link: '/pricing',
     },
-    {
-      name: { en: 'About Us', es: 'Sobre nosotros', pt: 'Sobre nós' },
-      type: 'link',
-      link: '/about-us',
-    },
-    {
-      name: { en: 'en', es: 'es', pt: 'pt' },
-      type: 'dropdown',
-      items: [
-        { name: { en: 'en', es: 'en', pt: 'en' }, link: '/lang' },
-        { name: { en: 'es', es: 'es', pt: 'es' }, link: '/lang' },
-        { name: { en: 'pt', es: 'pt', pt: 'pt' }, link: '/lang' },
-      ],
-    },
+    // {
+    //   name: { en: 'en', es: 'es', pt: 'pt' },
+    //   type: 'dropdown',
+    //   items: [
+    //     { name: { en: 'en', es: 'en', pt: 'en' }, link: '/lang' },
+    //     { name: { en: 'es', es: 'es', pt: 'es' }, link: '/lang' },
+    //     { name: { en: 'pt', es: 'pt', pt: 'pt' }, link: '/lang' },
+    //   ],
+    // },
     {
       name: {
-        en: 'Contact Us',
+        en: 'Contact sales',
         es: 'Contacta con nosotros',
         pt: 'Fale conosco',
       },
       type: 'button',
       link: '/contact-us',
+      bgColor: '#1F1F1F',
+    },
+    {
+      name: {
+        en: 'Request a Demo',
+        es: 'Solicitar una demostración',
+        pt: 'Solicite uma demonstração',
+      },
+      type: 'button',
+      link: '/contact-us',
+      bgColor: '#195DFF',
     },
   ];
 
@@ -161,7 +162,7 @@ const Navbar = ({ locale }) => {
                     : ''
                 }`}
               >
-                {menu.name[locale]} <i className='fas fa-chevron-down'></i>
+                {menu.name[locale]} 
               </div>
               <div className='dropdown-content'>
                 {menu.items.map((subItem, subIndex) =>
@@ -208,9 +209,9 @@ const Navbar = ({ locale }) => {
         );
       else if (menu.type === 'button')
         return (
-          <li key={index} className='menu-items'>
+          <li key={index} className='menu-items btn-container'>
             <Link href={menu.link}>
-              <a className='btn-nav'>{menu.name[locale]}</a>
+              <a className='btn-nav' style={{backgroundColor: menu.bgColor, marginLeft: menu.marginLeft? menu.marginLeft: ''}}>{menu.name[locale]}</a>
             </Link>
           </li>
         );
@@ -293,7 +294,7 @@ const Navbar = ({ locale }) => {
         <div className='logo'>
           <Link href='/'>
             <a>
-              <Image src={logo} alt='Inspektlabs' />
+              <Image src={logo} alt='Inspektlabs'/>
             </a>
           </Link>
         </div>
