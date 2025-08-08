@@ -654,5 +654,56 @@ export const questions = {
                 "A": ["A IA da Inspektlabs é treinada para identificar informações de identificação do veículo, como VIN e placas de veículos, que depois são verificadas para confirmar a propriedade do veículo.", "Capturar a leitura do odômetro também é uma etapa obrigatória no fluxo de trabalho de inspeção ao usar a IA da Inspektlabs (Leia mais)"]
             }
         ]
+    },
+    "Fixed Camera": {
+        "en": [
+            {
+                Q: "Which vehicle scanner should I choose between the Inspekt Pillars, Box360, and WallScan?",
+                A: ["Inspekt Pillars: Ideal for both commercial and passenger vehicles, from compact cars to 26-feet box trucks. It’s a plug-and-play, drive-through scanner requiring minimal installation effort.", 
+                    "Inspekt Box360: Best suited for use cases where the requirement is for extremely accurate inspections. It offers 360° inspections in a compact setup (7 x 4.5 x 3.5 meters) with controlled lighting. Ideal for all types of passenger vehicles, from compact hatchbacks to minivans.", 
+                    "Inspekt WallScan: Designed for custom site conditions.Vehicle suitability depends on the space available."]
+            },
+            {
+                Q: "How long does it take to install the vehicle scanners?",
+                A: ["Inspekt Pillars: Can be installed within 1 day on a leveled surface.", 
+                    "InspektBox360 and InspektWallScan: Require 1–2 working days for full installation including calibration, depending on site readiness."]
+            },
+            {
+                Q: "Should the vehicle scanners be placed indoors or outdoors?",
+                A: ["All Inspektlabs scanners are designed to work outdoors or indoors. Our designs for all three scanners are water proof and can operate in windspeeds upto 120 Kmph."]
+            },
+            {
+                Q: "What is the ideal speed to drive through the vehicle scanners?",
+                A: ["The recommended speed is below 5 km/h (approx. 3 mph) to ensure all sides of the vehicle are accurately captured."]
+            },
+            {
+                Q: "What is needed to install the vehicle scanners?",
+                A: ["A leveled surface, 220 Volts power supply, and 100 MBPS internet connection with LAN enabled.", 
+                    "Inspektlabs provides installation support and calibration services as needed."]
+            },
+            {
+                Q: "Which kinds of vehicles can go through the vehicle scanners?",
+                A: ["Inspekt Pillars: Designed for a wide range - hatchbacks to 26-feet box trucks.", 
+                    "Inspekt Box360: Suitable for passenger vehicles, including sedans, SUVs, taxis, and rental fleets.", 
+                    "Inspekt WallScan: Depends on how its deployed - vehicle type suitability depends on site conditions and space available"]
+            },
+            {
+                Q: "Do the Inspekt Pillars work in all weather conditions?",
+                A: ["Yes. The Inspekt Pillars are built for outdoor environments and are weatherproof, functioning reliably in rain, sun, or wind. They include protective casing and optional zebra lighting for enhanced imaging in various lighting conditions."]
+            },
+            {
+                Q: "Why should you choose Inspektlabs vehicle scanners?",
+                A: ["1. AI-Powered Damage Detection",
+                    "2. Flexible hardware formats- Pillars, Box360, WallScan",
+                    "3. Plug-and-play setup (especially for Inspekt Pillars)",
+                    "4. Compatible with passenger and commercial vehicles",
+                    "5. Cloud-connected, API-ready, and supports real-time scanning"]
+            },
+            {
+                Q: "How much do the Inspektlabs vehicle scanners cost?",
+                A: ["Pricing varies based on configuration and camera setup (2 MP to 8 MP), number of cameras, and deployment region.", 
+                    "Please contact our team for a customized quote."]
+            }
+        ],
     }
 }

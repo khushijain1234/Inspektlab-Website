@@ -49,6 +49,12 @@ const Navbar = ({ locale }) => {
           },
           link: '/photo-video-capture',
         },
+        {
+          name: {
+            en: 'Vehicle Damage Scanners',
+          },
+          link: '/vehicle-damage-scanners'
+        }
       ],
     },
     {
