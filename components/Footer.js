@@ -72,7 +72,7 @@ const Footer = ({locale}) => {
                 </div> */}
                 <div className="section">
                     <div>
-                        <h3 className='location-heading'>BUSINESS</h3>
+                        <p className='location-heading'>BUSINESS</p>
                         <ul className="footer-nav">
                             <li className="footer-links">
                                 <Link locale={locale} href="/">{language["Home"][locale]}</Link>
@@ -90,7 +90,7 @@ const Footer = ({locale}) => {
                     </div>
 
                     <div>
-                        <h3 className='location-heading'>Visit us on</h3>
+                        <p className='location-heading'>Visit us on</p>
                         <div className="social-container">
                             <a href="https://www.linkedin.com/company/inspektlabs" target="_blank" rel="noreferrer noopener"><i className="fab fa-linkedin fa-2x" title="LinkedIn"></i></a>
                             <a href="https://angel.co/company/inspekt-labs" target="_blank" rel="noreferrer noopener"><i className="fab fa-angellist fa-2x" title="AngelList"></i></a>
