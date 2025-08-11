@@ -456,9 +456,6 @@
         /* background: none; */
         background: linear-gradient(150deg, rgba(56, 67, 184, 1) 0%, rgba(47, 52, 112, 1) 18%, rgb(33, 33, 33) 25%);
       }
-      .featured > div:first-of-type {
-        display: none !important;
-      }
       .mainImg{
         display: none;
       }
