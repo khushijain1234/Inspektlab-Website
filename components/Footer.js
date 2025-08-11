@@ -32,7 +32,7 @@ const Footer = ({locale}) => {
                 </div>
                 <div className="section contact-section">
                     <div>
-                        <h3 className='location-heading'>Our Location</h3>
+                        <p className='location-heading'>Our Location</p>
                         <ul className="footer-nav">
                             <li><p>HEAD OFFICE</p></li>
                             <li>
@@ -45,11 +45,11 @@ const Footer = ({locale}) => {
                         </ul>
                     </div>
                     <div>
-                        <h3 className='location-heading'>PHONE</h3>
+                        <p className='location-heading'>PHONE</p>
                         <p>+1 302 613 1607</p>
                     </div>
                     <div>
-                        <h3 className='location-heading'>EMAIL</h3>
+                        <p className='location-heading'>EMAIL</p>
                         <p>info@inspektlabs.com</p>
                     </div>
                 </div>
