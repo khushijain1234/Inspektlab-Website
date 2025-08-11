@@ -168,15 +168,17 @@ const FixedCamera = ({ locale }) => {
 
         <main className={styles.main}>
             <section className={styles.featured}>
-                <Image
-                    src="/img/fixed-camera-featured-photo.svg"
-                    alt="AI-powered vehicle scanner"
-                    layout='fill'
-                    priority
-                    fetchPriority="high"
-                    sizes="100vw"
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    preload='auto'
+                    playsInline
                     className={styles.mainImg}
-                />
+                >
+                    <source src='/img/Vehicle-Damage-Scanners-Video.mp4' type='video/mp4' />
+                    Your browser does not support the video tag.
+                </video>
                 <div className={styles.grid}>
                     <h1 className={styles.featuredTitle}>AI-Powered Vehicle Damage Scanners</h1>
                     <p className={styles.featuredText}>Inspektlabs vehicle scanners capture high-resolution image and video of cars to automatically detect Damages, enabling fast, accurate and cost effective inspections.</p>
