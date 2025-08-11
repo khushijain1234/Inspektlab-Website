@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import styles from '../styles/VehicleDamageScanners.module.css';
 import Image from 'next/image';
 import { questions } from '../const/faq';
+import SEO from '../components/SEO'
 
 
 
@@ -156,6 +157,15 @@ const FixedCamera = ({ locale }) => {
       }
   return (
     <div className={styles.container}>
+        <SEO
+            title="AI-Powered Vehicle Damage Detection Scanners | Inspektlabs"
+            description="Streamline car inspections with AI vehicle damage scanners. Get instant, accurate results for rentals, insurers, and automotive businesses."
+            image="https://inspektlabs.com/img/car.png"
+            url="https://inspektlabs.com/vehicle-damage-scanners/"
+            keywords="Vehicle Damage Scanners"
+            page="vehicle-damage-scanners"
+        />
+
         <main className={styles.main}>
             <section className={styles.featured}>
                 <Image
@@ -278,7 +288,6 @@ const FixedCamera = ({ locale }) => {
             <div className={styles.faqSection}>
                 <div className={styles.faqTitleContainer}>
                 <h1 className={styles.faqTitle}>Commonly asked questions</h1>
-                <p className={styles.faqSubTitle}>The purpose of a FAQ is generally to provide information on frequent questions or concerns. However, the format is a useful means of organizing information, and text</p>
                 </div>
                 <div className={styles.questionContainer}>
                     <div className={styles.faqGrid}>

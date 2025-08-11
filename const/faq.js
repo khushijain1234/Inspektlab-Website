@@ -695,13 +695,13 @@ export const questions = {
                 Q: "Why should you choose Inspektlabs vehicle scanners?",
                 A: ["1. AI-Powered Damage Detection",
                     "2. Flexible hardware formats- Pillars, Box360, WallScan",
-                    "3. Plug-and-play setup (especially for Inspekt Pillars)",
+                    "3. Plug-and-play setup",
                     "4. Compatible with passenger and commercial vehicles",
                     "5. Cloud-connected, API-ready, and supports real-time scanning"]
             },
             {
                 Q: "How much do the Inspektlabs vehicle scanners cost?",
-                A: ["Pricing varies based on configuration and camera setup (2 MP to 8 MP), number of cameras, and deployment region.", 
+                A: ["Pricing varies based on configuration and camera setup, number of cameras, and deployment region.", 
                     "Please contact our team for a customized quote."]
             }
         ],
