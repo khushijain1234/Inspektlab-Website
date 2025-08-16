@@ -1,3 +1,95 @@
+export const companies=[
+  {
+    img: 'autosphere.svg',
+    title: 'Autosphere',
+    width: 150,
+    height: 150
+  },
+  {
+    img: 'senger.svg',
+    title: 'Senger',
+    width: 150,
+    height: 150
+  },
+  {
+    img: 'volkswagen.svg',
+    title: 'Volkswagen',
+    width: 150,
+    height: 150
+  },
+  {
+    img: 'fastlease.svg',
+    title: 'Fastlease',
+    width: 150,
+    height: 150
+  },
+  {
+    img: 'gefco.svg',
+    title: 'Gefco',
+    width: 100,
+    height: 100
+  }
+];
+export const productFeatures = [
+  {
+    title: 'Assess Vehicle Damage within seconds',
+    text: 'Our Proprietary AI is trained to detect 21 types of damages on all vehicle types and generate a detailed report in just a few seconds',
+    img: 'vehicle-damage.svg',
+    mainImg: 'Assess-vehicle-damage-within-seconds.svg'
+  },
+  {
+    title: 'Real time fraud detection',
+    text: 'Avoid real time fraud during vehicle inspections with Inspektlab\'s Real time Fraud Detection',
+    img: 'real-time-fraud.svg',
+    mainImg: 'Real time fraud detection.svg'
+  },
+  {
+    title: "Analyze Your vehicle's image quality",
+    text: "Get a detailed report about the quality of your vehicle's images in less than 2 seconds with real time improvement feedback",
+    img: 'vehicle-quality.svg',
+    mainImg: "Analyze Your vehicle’s image quality.svg",
+  },
+  {
+    title: 'Automate Inspections with Fixed Cameras',
+    text: 'Set up a Fixed Camera Layout to inspect vehicles using AI when they enter and exit your facility',
+    img: 'Automate-inspections.svg',
+    mainImg: 'Automate-inspections-with-fixed-cameras.svg'
+  },
+  {
+    title: 'Generate Claim Estimates in seconds',
+    text: 'We detect damages, take repair vs replace decisions on car parts and integrate with incredible sources of part and labour costs to estimate $ claim value for vehicles',
+    img: 'fixed-cameras.svg',
+    mainImg: 'Generate Claim Estimates in seconds.svg'
+  },
+  {
+    title: 'Auto-Scan important information',
+    text: 'Automatically capture critical information like odometer reading, VIN, License plate number and more',
+    img: 'claim-estimates.svg',
+    mainImg: 'Auto-scan-important-information.svg'
+  }
+]
+export const usersCard = [
+ {
+  cardImg: 'Insurers.svg',
+  userType: 'Insurers',
+  text: 'Run remote inspection and generate detailed assessment reports with $ estimate on a range of vehicles'
+ },
+ {
+  cardImg: 'fleetmanagement.svg',
+  userType: 'Fleet Management',
+  text: 'Automate inspection with fixed camera/smartphone inspection to track of the before vs after condition of your vehicles'
+ },
+ {
+  cardImg: 'Car rentals.svg',
+  userType: 'Car Rentals',
+  text: 'Easily run pre-inspection and post-journey assessment to save, time, money, and efforts for you and your customers'
+ },
+ {
+  cardImg: 'Vehicle Re-marketing.svg',
+  userType: 'Vehicle Re-marketing',
+  text: 'Automate condition reports, build buyers trust, and sell used vehicles faster, with Inspection data you can trust'
+ }
+]
 export const features = [
   {
     title: {
