@@ -416,7 +416,7 @@ console.log(productFeatures.length, openIndex,"heyy")
               <p className={styles.testimonialsSubtitle}>Hear directly from our partners</p>
             </div>
             <div className={styles.testimonialsContainer}>
-            <div className={styles.testimonialWrapper}>
+            {/* <div className={styles.testimonialWrapper}>
                 <div className={`${styles.testimonialRow}${styles.row1}`}>
                   <div className={styles.scrollTrack}>
                     {[
@@ -460,7 +460,7 @@ console.log(productFeatures.length, openIndex,"heyy")
                     ))}
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className={styles.testimonialMobileWrapper}>
                   <div className={styles.testimonialRow}>
                     {
@@ -631,7 +631,7 @@ console.log(productFeatures.length, openIndex,"heyy")
             <h2 className={styles.testimonialsTitle}>{language['Latest Blogs'][locale]}</h2>
             <p className={styles.blogSubtitle}>As we continue our journey to revolutionize vehicle inspections and claims automation, attending industry gatherings becomes essential to the story.</p>
           </div>
-            <div className={styles.blogCaraouselContainer}>
+            {/* <div className={styles.blogCaraouselContainer}>
                 <div className={`${styles.nav} ${styles.navLeft}`}>
                   <Image src={'/img/nav-left-icon.svg'} width={50} height={50} alt="nav-left" onClick={() => scroll("left")}/>
                 </div>
@@ -671,7 +671,7 @@ console.log(productFeatures.length, openIndex,"heyy")
                 <div className={`${styles.nav} ${styles.navRight}`}>
                   <Image src={'/img/nav-right-icon.svg'} width={50} height={50} alt="nav-right" onClick={() => scroll("right")}/>
                 </div>
-            </div>
+            </div> */}
           
         </section>
 
