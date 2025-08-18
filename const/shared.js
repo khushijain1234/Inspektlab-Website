@@ -1,20 +1,20 @@
 export const partners = [
   {
       "name": {
-          "en": "Clients",
-          "es": "Clientes",
-          "pt": "Clientes"
-      },
-      "logo": [
-          "clients/liberty-mutual.png",
-          "clients/bmw.png",
-          "clients/dekra.png",
-          "clients/fixico.png",
-          "clients/holiday-cars.png",
-          "clients/ntt-data-services.png",
-          "clients/kotak.jpg",
-          "clients/age.png"
-      ]
+  "en": "Clients",
+  "es": "Clientes",
+  "pt": "Clientes"
+  },
+  "logo": [
+  "clients/liberty-mutual.png",
+  "clients/bmw.png",
+  "clients/dekra.png",
+  "clients/fixico.png",
+  "clients/holiday-cars.png",
+  "clients/ntt-data-services.png",
+  "clients/kotak.jpg",
+  "clients/age.png"
+  ]
   },
   {
       "name": {
@@ -24,8 +24,8 @@ export const partners = [
       },
       "logo": [
           "techstars.png",
-          "barclays.png",
-          "titancapital.png",
+          "Barclays logo.png",
+          "Titan Capital.jpg",
           "bettercapital.svg"
       ]
   },

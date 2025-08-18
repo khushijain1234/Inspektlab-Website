@@ -28,6 +28,7 @@ export default function Home({ locale }) {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const [openIndex, setOpenIndex] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
   const recaptchaRef = useRef();
   const scrollRef = useRef();
@@ -135,7 +136,7 @@ export default function Home({ locale }) {
       text: "Inspektlabs software offers + 95% accuracy, and we hope this will also advance our sustainability commitment, Repair before Replace."
     },
     {
-      name: 'Jonathan Simcoe',
+      name: 'Joris Van Poppel',
       id: 'Sompo',
       img: 't3.png',
       text: "Inspektlabs has assisted us in enhancing our inspection process at Universal Sompo General Insurance. Their automated inspection solution provides comprehensive coverage for both cars and motorbikes. With custom workflows designed to handle inspections from any source – be it customer self-inspections, vendor checks, or OEM reviews – their platform has streamlined our process, allowing us to manage inspections more efficiently."
@@ -257,7 +258,7 @@ console.log(productFeatures.length, openIndex,"heyy")
                     const isOpen = openIndex === index;
                     return (
                       <>
-                        <div key={index} className={`${styles.productFeature} ${isOpen? styles.activeDiv:""}`} onClick={()=>{openIndex === index? setOpenIndex('null'): setOpenIndex(index)}}>
+                        <div key={index} className={`${styles.productFeature} ${isOpen? styles.activeDiv:""}`} onClick={()=>{if(openIndex===index){setOpenIndex(null);}else{setOpenIndex(index);setSelectedIndex(index);}}}>
                           <Image src={`/img/${feature.img}`} alt={feature.title} width={54} height={54} />
                           <div className={styles.productFeatureContent}>
                             <div className={styles.productFeatureTitleContainer}>
@@ -265,7 +266,7 @@ console.log(productFeatures.length, openIndex,"heyy")
                               <Image src="/img/downArrorw.svg" alt="FAQ" width={24} height={24}  objectFit='contain'/>
                             </div>
                             <div className={styles.innerImg}>
-                              {isOpen && <Image src={`/img/${openIndex!=null? productFeatures[openIndex].mainImg: productFeatures[0].mainImg}`} alt='Car Icon' width={575} height={700} />}
+                              {isOpen && <Image src={`/img/${productFeatures[index].mainImg}`} alt='Car Icon' width={575} height={700} />}
                             </div>
                             <div className={`${styles.productFeatureTextWrapper} ${isOpen ? styles.open : ''}`}>
                               {isOpen && <p className={styles.productFeatureText}>{feature.text}</p>}
@@ -277,7 +278,7 @@ console.log(productFeatures.length, openIndex,"heyy")
                   })}
                 </div>
                 <div className={styles.imgSection}>
-                  <Image src={`/img/${openIndex!=null? productFeatures[openIndex].mainImg: productFeatures[0].mainImg}`} alt='Car Icon' width={575} height={744} />
+                  <Image src={`/img/${productFeatures[selectedIndex].mainImg}`}  alt='Car Icon' width={575} height={744} />
                 </div>
               </div>
             </div>
@@ -325,8 +326,8 @@ console.log(productFeatures.length, openIndex,"heyy")
                 <div className={`${styles.testimonialRow} ${styles.row1}`}>
                   <div className={styles.scrollTrack}>
                     {[
-                      ...testimonialsData.slice(0, 4),
-                      ...testimonialsData.slice(0, 4),
+                      ...testimonials.slice(0, 4),
+                      ...testimonials.slice(0, 4),
                     ].map((t, i) => (
                       <div className={styles.testimonialCard} key={`row1-${i}`}>
                         <div className={styles.testimonialCardHeadingContainer}>
@@ -335,7 +336,7 @@ console.log(productFeatures.length, openIndex,"heyy")
                           </div>
                           <div className={styles.testimonialCardHeading}>
                             <p><strong>{t.name}</strong></p>
-                            <p className={styles.testimonialTag}>{t.id}</p>
+                            <p className={styles.testimonialTag}>{t.position}</p>
                           </div>
                         </div>
                         <p>“{t.text}”</p>
@@ -347,8 +348,8 @@ console.log(productFeatures.length, openIndex,"heyy")
                 <div className={`${styles.testimonialRow} ${styles.row2}`}>
                   <div className={styles.scrollTrackReverse}>
                     {[
-                      ...testimonialsData.slice(4, 8),
-                      ...testimonialsData.slice(4, 8),
+                      ...testimonials.slice(4, 8),
+                      ...testimonials.slice(4, 8),
                     ].map((t, i) => (
                       <div className={styles.testimonialCard} key={`row2-${i}`}>
                        <div className={styles.testimonialCardHeadingContainer}>
@@ -357,7 +358,7 @@ console.log(productFeatures.length, openIndex,"heyy")
                           </div>
                           <div className={styles.testimonialCardHeading}>
                             <p><strong>{t.name}</strong></p>
-                            <p>{t.id}</p>
+                            <p>{t.position}</p>
                           </div>
                         </div>
                         <p className={styles.testimonialText}>“{t.text}”</p>
@@ -369,7 +370,7 @@ console.log(productFeatures.length, openIndex,"heyy")
               <div className={styles.testimonialMobileWrapper}>
                   <div className={styles.testimonialRow}>
                     {
-                      testimonialsData.map((t,i) =>(
+                      testimonials.map((t,i) =>(
                         <div className={styles.testimonialCard} key={i}>
                         <div className={styles.testimonialCardHeadingContainer}>
                           <div>
@@ -377,7 +378,7 @@ console.log(productFeatures.length, openIndex,"heyy")
                           </div>
                           <div className={styles.testimonialCardHeading}>
                             <p><strong>{t.name}</strong></p>
-                            <p className={styles.testimonialTag}>{t.id}</p>
+                            <p className={styles.testimonialTag}>{t.position}</p>
                           </div>
                         </div>
                         <p>“{t.text}”</p>
@@ -399,8 +400,8 @@ console.log(productFeatures.length, openIndex,"heyy")
                           key={img}
                           src={`/img/${img}`}
                           alt={img}
-                          width={143}
-                          height={27}
+                          width={150}
+                          height={40}
                           objectFit='contain'
                           className={styles.partnerLogoImg}
                         />
