@@ -106,6 +106,8 @@ a {
   font-style: Inter;
   margin: 0;
   cursor: pointer;
+  padding: 0px 4px;
+
 }
 
 .nav .menu .menu-items a {
@@ -307,6 +309,7 @@ a {
   color: var(--white);
   border-radius: 50px;
   border: 1px solid var(--white);
+  cursor: pointer;
 }
 .logo-footer + p {
   color: var(--white);
@@ -367,35 +370,52 @@ a {
   text-align: center;
 }
 
-.nav-active {
-  margin: 0 -16px;
+.nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 4px 0; /* spacing for the brackets */
 }
 
-.nav-active::before {
-  display: inline-block;
-  content: url('/img/top.svg');
-  transform: scale(0.5);
-  position: relative;
-  top: -4px;
-  left: 12px;
+.nav-active::before,
+.nav-active::after {
+  content: "";
+  position: absolute;
+  transform: translateX(-50%);
+  width: 10px;   /* length of bracket line */
+  height: 6px;   /* height of the bracket */
 }
+
+
+
+.nav-active::before {
+  top: 20px; /* position above text */
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+}
+
+.nav-active::after {
+  bottom: 20px; /* position below text */
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+}
+
 
 .nav-active.mobile::before {
   filter: invert(1);
   top: -2px;
 }
-
-.nav-active::after {
-  display: inline-block;
-  content: url('/img/bottom.svg');
-  transform: scale(0.5);
-  position: relative;
-  bottom: -18px;
-  right: 9px;
+.highlighted::before{
+  top: -6px;
+}
+.highlighted::after{
+  bottom: -6px;
 }
 
 .nav-active.mobile::after {
   filter: invert(1);
+}
+.dropbtn .nav-active{
+  border: 1px solid green;
 }
 
 .left-corner {

@@ -274,7 +274,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 7rem;
+  margin-top: 4rem;
 }
 .targetAudienceDiv{
   width: 80%;
@@ -554,13 +554,16 @@
 .testimonialWrapper {
   background: transparent;
   padding: 50px 0;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box;
   gap: 30px;
   border-radius: 5px;
+  inline-size: 80vw;
+  margin-inline: auto;
+  overflow: hidden;
 }
 .testimonialMobileWrapper{
   display: none;
@@ -569,29 +572,35 @@
 .testimonialRow {
   /* overflow: hidden; */
   /* white-space: nowrap; */
+  overflow: hidden;
   margin-bottom: 40px;
 }
 .row2{
   display: flex;
 }
-.scrollTrack {
+.scrollTrack,
+.scrollTrackReverse {
   display: inline-flex;
+  min-width: 100%;   /* make sure they never shrink smaller than wrapper */
+  max-width: 100%;   /* make sure they don’t overflow parent width */
+  box-sizing: border-box;
+}
+.scrollTrack {
   animation: scroll-left 30s linear infinite; /* was 5s → now 20s for slower scroll */
 }
 
 .scrollTrackReverse {
-  display: inline-flex;
   animation: scroll-right 30s linear infinite; /* match speed */
 }
 
 .testimonialCard {
   background: rgba(255, 255, 255, 0.05);
+  flex: 0 0 20vw;
   color: white;
   border-radius: 16px;
   padding: 20px;
   margin: 0 10px;
-  width: 400px;
-  height: 250px;
+  height: auto;
   overflow: hidden;
   opacity: 0.6;
   /* min-width: 300px;
@@ -814,25 +823,27 @@
 
 .blogCaraouselContainer {
   position: relative;
-  /* width: 80%; */
-  /* overflow: hidden; */
   background-color: black;
-  /* padding: 40px 0; */
   display: flex;
-    
-  /* gap: 70px;  */
-  /* justify-content: center;
-  display: flex;
-  gap: 50px; */
+  inline-size: 80vw;
+  margin-inline: auto;
+  /* width: 100%; */
+  /* overflow: hidden; */
 }
 
 .blogCaraouselContent{
   display: flex;
+  flex: 1 1 auto;
+  min-width: 0;
+  width: 100%;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  align-items: flex-start;
   transition: transform 10s ease-in-out;
   gap: 20px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .nav {
@@ -844,29 +855,24 @@
 }
 
 .navLeft {
-  left: -100px; /* adjust as needed based on carousel width */
+  left: -5rem; /* adjust as needed based on carousel width */
 }
 
 .navRight {
-  right: -100px;
+  right: -5rem;
 }
 .blogCaraouselContent::-webkit-scrollbar {
   display: none;
 }
-.blogCaraouselContent {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
 .blogItem {
   display: flex;
   flex-direction: column;
-  flex: 0 0 80%;
+  flex: 0 0 calc((100% - 40px) / 3);
+  min-width: 0;
   overflow: hidden;
   scroll-snap-align: start;
   gap: 10px;
-  max-width: 350px;
   border-radius: 3px;
-  /* border: solid 1px #eee; */
   text-align: left;
   transition: box-shadow 0.6s ease-out;
   background: var(--white);
@@ -981,13 +987,12 @@
 }
 .mapSectionHeading{
   width: 80%;
-  font-size: 64px;
+  font-size: 86px;
   line-height: 95px;
   letter-spacing: -3.46px;
   font-weight: 500;
   color: #FFFFFF;
   margin-top: 30px;
-  margin-bottom: 20px;
 }
 
 .legend {
@@ -1004,7 +1009,7 @@
   height: 750px;
   position: relative;
 }
-.mapContainer img{
+.mapWrapper img{
   width: 100%;
   height: 100%;
 }
@@ -1458,6 +1463,7 @@ margin-top: 30px;
   .testimonialCard{
     width: 80%; /* full viewport width */
     scroll-snap-align: start;
+    flex-basis: 80vw;
     flex-shrink: 0;
   }
   .testimonialRow::-webkit-scrollbar {
@@ -1577,15 +1583,20 @@ line-height: 30px;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     transition: transform 10s ease-in-out;
+    margin-bottom: 30px;
     /* padding: 0 40px; */
     /* gap: 20px; */
     /* max-width: 100%; */
     /* flex: 0 0 80%; */
 }
+.blogItem{
+  flex-basis: 90%;
+}
 .mapSectionHeading{
   font-size: 26px;
   line-height: 46px;
   letter-spacing: 0px;
+  margin-bottom: 20px;
 }
 
 .mapContainer{
@@ -1598,10 +1609,15 @@ line-height: 30px;
   -webkit-overflow-scrolling: touch;
   position: relative; 
 }
-.mapContainer img{
+.mapWrapper{
   width: 200%;              /* fixed width larger than viewport */
-    height: auto;               /* keep aspect ratio */
-    display: inline-block;
+    height: 100%; 
+    min-width: 150%;
+    /* display: inline-block; */
+    position: relative;
+}
+.mapContainer::-webkit-scrollbar {
+  display: none;
 }
 .legendsContainer{
   gap: 20px;

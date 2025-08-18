@@ -14,6 +14,11 @@ const Navbar = ({ locale }) => {
 
   const navMenu = [
     {
+      name: { en: 'Home', es: 'Hogar', pt: 'Início' },
+      type: 'link',
+      link: '/',
+    },
+    {
       name: { en: 'Product', es: 'Productos', pt: 'Produtos' },
       type: 'dropdown',
       items: [
@@ -48,6 +53,12 @@ const Navbar = ({ locale }) => {
             pt: 'Captura de foto e vídeo',
           },
           link: '/photo-video-capture',
+        },
+        {
+          name: {
+            en: 'Photo Inspection',
+          },
+          link: '/photo-inspection',
         },
         {
           name: {
@@ -164,7 +175,7 @@ const Navbar = ({ locale }) => {
                   menu.items
                     .map((subItem) => subItem.link)
                     .includes(router.asPath)
-                    ? 'nav-active'
+                    ? 'nav-active highlighted'
                     : ''
                 }`}
               >

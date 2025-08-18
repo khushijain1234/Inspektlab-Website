@@ -269,7 +269,6 @@ console.log(productFeatures.length, openIndex,"heyy")
                             </div>
                             <div className={`${styles.productFeatureTextWrapper} ${isOpen ? styles.open : ''}`}>
                               {isOpen && <p className={styles.productFeatureText}>{feature.text}</p>}
-                              {isOpen && <p className={`${isOpen? styles.activeTitle: ""}`}>Learn More <Image src='/img/arrow.svg' width={50} height={11} /></p>}
                             </div>
                           </div>
                         </div>
@@ -305,7 +304,6 @@ console.log(productFeatures.length, openIndex,"heyy")
                   <h3 className={styles.userType}>{card.userType}</h3>
                   <p className={styles.cardText}>{card.text}</p>
                   <a>
-                    <h4 className={styles.learnMore}>Learn more <Image src='/img/arrow.svg' width={50} height={11} /></h4>
                   </a>
                 </div>
               </div>
@@ -314,99 +312,6 @@ console.log(productFeatures.length, openIndex,"heyy")
           </div>
         </section>
 
-        {/* Features Section */}
-        {/* <section className={styles.features}>
-          <h2 className={styles.featuresTitle}>
-            {language['Features'][locale]}
-          </h2>
-          <div className={styles.featuresContainer}>
-            {features.map((feature) => (
-              <FeatureCard
-                key={feature.title[locale]}
-                title={feature.title[locale]}
-                text={feature.text[locale]}
-                img={feature.img}
-                path={feature.path}
-                bgColor={feature.bgColor}
-                action={feature.action}
-                locale={locale}
-              />
-            ))}
-          </div>
-        </section> */}
-
-        {/* Why Choose Us? */}
-        {/* <section className={styles.whySection}>
-          <h2 className={styles.whyTitle}>
-            {language['Why Choose Our AI Inspection Solution?'][locale]}
-          </h2>
-          <div className={styles.whyContainer}>
-            {whyCards.map((wCard) => (
-              <WhyCard
-                key={wCard.title[locale]}
-                title={wCard.title[locale]}
-                text={wCard.text[locale]}
-                img={wCard.img}
-              />
-            ))}
-          </div>
-          <Link href='/contact-us'>
-            <a className={styles.btnBlue} style={{ color: '#fff' }}>
-              {language['Request a Demo'][locale]}
-            </a>
-          </Link>
-        </section> */}
-
-        {/* Partners Section */}
-        {/* <section className={styles.partners}>
-          <h2 className={styles.partnersTitle}>
-            {language['Our Partners'][locale]}
-          </h2>
-          {partners.map((category) => (
-            <Fragment key={category.name[locale]}>
-              <h3 className={styles.partnerCategory}>
-                {category.name[locale]}
-              </h3>
-              <div className={styles.partnerLogoContainer}>
-                {category.logo.map((img) => (
-                  <div className={styles.partnerLogo} key={img}>
-                    <Image
-                      key={img}
-                      src={`/img/${img}`}
-                      alt={img}
-                      width={170}
-                      height={55}
-                      objectFit='contain'
-                    />
-                  </div>
-                ))}
-              </div>
-            </Fragment>
-          ))}
-          <Fragment>
-            <h3 className={styles.partnerCategory}>
-              {language['Awards'][locale]}
-            </h3>
-            <div className={styles.partnerLogoContainer}>
-              {awards.map((award) => (
-                <div className={styles.awardsContainer} key={award.name}>
-                  <div className={styles.partnerLogo}>
-                    <Image
-                      src={`/img/news/${award.img}`}
-                      alt={award.name}
-                      width={200}
-                      height={70}
-                      objectFit='contain'
-                    />
-                  </div>
-                  <a href={award.url} target='_blank' rel='noopener noreferrer'>
-                    {award.name}
-                  </a>
-                </div>
-              ))}
-            </div>
-          </Fragment>
-        </section> */}
 
         {/* Testimonials Section */}
         <section className={styles.testimonialSection}>
@@ -416,8 +321,8 @@ console.log(productFeatures.length, openIndex,"heyy")
               <p className={styles.testimonialsSubtitle}>Hear directly from our partners</p>
             </div>
             <div className={styles.testimonialsContainer}>
-            {/* <div className={styles.testimonialWrapper}>
-                <div className={`${styles.testimonialRow}${styles.row1}`}>
+            <div className={styles.testimonialWrapper}>
+                <div className={`${styles.testimonialRow} ${styles.row1}`}>
                   <div className={styles.scrollTrack}>
                     {[
                       ...testimonialsData.slice(0, 4),
@@ -439,7 +344,7 @@ console.log(productFeatures.length, openIndex,"heyy")
                   </div>
                 </div>
 
-                <div className={`${styles.testimonialRow}${styles.row2}`}>
+                <div className={`${styles.testimonialRow} ${styles.row2}`}>
                   <div className={styles.scrollTrackReverse}>
                     {[
                       ...testimonialsData.slice(4, 8),
@@ -460,7 +365,7 @@ console.log(productFeatures.length, openIndex,"heyy")
                     ))}
                   </div>
                 </div>
-              </div> */}
+              </div>
               <div className={styles.testimonialMobileWrapper}>
                   <div className={styles.testimonialRow}>
                     {
@@ -538,72 +443,6 @@ console.log(productFeatures.length, openIndex,"heyy")
           </div>
         </section>
 
-        {/* News Section */}
-        {/* <section className={styles.newsSection}>
-          <h2 className={styles.newsSectionTitle}>
-            {
-              language["Inspektlabs' vehicle inspection tools are in the News"][
-                locale
-              ]
-            }
-          </h2>
-          <div className={styles.newsContainer}>
-            {news.slice(0, 3).map((newsItem, index) => (
-              <div className={styles.newsItem} key={index}>
-                <div className={styles.newsLogo}>
-                  <Image
-                    src={`/img/news/${newsItem.logo}`}
-                    layout='fill'
-                    objectFit='initial'
-                    alt={newsItem.name}
-                  />
-                </div>
-                <p className={styles.newsTitle}>{newsItem.name}</p>
-                <p className={styles.newsContent}>{newsItem.text}</p>
-                <a
-                  href={newsItem.url}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className={styles.newsAction}
-                  title={newsItem.name}
-                >
-                  {language['Read More'][locale]}
-                  <span className='sr-only'>about {newsItem.name}</span>{' '}
-                  <i className='fas fa-chevron-right'></i>
-                </a>
-              </div>
-            ))}
-          </div>
-        </section> */}
-
-        {/* Stats Section */}
-        {/* <section className={styles.statsSection}>
-          <h2 className={styles.statsTitle}>
-            {
-              language[
-                'Our success says everything about our digital vehicle inspections'
-              ][locale]
-            }
-          </h2>
-          <div className={styles.statsContainer}>
-            <p>
-              20+ <span>{language['Enterprise Customers'][locale]}</span>
-            </p>
-            <p>
-              1M+ <span>{language['Inspections Passed'][locale]}</span>
-            </p>
-            <p>
-              10+ <span>{language['Countries'][locale]}</span>
-            </p>
-          </div>
-          <p className={styles.statsText}>
-            “{language['Damage assessment text'][locale]}
-            <br />
-            <br />
-            {language['360 damage text'][locale]}”
-          </p>
-        </section> */}
-
         {/* FAQ Section */}
         <section className={styles.faqSectionContainer}>
           <div className={styles.faqSection}>
@@ -631,12 +470,12 @@ console.log(productFeatures.length, openIndex,"heyy")
             <h2 className={styles.testimonialsTitle}>{language['Latest Blogs'][locale]}</h2>
             <p className={styles.blogSubtitle}>As we continue our journey to revolutionize vehicle inspections and claims automation, attending industry gatherings becomes essential to the story.</p>
           </div>
-            {/* <div className={styles.blogCaraouselContainer}>
+            <div className={styles.blogCaraouselContainer}>
                 <div className={`${styles.nav} ${styles.navLeft}`}>
                   <Image src={'/img/nav-left-icon.svg'} width={50} height={50} alt="nav-left" onClick={() => scroll("left")}/>
                 </div>
                 <div className={styles.blogCaraouselContent} ref={scrollRef}>
-                  {posts.slice(0, 3).map((post) => (
+                  {posts.map((post) => (
                   <div className={styles.blogItem} key={post.id}>
                     <div className={styles.blogImg}>
                       <Image
@@ -671,7 +510,7 @@ console.log(productFeatures.length, openIndex,"heyy")
                 <div className={`${styles.nav} ${styles.navRight}`}>
                   <Image src={'/img/nav-right-icon.svg'} width={50} height={50} alt="nav-right" onClick={() => scroll("right")}/>
                 </div>
-            </div> */}
+            </div>
           
         </section>
 
@@ -679,13 +518,15 @@ console.log(productFeatures.length, openIndex,"heyy")
         <section className={styles.mapSection}>
           <h1 className={styles.mapSectionHeading}>Our Presence</h1>
           <div className={styles.mapContainer}>
-          <Image
-            src='/img/map.svg'
-            layout='fill'
-            objectFit='contain'
-            objectPosition='center'
-            alt='map'
-          />
+              <div className={styles.mapWrapper}>
+                <Image
+                  src='/img/map.svg'
+                  layout='fill'
+                  objectFit='contain'
+                  objectPosition='center'
+                  alt='map'
+                />
+              </div>
           </div>
           <div className={styles.legendsContainer}>
             <div className={styles.legend}>
@@ -718,96 +559,6 @@ console.log(productFeatures.length, openIndex,"heyy")
           </div>
         </section>
 
-        {/* Misc Section */}
-        {/* <section className={styles.miscSection}>
-          <h4>Flipkart Plus</h4>
-          <p>A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins & non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you shop more!</p>
-          <br/>
-          <p>What&apos;s more, you can even use the Flipkart supercoins for a number of exciting services, like:</p>
-          <p>An annual Zomato Gold membership</p>
-          <p>An annual Hotstar Premium membership</p>
-          <p>6 months Gaana plus subscription</p>
-          <p>Rupees 550 instant discount on flights on ixigo</p>
-          <p>Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.</p>
-          <br/>
-          <h4>No Cost EMI</h4>
-          <p>In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.</p>
-          <br/>
-          <h4>EMI on Debit Cards</h4>
-          <p>Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply.</p>
-          <br/>
-          <h4>Mobile Exchange Offers</h4>
-          <p>Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever possible. Terms and conditions apply.</p>
-          <br/>
-          <h4>No Cost EMI</h4>
-          <p>In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.</p>
-          <br/>
-          <h4>EMI on Debit Cards</h4>
-          <p>Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply.</p>
-          <br/>
-          <h4>Mobile Exchange Offers</h4>
-          <p>Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever possible. Terms and conditions apply.</p>
-        </section> */}
-
-        {/* API Request Modal */}
-        {/* {showModal && (
-          <div className={styles.modalContainer}>
-            <div className={styles.modal}>
-              <div
-                className={styles.actionClose}
-                onClick={() => setShowModal(false)}
-              >
-                <i className='fas fa-times fa-2x'></i>
-              </div>
-              <h3>{language['enter email text'][locale]}</h3>
-              <p>**Note: {language['please use company id'][locale]}</p>
-              <form className={styles.contactForm} onSubmit={handleSubmit}>
-                <input
-                  type='email'
-                  name='email'
-                  id='email'
-                  value={email}
-                  onChange={onEmailChange}
-                  autoFocus
-                />
-                <ReCAPTCHA
-                  ref={recaptchaRef}
-                  size='invisible'
-                  sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
-                  onChange={handleRecaptchaChange}
-                />
-                {valid ? (
-                  loading ? (
-                    <button className={styles.btnBlue}>
-                      <i className='fas fa-circle-notch fa-spin'></i>
-                    </button>
-                  ) : (
-                    <button type='submit' className={styles.btnBlue}>
-                      {language['Get API Key'][locale]}
-                    </button>
-                  )
-                ) : (
-                  <div
-                    className={`${styles['btnBlue']} ${styles['btnDisabled']}`}
-                  >
-                    {language['Get API Key'][locale]}
-                  </div>
-                )}
-                {success && (
-                  <p className={styles.successMessage}>
-                    <i className='fas fa-check'></i>{' '}
-                    {language['Message Sent'][locale]}
-                  </p>
-                )}
-                {error && (
-                  <p className={styles.errorMessage}>
-                    <i className='fas fa-times'></i> {error}
-                  </p>
-                )}
-              </form>
-            </div>
-          </div>
-        )} */}
       </main>
     </div>
   );

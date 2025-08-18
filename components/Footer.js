@@ -32,7 +32,7 @@ const Footer = ({locale}) => {
                 </div>
                 <div className="section contact-section">
                     <div>
-                        <p className='location-heading'>Our Location</p>
+                        <h3 className='location-heading'>Our Location</h3>
                         <ul className="footer-nav">
                             <li><p>HEAD OFFICE</p></li>
                             <li>
@@ -45,11 +45,11 @@ const Footer = ({locale}) => {
                         </ul>
                     </div>
                     <div>
-                        <p className='location-heading'>PHONE</p>
+                        <h3 className='location-heading'>PHONE</h3>
                         <p>+1 302 613 1607</p>
                     </div>
                     <div>
-                        <p className='location-heading'>EMAIL</p>
+                        <h3 className='location-heading'>EMAIL</h3>
                         <p>info@inspektlabs.com</p>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ const Footer = ({locale}) => {
                 </div> */}
                 <div className="section">
                     <div>
-                        <p className='location-heading'>BUSINESS</p>
+                        <h3 className='location-heading'>BUSINESS</h3>
                         <ul className="footer-nav">
                             <li className="footer-links">
                                 <Link locale={locale} href="/">{language["Home"][locale]}</Link>
@@ -90,7 +90,7 @@ const Footer = ({locale}) => {
                     </div>
 
                     <div>
-                        <p className='location-heading'>Visit us on</p>
+                        <h3 className='location-heading'>Visit us on</h3>
                         <div className="social-container">
                             <a href="https://www.linkedin.com/company/inspektlabs" target="_blank" rel="noreferrer noopener"><i className="fab fa-linkedin fa-2x" title="LinkedIn"></i></a>
                             <a href="https://angel.co/company/inspekt-labs" target="_blank" rel="noreferrer noopener"><i className="fab fa-angellist fa-2x" title="AngelList"></i></a>
