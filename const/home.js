@@ -276,8 +276,8 @@ export const testimonials = [
   {
     id: 4,
     name: 'Vikram Jain',
-    position: 'CTO & Business Transformation(Sompo)',
-    img: 'Sompo.png',
+    position: 'CTO of Sompo',
+    img: 'sompo.png',
     text: "Inspektlabs has assisted us in enhancing our inspection process at Universal Sompo General Insurance. Their automated inspection solution provides comprehensive coverage for both cars and motorbikes. With custom workflows designed to handle inspections from any source – be it customer self-inspections, vendor checks, or OEM reviews – their platform has streamlined our process, allowing us to manage inspections more efficiently."
   },
   {
@@ -285,20 +285,20 @@ export const testimonials = [
     name: 'Danielle Corby',
     position: 'CEO of VMG',
     text: 'Working with Inspeklabs has made a real difference for vMobility, allowing us to deliver an optimised and streamlined repair process. The team at Inspeklabs have been responsive and supportive throughout our integration journey and this approach has been key to the success of the partnership so far. We are excited to keep building on the partnership as we continue to innovate and improve our solutions for the benefit of our clients and their customers.',
-    img: 'VMG.png',
+    img: 'vmg.png',
   },
   {
     id: 7,
     name: 'Jonathan Simcoe',
     position: 'DEKRA',
-    img: 't3.png',
+    img: 'dekra.png',
     text: "As a leading damage assessment company in Europe, DEKRA is continuously looking for ways to enhance its services. By integrating Inspektlabs’ digital inspection solution, we’ve significantly streamlined our processes for insurers. The automated visual inspections have greatly reduced claim processing times without compromising quality or accuracy. Inspektlabs is a valuable partner for us in the digital transformation of damage assessment workflows. DEKRA Automotive from the Netherlands"
   },
   {
     id: 8,
     name: 'Jonathan Simcoe',
     id: 'Autoparts Australia',
-    img: 't3.png',
+    img: 'Autoparts Australia.jpg',
     text: "Inspektlabs has been a game changer for APG. Their platform has streamlined our recycled parts product line, allowing us to assess quality with consistency, speed, and confidence. The automation and accuracy it provides has significantly improved how we manage inventory and meet customer expectations. Inspektlabs has helped us lift the standard of recycled parts in the market, and we’re proud to be working with a partner that shares our commitment to innovation and quality."
   }
 ];

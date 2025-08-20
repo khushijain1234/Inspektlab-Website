@@ -331,8 +331,8 @@ console.log(productFeatures.length, openIndex,"heyy")
                     ].map((t, i) => (
                       <div className={styles.testimonialCard} key={`row1-${i}`}>
                         <div className={styles.testimonialCardHeadingContainer}>
-                          <div>
-                            <Image className={styles.testimonialImg} src={`/img/clients/${t.img}`} width={50} height={50} alt='Testimonual Image' />
+                        <div className={styles.logoWrapper}>
+                            <Image className={styles.testimonialImg} src={`/img/clients/${t.img}`} width={60} height={35} alt='Testimonual Image' />
                           </div>
                           <div className={styles.testimonialCardHeading}>
                             <p><strong>{t.name}</strong></p>
@@ -351,10 +351,10 @@ console.log(productFeatures.length, openIndex,"heyy")
                       ...testimonials.slice(4, 8),
                       ...testimonials.slice(4, 8),
                     ].map((t, i) => (
-                      <div className={styles.testimonialCard} key={`row2-${i}`}>
+                      <div className={`${styles.testimonialCard} ${styles.cardRow2}`} key={`row2-${i}`}>
                        <div className={styles.testimonialCardHeadingContainer}>
-                          <div>
-                            <Image className={styles.testimonialImg} src={`/img/clients/${t.img}`} width={50} height={50} alt='Testimonual Image' />
+                          <div className={styles.logoWrapper}>
+                            <Image className={styles.testimonialImg} src={`/img/clients/${t.img}`} width={60} height={40} alt='Testimonual Image' />
                           </div>
                           <div className={styles.testimonialCardHeading}>
                             <p><strong>{t.name}</strong></p>
@@ -373,8 +373,8 @@ console.log(productFeatures.length, openIndex,"heyy")
                       testimonials.map((t,i) =>(
                         <div className={styles.testimonialCard} key={i}>
                         <div className={styles.testimonialCardHeadingContainer}>
-                          <div>
-                            <Image className={styles.testimonialImg} src={`/img/clients/${t.img}`} width={50} height={50} alt='Testimonual Image' />
+                          <div className={styles.logoWrapper}>
+                            <Image className={styles.testimonialImg} src={`/img/clients/${t.img}`} width={60} height={35} alt='Testimonual Image' />
                           </div>
                           <div className={styles.testimonialCardHeading}>
                             <p><strong>{t.name}</strong></p>
@@ -516,7 +516,7 @@ console.log(productFeatures.length, openIndex,"heyy")
         </section>
 
         {/* Map Section */}
-        <section className={styles.mapSection}>
+        {/* <section className={styles.mapSection}>
           <h1 className={styles.mapSectionHeading}>Our Presence</h1>
           <div className={styles.mapContainer}>
               <div className={styles.mapWrapper}>
@@ -558,7 +558,7 @@ console.log(productFeatures.length, openIndex,"heyy")
               <p>{language['Clients'][locale]}</p>
             </div>
           </div>
-        </section>
+        </section> */}
 
       </main>
     </div>

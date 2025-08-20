@@ -607,9 +607,14 @@
   /* min-width: 300px;
   max-width: 300px; */
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  text-align: center;
+  text-align: left;
 }
-
+.cardRow2{
+  flex: 0 0 30vw;
+  /* height: 300px; */
+  /* height: 300px;
+  overflow: auto; */
+}
 .testimonialCardHeadingContainer{
   display: flex;
   gap: 20px;
@@ -618,14 +623,25 @@
   font-size: 14px;
 
 }
-.testimonialImg{
-  border-radius: 100%;
+.logoWrapper{
+  width: 80px;
+  height:50px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
+.testimonialImg{
+  object-fit: contain;
+}
+
 .testimonialText{
-  display: -webkit-box;
+  /* display: -webkit-box;
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 .testimonialCardHeading{
