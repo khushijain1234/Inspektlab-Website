@@ -14,7 +14,7 @@ export const companies=[
   {
     img: 'volkswagen.jpg',
     title: 'Volkswagen',
-    width: 200,
+    width: 170,
     height: 80
   },
   {

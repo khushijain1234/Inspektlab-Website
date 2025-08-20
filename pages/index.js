@@ -516,7 +516,7 @@ console.log(productFeatures.length, openIndex,"heyy")
         </section>
 
         {/* Map Section */}
-        {/* <section className={styles.mapSection}>
+        <section className={styles.mapSection}>
           <h1 className={styles.mapSectionHeading}>Our Presence</h1>
           <div className={styles.mapContainer}>
               <div className={styles.mapWrapper}>
@@ -558,7 +558,7 @@ console.log(productFeatures.length, openIndex,"heyy")
               <p>{language['Clients'][locale]}</p>
             </div>
           </div>
-        </section> */}
+        </section>
 
       </main>
     </div>

@@ -103,7 +103,7 @@ const FixedCamera = ({ locale }) => {
         {
             id: '5',
             title: 'Automotive Repair Networks',
-            text: 'Daily vehicle condition reports',
+            text: 'Eliminate disputes related to damages at workshop',
             img: 'Automotive Repair Network.svg'
         }
     ]
