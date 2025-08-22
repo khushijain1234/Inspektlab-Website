@@ -18,6 +18,24 @@ export const companies=[
     height: 50
   },
   {
+    img: 'clients/Nissan.png',
+    title: 'Nissan',
+    width: 70,
+    height: 50
+  },
+  {
+    img: 'clients/Toyota.png',
+    title: 'Toyota',
+    width: 70,
+    height: 50
+  },
+  {
+    img: 'clients/t4.jpg',
+    title: 'Sompo',
+    width: 120,
+    height: 50
+  },
+  {
     img: 'clients/fixico.png',
     title: 'Fixico',
     width: 90,
@@ -26,27 +44,33 @@ export const companies=[
   {
     img: 'clients/holiday-cars.png',
     title: 'Holiday Cars',
-    width: 135,
+    width: 140,
     height: 50
   },
   {
     img: 'clients/ntt-data-services.png',
     title: 'NTT Data Services',
+    width: 90,
+    height: 50
+  },
+  {
+    img: 'clients/Zurich.jpg',
+    title: 'Zurich',
+    width: 80,
+    height: 50
+  },
+  {
+    img: 'clients/APG.png',
+    title: 'APG',
     width: 100,
     height: 50
   },
   {
-    img: 'clients/kotak.jpg',
-    title: 'Kotak',
-    width: 135,
+    img: 'clients/vmg.png',
+    title: 'VMG',
+    width: 130,
     height: 50
   },
-  {
-    img: 'clients/age.png',
-    title: 'Age',
-    width: 100,
-    height: 50
-  }
 ];
 export const productFeatures = [
   {

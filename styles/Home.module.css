@@ -108,7 +108,6 @@
   align-items: center;
   cursor: pointer;
   padding: 5px;
-  margin-bottom: 15px;
 }
 
 .viewMoreBtn,
@@ -173,9 +172,20 @@
 .companiesContainer{
   width: 80%;
   display: flex;
-  justify-content: space-around;
+  overflow-x: auto;
+    gap: 25px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    transition: transform 10s ease-in-out;
 }
-
+.companiesContainer::-webkit-scrollbar {
+  display: none;
+}
+.companyIcon{
+  overflow: hidden;
+  scroll-snap-align: start;
+  flex: 0 0 calc((100% - 40px) / 7);
+}
 .productsSection{
   max-width: 100%;
   width: 100%;
@@ -1397,19 +1407,14 @@ margin-top: 30px;
     display: flex;
     width: 80%;
     padding-right: 20px;
-    overflow-x: auto;
-    gap: 25px;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    transition: transform 10s ease-in-out;
+
   }
   .companyIcon{
     scroll-snap-align: start;
-    flex: 0 0 auto;
+  flex: 0 0 calc((100% - 40px) / 3);
+
   }
-  .companiesContainer::-webkit-scrollbar {
-    display: none;
-  }
+  
 
   .productsSection{
     width: 100%;
