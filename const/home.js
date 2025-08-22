@@ -330,11 +330,11 @@ export const partners = [
           flip: 'true'
         },
         {
-          img: "Aws.png",
+          img: "Aws logo.png",
           flip: 'true'
         },
         {
-          img: "Microsoft.png",
+          img: "Microsoft logo.png",
         },
       ]
   }

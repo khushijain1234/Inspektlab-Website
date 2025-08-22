@@ -460,7 +460,7 @@
 .partnerLogoContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 50px;
   justify-content: start;
   margin-left: 200px;
   border-top: 1px solid rgba(255, 255, 255, 0.35);
