@@ -9,9 +9,9 @@ import FeatureCard from '../components/home/FeatureCard';
 import WhyCard from '../components/home/WhyCard';
 import language from '../languages/index.json';
 
-import { features, whyCards, testimonials, companies, productFeatures, usersCard } from '../const/home';
+import { features, whyCards, testimonials, companies, productFeatures, usersCard, partners } from '../const/home';
 import { news } from '../const/media';
-import { partners, awards, mailFormat } from '../const/shared';
+import { awards, mailFormat } from '../const/shared';
 import { questions } from '../const/faq';
 
 const ReCAPTCHA = dynamic(() => import('react-google-recaptcha'), {
@@ -270,6 +270,18 @@ console.log(productFeatures.length, openIndex,"heyy")
                             </div>
                             <div className={`${styles.productFeatureTextWrapper} ${isOpen ? styles.open : ''}`}>
                               {isOpen && <p className={styles.productFeatureText}>{feature.text}</p>}
+                              {isOpen && (
+                                  feature.link ? (
+                                    <Link href={feature.link} target="_blank" rel="noreferrer">
+                                      <a className={`${isOpen ? styles.activeTitle : ""}`}>
+                                        Read More 
+                                        <Image src="/img/arrow.svg" alt="arrow" width={50} height={10} />
+                                      </a>
+                                    </Link>
+                                  ) : (
+                                    <p className={styles.comingSoon}>Coming soon</p>
+                                  )
+                                )} 
                             </div>
                           </div>
                         </div>
@@ -278,7 +290,7 @@ console.log(productFeatures.length, openIndex,"heyy")
                   })}
                 </div>
                 <div className={styles.imgSection}>
-                  <Image src={`/img/${productFeatures[selectedIndex].mainImg}`}  alt='Car Icon' width={575} height={744} />
+                  <Image src={`/img/${productFeatures[selectedIndex].mainImg}`}  alt='Car Icon' width={575} height={744} priority/>
                 </div>
               </div>
             </div>
@@ -304,8 +316,6 @@ console.log(productFeatures.length, openIndex,"heyy")
                 <div className={styles.cardContent}>
                   <h3 className={styles.userType}>{card.userType}</h3>
                   <p className={styles.cardText}>{card.text}</p>
-                  <a>
-                  </a>
                 </div>
               </div>
             ))}
@@ -331,8 +341,8 @@ console.log(productFeatures.length, openIndex,"heyy")
                     ].map((t, i) => (
                       <div className={styles.testimonialCard} key={`row1-${i}`}>
                         <div className={styles.testimonialCardHeadingContainer}>
-                        <div className={styles.logoWrapper}>
-                            <Image className={styles.testimonialImg} src={`/img/clients/${t.img}`} width={60} height={35} alt='Testimonual Image' />
+                          <div>
+                            <Image className={`${styles.testimonialImg} ${t.flip=='true' ? styles.flipImg : ''}`} src={`/img/clients/${t.img}`} width={50} height={50} alt='Testimonual Image' />
                           </div>
                           <div className={styles.testimonialCardHeading}>
                             <p><strong>{t.name}</strong></p>
@@ -353,8 +363,8 @@ console.log(productFeatures.length, openIndex,"heyy")
                     ].map((t, i) => (
                       <div className={`${styles.testimonialCard} ${styles.cardRow2}`} key={`row2-${i}`}>
                        <div className={styles.testimonialCardHeadingContainer}>
-                          <div className={styles.logoWrapper}>
-                            <Image className={styles.testimonialImg} src={`/img/clients/${t.img}`} width={60} height={40} alt='Testimonual Image' />
+                       <div>
+                            <Image className={`${styles.testimonialImg} ${t.flip=='true' ? styles.flipImg : ''}`} src={`/img/clients/${t.img}`} width={50} height={50} alt='Testimonual Image' />
                           </div>
                           <div className={styles.testimonialCardHeading}>
                             <p><strong>{t.name}</strong></p>
@@ -373,8 +383,8 @@ console.log(productFeatures.length, openIndex,"heyy")
                       testimonials.map((t,i) =>(
                         <div className={styles.testimonialCard} key={i}>
                         <div className={styles.testimonialCardHeadingContainer}>
-                          <div className={styles.logoWrapper}>
-                            <Image className={styles.testimonialImg} src={`/img/clients/${t.img}`} width={60} height={35} alt='Testimonual Image' />
+                        <div>
+                            <Image className={`${styles.testimonialImg} ${t.flip=='true' ? styles.flipImg : ''}`} src={`/img/clients/${t.img}`} width={50} height={50} alt='Testimonual Image' />
                           </div>
                           <div className={styles.testimonialCardHeading}>
                             <p><strong>{t.name}</strong></p>
@@ -394,16 +404,16 @@ console.log(productFeatures.length, openIndex,"heyy")
                     <Image src={'/img/star.svg'} alt='star' width={20} height={20} className={styles.starImg}/>
                   </div>
                   <div className={styles.partnerLogoContainer}>
-                    {category.logo.map((img) => (
-                      <div className={styles.partnerLogo} key={img}>
+                    {category.logo.map((t,i) => (
+                      <div className={styles.partnerLogo} key={i}>
                         <Image
-                          key={img}
-                          src={`/img/${img}`}
-                          alt={img}
+                          key={t.img}
+                          src={`/img/${t.img}`}
+                          alt={t.img}
                           width={150}
                           height={40}
                           objectFit='contain'
-                          className={styles.partnerLogoImg}
+                          className={`${styles.partnerLogoImg} ${t.flip=='true' ? styles.flipImg : ''}`}
                         />
                       </div>
                     ))}

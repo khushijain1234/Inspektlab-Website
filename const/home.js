@@ -1,33 +1,51 @@
 export const companies=[
   {
-    img: 'autosphere.svg',
-    title: 'Autosphere',
-    width: 270,
-    height: 80
+    img: 'clients/liberty-insurance.png',
+    title: 'Liberty Insurance',
+    width: 130,
+    height: 50
   },
   {
-    img: 'senger.svg',
-    title: 'Senger',
-    width: 242,
-    height: 80
+    img: 'clients/bmw.png',
+    title: 'BMW',
+    width: 70,
+    height: 50
   },
   {
-    img: 'volkswagen.jpg',
-    title: 'Volkswagen',
-    width: 170,
-    height: 80
+    img: 'clients/dekra.png',
+    title: 'Dekra',
+    width: 70,
+    height: 50
   },
   {
-    img: 'fastlease.svg',
-    title: 'Fastlease',
-    width: 262,
-    height: 80
+    img: 'clients/fixico.png',
+    title: 'Fixico',
+    width: 90,
+    height: 50
   },
   {
-    img: 'gefco.svg',
-    title: 'Gefco',
+    img: 'clients/holiday-cars.png',
+    title: 'Holiday Cars',
+    width: 135,
+    height: 50
+  },
+  {
+    img: 'clients/ntt-data-services.png',
+    title: 'NTT Data Services',
     width: 100,
-    height: 100
+    height: 50
+  },
+  {
+    img: 'clients/kotak.jpg',
+    title: 'Kotak',
+    width: 135,
+    height: 50
+  },
+  {
+    img: 'clients/age.png',
+    title: 'Age',
+    width: 100,
+    height: 50
   }
 ];
 export const productFeatures = [
@@ -35,13 +53,15 @@ export const productFeatures = [
     title: 'Assess Vehicle Damage within seconds',
     text: 'Our Proprietary AI is trained to detect 21 types of damages on all vehicle types and generate a detailed report in just a few seconds',
     img: 'vehicle-damage.svg',
-    mainImg: 'Assess-vehicle-damage-within-seconds.svg'
+    mainImg: 'Assess-vehicle-damage-within-seconds.svg',
+    link: '/damage-detection'
   },
   {
     title: 'Real time fraud detection',
     text: 'Avoid real time fraud during vehicle inspections with Inspektlab\'s Real time Fraud Detection',
     img: 'real-time-fraud.svg',
-    mainImg: 'Real time fraud detection.svg'
+    mainImg: 'Real time fraud detection.svg',
+    link: '/fraud-detection'
   },
   {
     title: "Analyze Your vehicle's image quality",
@@ -53,19 +73,22 @@ export const productFeatures = [
     title: 'Automate Inspections with Fixed Cameras',
     text: 'Set up a Fixed Camera Layout to inspect vehicles using AI when they enter and exit your facility',
     img: 'Automate-inspections.svg',
-    mainImg: 'Automate-inspections-with-fixed-cameras.svg'
+    mainImg: 'Automate-inspections-with-fixed-cameras.svg',
+    link: '/vehicle-damage-scanners'
   },
   {
     title: 'Generate Claim Estimates in seconds',
     text: 'We detect damages, take repair vs replace decisions on car parts and integrate with incredible sources of part and labour costs to estimate $ claim value for vehicles',
     img: 'fixed-cameras.svg',
-    mainImg: 'Generate Claim Estimates in seconds.svg'
+    mainImg: 'Generate Claim Estimates in seconds.svg',
+    link: '/claim-estimation'
   },
   {
     title: 'Auto-Scan important information',
     text: 'Automatically capture critical information like odometer reading, VIN, License plate number and more',
     img: 'claim-estimates.svg',
-    mainImg: 'Auto-scan-important-information.svg'
+    mainImg: 'Auto-scan-important-information.svg',
+    link: '/photo-video-capture'
   }
 ]
 export const usersCard = [
@@ -243,7 +266,55 @@ export const whyCards = [
     img: 'no-manual-setup.svg',
   },
 ];
-
+export const partners = [
+  {
+      "name": {
+          "en": "Investors",
+          "es": "Inversores",
+          "pt": "Investidores"
+      },
+      "logo": [
+        {
+          img: "techstars.png",
+        },
+        {
+          img: "Barclays logo.png",
+        },
+        {
+          img: "Titan Capital.jpg",
+        },
+        {
+          img: "bettercapital.svg",
+        },
+      ]
+  },
+  {
+      "name": {
+          "en": "Partners",
+          "es": "Socios",
+          "pt": "Parceiros"
+      },
+      "logo": [
+        {
+          img: "mitchell.png",
+        },
+        {
+          img: "gt-motive.png",
+        },
+        {
+          img: "plug-and-play.jpg",
+          flip: 'true'
+        },
+        {
+          img: "Aws.png",
+          flip: 'true'
+        },
+        {
+          img: "Microsoft.png",
+        },
+      ]
+  }
+];
 export const testimonials = [
   {
     id: 0,
@@ -251,6 +322,7 @@ export const testimonials = [
     position: 'HolidayCars.com COO/CTO',
     text: "By leveraging Inspektlabs' technology, HolidayCars.com can deliver detailed inspection reports, allowing customers to use this information as a reference and enjoy a hassle-free rental experience",
     img: 't0.jpeg',
+    flip: 'false',
   },
   {
     id: 1,
@@ -258,6 +330,7 @@ export const testimonials = [
     position: 'Chief Product Officer of Fixico',
     text: 'In the past two years, our collaboration with Inspektlabs helped us to further optimize the quality of our digital damage assessment enabling our repairers to provide top quality repairs for our customers',
     img: 't1.png',
+    flip: 'false',
   },
   {
     id: 2,
@@ -265,6 +338,7 @@ export const testimonials = [
     position: 'NTT Data',
     text: 'We believe that the greatest strength of their technology is the AI accuracy with a large dataset of over several million images. In fact, the technical evaluation confirmed that their AI accuracy was very high and practical enough',
     img: 't2.jpg',
+    flip: 'false',
   },
   {
     id: 3,
@@ -272,12 +346,14 @@ export const testimonials = [
     position: 'CEO and Chairman of AGE',
     text: 'Inspektlabs software offers + 95% accuracy, and we hope this will also advance our sustainability commitment, Repair before Replace.',
     img: 't3.png',
+    flip: 'false',
   },
   {
     id: 4,
     name: 'Vikram Jain',
     position: 'CTO of Sompo',
-    img: 'sompo.png',
+    img: 't4.jpg',
+    flip: 'false',
     text: "Inspektlabs has assisted us in enhancing our inspection process at Universal Sompo General Insurance. Their automated inspection solution provides comprehensive coverage for both cars and motorbikes. With custom workflows designed to handle inspections from any source – be it customer self-inspections, vendor checks, or OEM reviews – their platform has streamlined our process, allowing us to manage inspections more efficiently."
   },
   {
@@ -285,20 +361,23 @@ export const testimonials = [
     name: 'Danielle Corby',
     position: 'CEO of VMG',
     text: 'Working with Inspeklabs has made a real difference for vMobility, allowing us to deliver an optimised and streamlined repair process. The team at Inspeklabs have been responsive and supportive throughout our integration journey and this approach has been key to the success of the partnership so far. We are excited to keep building on the partnership as we continue to innovate and improve our solutions for the benefit of our clients and their customers.',
-    img: 'vmg.png',
+    img: 't5.png',
+    flip: 'true'
   },
   {
     id: 7,
-    name: 'Jonathan Simcoe',
+    name: 'DEKRA Automotive from the Netherlands',
     position: 'DEKRA',
-    img: 'dekra.png',
+    img: 't6.jpg',
+    flip: 'false',
     text: "As a leading damage assessment company in Europe, DEKRA is continuously looking for ways to enhance its services. By integrating Inspektlabs’ digital inspection solution, we’ve significantly streamlined our processes for insurers. The automated visual inspections have greatly reduced claim processing times without compromising quality or accuracy. Inspektlabs is a valuable partner for us in the digital transformation of damage assessment workflows. DEKRA Automotive from the Netherlands"
   },
   {
     id: 8,
-    name: 'Jonathan Simcoe',
-    id: 'Autoparts Australia',
-    img: 'Autoparts Australia.jpg',
+    name: 'Auto Parts Groups, Australia',
+    position: 'Autoparts Australia',
+    img: 't7.jpg',
+    flip: 'false',
     text: "Inspektlabs has been a game changer for APG. Their platform has streamlined our recycled parts product line, allowing us to assess quality with consistency, speed, and confidence. The automation and accuracy it provides has significantly improved how we manage inventory and meet customer expectations. Inspektlabs has helped us lift the standard of recycled parts in the market, and we’re proud to be working with a partner that shares our commitment to innovation and quality."
   }
 ];
