@@ -18,9 +18,9 @@ export const companies=[
     height: 80
   },
   {
-    img: 'clients/Nissan.png',
+    img: 'clients/Nissan Logo.png',
     title: 'Nissan',
-    width: 70,
+    width: 110,
     height: 80
   },
   {
@@ -30,9 +30,9 @@ export const companies=[
     height: 80
   },
   {
-    img: 'clients/t4.jpg',
+    img: 'clients/Univeral-Sompo-Logo.png',
     title: 'Sompo',
-    width: 120,
+    width: 150,
     height: 80
   },
   {
@@ -60,7 +60,7 @@ export const companies=[
     height: 80
   },
   {
-    img: 'clients/APG.png',
+    img: 'clients/APG-AUTO-PARTS-GROUP-LOGO.webp',
     title: 'APG',
     width: 100,
     height: 80
@@ -305,7 +305,7 @@ export const partners = [
           img: "Barclays-Logo.png",
         },
         {
-          img: "titan-capital-og.jpg",
+          img: "titan-capital.jpg",
           flip: 'true'
         },
         {
@@ -331,11 +331,11 @@ export const partners = [
           flip: 'true'
         },
         {
-          img: "Aws logo.png",
+          img: "Amazon Web Services.png",
           flip: 'true'
         },
         {
-          img: "Microsoft logo.png",
+          img: "Microsoft.png",
         },
       ]
   }
@@ -352,7 +352,7 @@ export const testimonials = [
   {
     id: 1,
     name: 'Joris van Poppel',
-    position: 'Chief Product Officer of Fixico',
+    position: 'Chief Product Officer; Fixico',
     text: 'In the past two years, our collaboration with Inspektlabs helped us to further optimize the quality of our digital damage assessment enabling our repairers to provide top quality repairs for our customers',
     img: 't1.png',
     flip: 'false',
@@ -376,7 +376,7 @@ export const testimonials = [
   {
     id: 4,
     name: 'Vikram Jain',
-    position: 'CTO of Sompo',
+    position: 'CTO; Universal Sompo Group',
     img: 't4.jpg',
     flip: 'false',
     text: "Inspektlabs has assisted us in enhancing our inspection process at Universal Sompo General Insurance. Their automated inspection solution provides comprehensive coverage for both cars and motorbikes. With custom workflows designed to handle inspections from any source – be it customer self-inspections, vendor checks, or OEM reviews – their platform has streamlined our process, allowing us to manage inspections more efficiently."
@@ -384,14 +384,14 @@ export const testimonials = [
   {
     id: 6,
     name: 'Danielle Corby',
-    position: 'CEO of VMG',
+    position: 'CEO; VMG',
     text: 'Working with Inspeklabs has made a real difference for vMobility, allowing us to deliver an optimised and streamlined repair process. The team at Inspeklabs have been responsive and supportive throughout our integration journey and this approach has been key to the success of the partnership so far. We are excited to keep building on the partnership as we continue to innovate and improve our solutions for the benefit of our clients and their customers.',
     img: 't5.png',
     flip: 'true'
   },
   {
     id: 7,
-    name: 'DEKRA Automotive from the Netherlands',
+    name: 'DEKRA Automotive',
     position: 'DEKRA',
     img: 't6.jpg',
     flip: 'false',

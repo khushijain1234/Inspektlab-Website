@@ -43,34 +43,6 @@ export default function Home({ locale }) {
     setValid(mailFormat.test(e.target.value));
   };
 
-  useEffect(() => {
-    const container = scrollCompaniesRef.current;
-    if (!container) return;
-
-    let scrollAmount = 0;
-    const scrollStep = 1;   // pixels per frame
-    const delay = 10;       // ms per step (~60fps)
-
-    const interval = setInterval(() => {
-      if (container) {
-        scrollAmount += scrollStep;
-        
-        // when we've scrolled through the first set, reset seamlessly
-        if (scrollAmount >= container.scrollWidth / 2) {
-          scrollAmount = 0;
-        }
-
-        container.scrollTo({
-          left: scrollAmount,
-          behavior: "smooth",
-        });
-      }
-    }, delay);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  
 
   const scroll = (direction) => {
     const container = scrollRef.current;
@@ -213,12 +185,14 @@ console.log(productFeatures.length, openIndex,"heyy")
         {/* Companies section */}
         <section className={styles.companies}>
           <h2 className={styles.trustedBy}>Trusted By</h2>
+          <div className={styles.companiesWrapper}>
           <div className={styles.companiesContainer} ref={scrollCompaniesRef}>
             {[...companies, ...companies].map((company, idx)=>(
               <div key={idx} className={styles.companyIcon}>
-                <Image src={`/img/${company.img}`} width={company.width} height={company.height} alt={company.title} />
+                <Image src={`/img/${company.img}`} width={company.width} height={company.height} alt={company.title} priority />
               </div>
             ))}
+          </div>
           </div>
         </section>
 
@@ -359,7 +333,7 @@ console.log(productFeatures.length, openIndex,"heyy")
               <div className={styles.testimonialMobileWrapper}>
                   <div className={styles.testimonialRow}>
                     {
-                      testimonials.map((t,i) =>(
+                      [...testimonials, ...testimonials].map((t,i) =>(
                         <div className={styles.testimonialCard} key={i}>
                         <div className={styles.testimonialCardHeadingContainer}>
                         <div>
