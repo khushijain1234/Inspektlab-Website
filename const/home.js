@@ -18,7 +18,7 @@ export const companies=[
     height: 80
   },
   {
-    img: 'clients/Nissan Logo.png',
+    img: 'clients/Nissan-logo.png',
     title: 'Nissan',
     width: 110,
     height: 80
@@ -36,10 +36,10 @@ export const companies=[
     height: 80
   },
   {
-    img: 'clients/fixico.png',
+    img: 'clients/Fixico-logo.png',
     title: 'Fixico',
-    width: 90,
-    height: 80
+    width: 80,
+    height: 70
   },
   {
     img: 'clients/holiday-cars.png',
@@ -335,7 +335,7 @@ export const partners = [
           flip: 'true'
         },
         {
-          img: "Microsoft logo.png",
+          img: "Microsoft.png",
         },
       ]
   }
@@ -354,7 +354,7 @@ export const testimonials = [
     name: 'Joris van Poppel',
     position: 'Chief Product Officer; Fixico',
     text: 'In the past two years, our collaboration with Inspektlabs helped us to further optimize the quality of our digital damage assessment enabling our repairers to provide top quality repairs for our customers',
-    img: 't1.png',
+    img: 'Fixico-logo.png',
     flip: 'false',
   },
   {
@@ -377,7 +377,7 @@ export const testimonials = [
     id: 4,
     name: 'Vikram Jain',
     position: 'CTO; Universal Sompo Group',
-    img: 't4.jpg',
+    img: 'sompo-logo.jpeg',
     flip: 'false',
     text: "Inspektlabs has assisted us in enhancing our inspection process at Universal Sompo General Insurance. Their automated inspection solution provides comprehensive coverage for both cars and motorbikes. With custom workflows designed to handle inspections from any source – be it customer self-inspections, vendor checks, or OEM reviews – their platform has streamlined our process, allowing us to manage inspections more efficiently."
   },
@@ -386,14 +386,14 @@ export const testimonials = [
     name: 'Danielle Corby',
     position: 'CEO; VMG',
     text: 'Working with Inspeklabs has made a real difference for vMobility, allowing us to deliver an optimised and streamlined repair process. The team at Inspeklabs have been responsive and supportive throughout our integration journey and this approach has been key to the success of the partnership so far. We are excited to keep building on the partnership as we continue to innovate and improve our solutions for the benefit of our clients and their customers.',
-    img: 't5.png',
-    flip: 'true'
+    img: 'vmg-logoo.png',
+    flip: 'false'
   },
   {
     id: 7,
     name: 'DEKRA Automotive',
     position: 'DEKRA',
-    img: 't6.jpg',
+    img: 'dekra-logo.webp',
     flip: 'false',
     text: "As a leading damage assessment company in Europe, DEKRA is continuously looking for ways to enhance its services. By integrating Inspektlabs’ digital inspection solution, we’ve significantly streamlined our processes for insurers. The automated visual inspections have greatly reduced claim processing times without compromising quality or accuracy. Inspektlabs is a valuable partner for us in the digital transformation of damage assessment workflows. DEKRA Automotive from the Netherlands"
   },
@@ -401,7 +401,7 @@ export const testimonials = [
     id: 8,
     name: 'Auto Parts Groups, Australia',
     position: 'Autoparts Australia',
-    img: 't7.jpg',
+    img: 'APG Australia-logo.png',
     flip: 'false',
     text: "Inspektlabs has been a game changer for APG. Their platform has streamlined our recycled parts product line, allowing us to assess quality with consistency, speed, and confidence. The automation and accuracy it provides has significantly improved how we manage inventory and meet customer expectations. Inspektlabs has helped us lift the standard of recycled parts in the market, and we’re proud to be working with a partner that shares our commitment to innovation and quality."
   }

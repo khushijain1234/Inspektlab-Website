@@ -185,6 +185,7 @@ console.log(productFeatures.length, openIndex,"heyy")
         {/* Companies section */}
         <section className={styles.companies}>
           <h2 className={styles.trustedBy}>Trusted By</h2>
+
           <div className={styles.companiesWrapper}>
           <div className={styles.companiesContainer} ref={scrollCompaniesRef}>
             {[...companies, ...companies].map((company, idx)=>(
@@ -294,8 +295,8 @@ console.log(productFeatures.length, openIndex,"heyy")
                     ].map((t, i) => (
                       <div className={styles.testimonialCard} key={`row1-${i}`}>
                         <div className={styles.testimonialCardHeadingContainer}>
-                          <div>
-                            <Image className={`${styles.testimonialImg} ${t.flip=='true' ? styles.flipImg : ''}`} src={`/img/clients/${t.img}`} width={50} height={50} alt='Testimonual Image' />
+                          <div className={styles.testimonialImageWrapper}>
+                            <Image className={`${styles.testimonialImg} ${t.flip=='true' ? styles.flipImg : ''}`} src={`/img/clients/${t.img}`} width={70} height={70} alt='Testimonual Image' />
                           </div>
                           <div className={styles.testimonialCardHeading}>
                             <p><strong>{t.name}</strong></p>
@@ -316,8 +317,8 @@ console.log(productFeatures.length, openIndex,"heyy")
                     ].map((t, i) => (
                       <div className={`${styles.testimonialCard} ${styles.cardRow2}`} key={`row2-${i}`}>
                        <div className={styles.testimonialCardHeadingContainer}>
-                       <div>
-                            <Image className={`${styles.testimonialImg} ${t.flip=='true' ? styles.flipImg : ''}`} src={`/img/clients/${t.img}`} width={50} height={50} alt='Testimonual Image' />
+                       <div className={styles.testimonialImageWrapper}>
+                            <Image className={`${styles.testimonialImg} ${t.flip=='true' ? styles.flipImg : ''}`} src={`/img/clients/${t.img}`} width={60} height={60} alt='Testimonual Image' />
                           </div>
                           <div className={styles.testimonialCardHeading}>
                             <p><strong>{t.name}</strong></p>
@@ -336,7 +337,7 @@ console.log(productFeatures.length, openIndex,"heyy")
                       [...testimonials, ...testimonials].map((t,i) =>(
                         <div className={styles.testimonialCard} key={i}>
                         <div className={styles.testimonialCardHeadingContainer}>
-                        <div>
+                        <div className={styles.testimonialImageWrapper}>
                             <Image className={`${styles.testimonialImg} ${t.flip=='true' ? styles.flipImg : ''}`} src={`/img/clients/${t.img}`} width={50} height={50} alt='Testimonual Image' />
                           </div>
                           <div className={styles.testimonialCardHeading}>

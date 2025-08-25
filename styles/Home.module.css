@@ -644,11 +644,11 @@
   animation-play-state: paused;
 }
 .scrollTrack {
-  animation: scroll-left 30s linear infinite; /* was 5s → now 20s for slower scroll */
+  animation: scroll-left 30s linear infinite; 
 }
 
 .scrollTrackReverse {
-  animation: scroll-right 30s linear infinite; /* match speed */
+  animation: scroll-right 30s linear infinite;
 }
 
 .testimonialCard {
@@ -677,6 +677,9 @@
   display: flex;
   gap: 20px;
 }
+/* .testimonialImageWrapper img{
+  background-color: white;
+} */
 .testimonialTag{
   font-size: 14px;
 
@@ -692,6 +695,7 @@
   overflow: hidden;
 }
 .testimonialImg{
+  background-color: white;
   border-radius: 100%;
 }
 .flipImg{
