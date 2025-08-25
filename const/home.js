@@ -344,7 +344,7 @@ export const testimonials = [
   {
     id: 0,
     name: 'Michel Houthoff',
-    position: 'HolidayCars.com COO/CTO',
+    position: 'COO/CTO; HolidayCars',
     text: "By leveraging Inspektlabs' technology, HolidayCars.com can deliver detailed inspection reports, allowing customers to use this information as a reference and enjoy a hassle-free rental experience",
     img: 't0.jpeg',
     flip: 'false',
@@ -368,7 +368,7 @@ export const testimonials = [
   {
     id: 3,
     name: 'Marco Moreno',
-    position: 'CEO and Chairman of AGE',
+    position: 'CEO and Chairman; AGE',
     text: 'Inspektlabs software offers + 95% accuracy, and we hope this will also advance our sustainability commitment, Repair before Replace.',
     img: 't3.png',
     flip: 'false',
@@ -392,15 +392,15 @@ export const testimonials = [
   {
     id: 7,
     name: 'DEKRA Automotive',
-    position: 'DEKRA',
-    img: 'dekra-logo.webp',
+    position: '',
+    img: 'Dekra-logo.png',
     flip: 'false',
     text: "As a leading damage assessment company in Europe, DEKRA is continuously looking for ways to enhance its services. By integrating Inspektlabs’ digital inspection solution, we’ve significantly streamlined our processes for insurers. The automated visual inspections have greatly reduced claim processing times without compromising quality or accuracy. Inspektlabs is a valuable partner for us in the digital transformation of damage assessment workflows. DEKRA Automotive from the Netherlands"
   },
   {
     id: 8,
     name: 'Auto Parts Groups, Australia',
-    position: 'Autoparts Australia',
+    position: '',
     img: 'APG Australia-logo.png',
     flip: 'false',
     text: "Inspektlabs has been a game changer for APG. Their platform has streamlined our recycled parts product line, allowing us to assess quality with consistency, speed, and confidence. The automation and accuracy it provides has significantly improved how we manage inventory and meet customer expectations. Inspektlabs has helped us lift the standard of recycled parts in the market, and we’re proud to be working with a partner that shares our commitment to innovation and quality."
