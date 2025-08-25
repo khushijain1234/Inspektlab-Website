@@ -176,15 +176,27 @@
     gap: 25px;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    transition: transform 10s ease-in-out;
+  transition: transform 10s ease-in-out;
+
 }
 .companiesContainer::-webkit-scrollbar {
   display: none;
 }
+
 .companyIcon{
   overflow: hidden;
   scroll-snap-align: start;
-  flex: 0 0 calc((100% - 40px) / 7);
+  flex: 0 0 calc((100% - 60px) / 5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  padding: 0 10px;  
+}
+.companyIcon img{
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
 }
 .productsSection{
   max-width: 100%;
@@ -1403,16 +1415,37 @@ margin-top: 30px;
     margin-top: 0px;
   }
 
-  .companiesContainer{
+  .companiesContainer {
     display: flex;
-    width: 80%;
-    padding-right: 20px;
-
+    width: 100%;    
+    overflow-x: auto;                   
+    overflow-y: hidden;                 
+    gap: 10px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-sizing: border-box;    
   }
-  .companyIcon{
+  
+  .companiesContainer::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .companyIcon {
+    flex: 0 0 calc((100% - 20px) / 3); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding: 0 5px;
     scroll-snap-align: start;
-  flex: 0 0 calc((100% - 40px) / 3);
-
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .companyIcon img {
+    max-height: 50px;
+    width: auto;
+    object-fit: contain;
   }
   
 

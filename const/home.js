@@ -3,73 +3,73 @@ export const companies=[
     img: 'clients/liberty-insurance.png',
     title: 'Liberty Insurance',
     width: 130,
-    height: 50
+    height: 80
   },
   {
     img: 'clients/bmw.png',
     title: 'BMW',
     width: 70,
-    height: 50
+    height: 80
   },
   {
     img: 'clients/dekra.png',
     title: 'Dekra',
     width: 70,
-    height: 50
+    height: 80
   },
   {
     img: 'clients/Nissan.png',
     title: 'Nissan',
     width: 70,
-    height: 50
+    height: 80
   },
   {
     img: 'clients/Toyota.png',
     title: 'Toyota',
     width: 70,
-    height: 50
+    height: 80
   },
   {
     img: 'clients/t4.jpg',
     title: 'Sompo',
     width: 120,
-    height: 50
+    height: 80
   },
   {
     img: 'clients/fixico.png',
     title: 'Fixico',
     width: 90,
-    height: 50
+    height: 80
   },
   {
     img: 'clients/holiday-cars.png',
     title: 'Holiday Cars',
     width: 140,
-    height: 50
+    height: 80
   },
   {
     img: 'clients/ntt-data-services.png',
     title: 'NTT Data Services',
     width: 90,
-    height: 50
+    height: 80
   },
   {
     img: 'clients/Zurich.jpg',
     title: 'Zurich',
     width: 80,
-    height: 50
+    height: 80
   },
   {
     img: 'clients/APG.png',
     title: 'APG',
     width: 100,
-    height: 50
+    height: 80
   },
   {
     img: 'clients/vmg.png',
     title: 'VMG',
     width: 130,
-    height: 50
+    height: 80
   },
 ];
 export const productFeatures = [
@@ -302,10 +302,11 @@ export const partners = [
           img: "techstars.png",
         },
         {
-          img: "Barclays logo.png",
+          img: "Barclays-Logo.png",
         },
         {
-          img: "Titan Capital.jpg",
+          img: "titan-capital-og.jpg",
+          flip: 'true'
         },
         {
           img: "bettercapital.svg",

@@ -33,6 +33,7 @@ export default function Home({ locale }) {
   const recaptchaRef = useRef();
   const scrollRef = useRef();
   const tryProductRef=useRef(null);
+  const scrollCompaniesRef=useRef(null);
 
   const selectTestimonial = (id) =>
     setTestimonial(testimonials.filter((t) => t.id === id)[0]);
@@ -41,6 +42,35 @@ export default function Home({ locale }) {
     setEmail(e.target.value);
     setValid(mailFormat.test(e.target.value));
   };
+
+  useEffect(() => {
+    const container = scrollCompaniesRef.current;
+    if (!container) return;
+
+    let scrollAmount = 0;
+    const scrollStep = 1;   // pixels per frame
+    const delay = 10;       // ms per step (~60fps)
+
+    const interval = setInterval(() => {
+      if (container) {
+        scrollAmount += scrollStep;
+        
+        // when we've scrolled through the first set, reset seamlessly
+        if (scrollAmount >= container.scrollWidth / 2) {
+          scrollAmount = 0;
+        }
+
+        container.scrollTo({
+          left: scrollAmount,
+          behavior: "smooth",
+        });
+      }
+    }, delay);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  
 
   const scroll = (direction) => {
     const container = scrollRef.current;
@@ -109,57 +139,6 @@ export default function Home({ locale }) {
       }, 3000);
     }
   };
-
-  const testimonialsData = [
-    {
-      name: 'Michel Houthoff',
-      id: 'HolidayCars.com COO/CTO',
-      img: 't0.jpeg',
-      text: "By leveraging Inspektlabs' technology, HolidayCars.com can deliver detailed inspection reports, allowing customers to use this information as a reference and enjoy a hassle-free rental experience",
-    },
-    {
-      name: 'Joris van Poppel',
-      id: 'Chief Product Officer of Fixico',
-      img: 't1.png',
-      text: "In the past two years, our collaboration with Inspektlabs helped us to further optimize the quality of our digital damage assessment enabling our repairers to provide top quality repairs for our customers"
-    },
-    {
-      name: 'Mika Hasegawa',
-      id: 'NTT Data',
-      img: 't2.jpg',
-      text: "We believe that the greatest strength of their technology is the AI accuracy with a large dataset of over several million images. In fact, the technical evaluation confirmed that their AI accuracy was very high and practical enough"
-    },
-    {
-      name: 'Marco Moreno',
-      id: 'CEO and Chairman of AGE',
-      img: 't3.png',
-      text: "Inspektlabs software offers + 95% accuracy, and we hope this will also advance our sustainability commitment, Repair before Replace."
-    },
-    {
-      name: 'Joris Van Poppel',
-      id: 'Sompo',
-      img: 't3.png',
-      text: "Inspektlabs has assisted us in enhancing our inspection process at Universal Sompo General Insurance. Their automated inspection solution provides comprehensive coverage for both cars and motorbikes. With custom workflows designed to handle inspections from any source – be it customer self-inspections, vendor checks, or OEM reviews – their platform has streamlined our process, allowing us to manage inspections more efficiently."
-    },
-    {
-      name: 'Jonathan Simcoe',
-      id: 'VMG',
-      img: 't3.png',
-      text: "Working with Inspeklabs has made a real difference for vMobility, allowing us to deliver an optimised and streamlined repair process. The team at Inspeklabs have been responsive and supportive throughout our integration journey and this approach has been key to the success of the partnership so far. We are excited to keep building on the partnership as we continue to innovate and improve our solutions for the benefit of our clients and their customers."
-    },
-    {
-      name: 'Jonathan Simcoe',
-      id: 'DEKRA',
-      img: 't3.png',
-      text: "As a leading damage assessment company in Europe, DEKRA is continuously looking for ways to enhance its services. By integrating Inspektlabs’ digital inspection solution, we’ve significantly streamlined our processes for insurers. The automated visual inspections have greatly reduced claim processing times without compromising quality or accuracy. Inspektlabs is a valuable partner for us in the digital transformation of damage assessment workflows. DEKRA Automotive from the Netherlands"
-    },
-    {
-      name: 'Jonathan Simcoe',
-      id: 'Autoparts Australia',
-      img: 't3.png',
-      text: "Inspektlabs has been a game changer for APG. Their platform has streamlined our recycled parts product line, allowing us to assess quality with consistency, speed, and confidence. The automation and accuracy it provides has significantly improved how we manage inventory and meet customer expectations. Inspektlabs has helped us lift the standard of recycled parts in the market, and we’re proud to be working with a partner that shares our commitment to innovation and quality."
-    }
-  ]
 
   const onClickGoToProduct = () => {
     if (tryProductRef.current) {
@@ -234,9 +213,9 @@ console.log(productFeatures.length, openIndex,"heyy")
         {/* Companies section */}
         <section className={styles.companies}>
           <h2 className={styles.trustedBy}>Trusted By</h2>
-          <div className={styles.companiesContainer}>
-            {companies.map((company)=>(
-              <div className={styles.companyIcon}>
+          <div className={styles.companiesContainer} ref={scrollCompaniesRef}>
+            {[...companies, ...companies].map((company, idx)=>(
+              <div key={idx} className={styles.companyIcon}>
                 <Image src={`/img/${company.img}`} width={company.width} height={company.height} alt={company.title} />
               </div>
             ))}
