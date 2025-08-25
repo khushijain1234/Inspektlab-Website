@@ -335,7 +335,7 @@ export const partners = [
           flip: 'true'
         },
         {
-          img: "Microsoft.png",
+          img: "Microsoft logo.png",
         },
       ]
   }
