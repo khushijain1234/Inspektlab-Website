@@ -364,8 +364,8 @@ console.log(productFeatures.length, openIndex,"heyy")
                           key={t.img}
                           src={`/img/${t.img}`}
                           alt={t.img}
-                          width={150}
-                          height={40}
+                          width={t.width? t.width:150}
+                          height={t.height? t.height:40}
                           objectFit='contain'
                           className={`${styles.partnerLogoImg} ${t.flip=='true' ? styles.flipImg : ''}`}
                         />

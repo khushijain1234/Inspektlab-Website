@@ -636,8 +636,7 @@
 .scrollTrack,
 .scrollTrackReverse {
   display: inline-flex;
-  min-width: 100%;   /* make sure they never shrink smaller than wrapper */
-  max-width: 100%;   /* make sure they don’t overflow parent width */
+  width: max-content; 
   box-sizing: border-box;
 }
 .scrollTrack:hover, .scrollTrackReverse:hover {

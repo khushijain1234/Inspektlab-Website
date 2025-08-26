@@ -331,11 +331,15 @@ export const partners = [
           flip: 'true'
         },
         {
-          img: "Amazon Web Services.png",
-          flip: 'true'
+          img: "Amazon-Web-Services AWS.png",
+          flip: 'false',
+          width: 155,
+          height:45
         },
         {
           img: "Microsoft.png",
+          width: 155,
+          height: 45
         },
       ]
   }
