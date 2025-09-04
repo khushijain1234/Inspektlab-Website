@@ -13,6 +13,8 @@
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@sendgrid/mail": "^7.4.6",
     "axios": "^0.21.4",
+    "form-data": "^4.0.4",
+    "formidable": "^3.5.4",
     "mixpanel-browser": "^2.49.0",
     "next": "^11.1.0",
     "react": "^17.0.2",
