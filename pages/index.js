@@ -14,9 +14,9 @@ import { news } from '../const/media';
 import { awards, mailFormat } from '../const/shared';
 import { questions } from '../const/faq';
 
-const ReCAPTCHA = dynamic(() => import('react-google-recaptcha'), {
-  ssr: false,
-});
+// const ReCAPTCHA = dynamic(() => import('react-google-recaptcha'), {
+//   ssr: false,
+// });
 
 export default function Home({ locale }) {
   const [testimonial, setTestimonial] = useState({});
