@@ -416,6 +416,7 @@ background-color: rgb(192, 186, 186);
 }
 
 .useCaseSection{
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -438,8 +439,8 @@ background-color: rgb(192, 186, 186);
   position: relative;
   /* background-color: black; */
   display: flex;
-  inline-size: 90%;
-  margin: 60px 0px;
+  inline-size: 80vw;
+margin-inline: auto;
   /* margin-inline: auto; */
   z-index: 3;
   /* width: 100%; */
@@ -448,7 +449,7 @@ background-color: rgb(192, 186, 186);
 
 .useCasesCaraouselContent{
   display: flex;
-  /* flex: 1 1 auto; */
+  flex: 1 1 auto;
   min-width: 0;
   width: 100%;
   overflow-x: auto;
@@ -459,6 +460,7 @@ background-color: rgb(192, 186, 186);
   gap: 20px;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  margin: 50px 0px;
 }
 
 .nav {
@@ -1022,7 +1024,6 @@ margin-top: 30px;
   .featured{
     padding: 1.5rem;
     padding-top: 2rem;
-    width: 100%;
   }
   .grid{
     flex-direction: column;
@@ -1071,9 +1072,6 @@ margin-top: 30px;
   .uploadSection{
     width: 100%;
   }
-  .photoAPISection{
-    width: 100%;
-  }
   .photoAPIContainer{
     width: 90%;
   }
@@ -1112,18 +1110,20 @@ margin-top: 30px;
   .nav{
     display: none;
   }
-  .useCaseSection{
-    width: 100%;
-  }
   .useCaseContainer{
     width: 90%;
   }
 
   .useCasesCarouselContainer{
-    width: 100dvw;
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    transition: transform 10s ease-in-out;
   }
   .useCaseItem{
-    flex: 0 0 70%;
+    flex-basis: 70%;
   }
   
   .vehiclesSupportedSection{
@@ -1147,14 +1147,8 @@ margin-top: 30px;
   .blogItem{
     flex: 0 0 auto;
   }
-  .photoAPIFeatureSection{
-    width: 100%;
-  }
-  .redirectToContactUsSection{
-    width: 100%;
-  }
   .faqSectionContainer{
-    width: 100%;
+    width: 100dvw;
     max-width: 100%;
     margin-top: 40px;
   }
