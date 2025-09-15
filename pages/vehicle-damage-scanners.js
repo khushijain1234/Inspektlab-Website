@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import styles from '../styles/VehicleDamageScanners.module.css';
 import Image from 'next/image';
 import { questions } from '../const/faq';
-import SEO from '../components/SEO'
 
 
 
@@ -103,7 +102,7 @@ const FixedCamera = ({ locale }) => {
         {
             id: '5',
             title: 'Automotive Repair Networks',
-            text: 'Eliminate disputes related to damages at workshop',
+            text: 'Daily vehicle condition reports',
             img: 'Automotive Repair Network.svg'
         }
     ]
@@ -157,28 +156,17 @@ const FixedCamera = ({ locale }) => {
       }
   return (
     <div className={styles.container}>
-        <SEO
-            title="AI-Powered Vehicle Damage Detection Scanners | Inspektlabs"
-            description="Streamline car inspections with AI vehicle damage scanners. Get instant, accurate results for rentals, insurers, and automotive businesses."
-            image="https://inspektlabs.com/img/car.png"
-            url="https://inspektlabs.com/vehicle-damage-scanners/"
-            keywords="Vehicle Damage Scanners"
-            page="vehicle-damage-scanners"
-        />
-
         <main className={styles.main}>
             <section className={styles.featured}>
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    preload='auto'
-                    playsInline
+                <Image
+                    src="/img/fixed-camera-featured-photo.svg"
+                    alt="AI-powered vehicle scanner"
+                    layout='fill'
+                    priority
+                    fetchPriority="high"
+                    sizes="100vw"
                     className={styles.mainImg}
-                >
-                    <source src='/img/Vehicle-Damage-Scanners-Video.mp4' type='video/mp4' />
-                    Your browser does not support the video tag.
-                </video>
+                />
                 <div className={styles.grid}>
                     <h1 className={styles.featuredTitle}>AI-Powered Vehicle Damage Scanners</h1>
                     <p className={styles.featuredText}>Inspektlabs vehicle scanners capture high-resolution image and video of cars to automatically detect Damages, enabling fast, accurate and cost effective inspections.</p>

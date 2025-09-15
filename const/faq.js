@@ -695,15 +695,47 @@ export const questions = {
                 Q: "Why should you choose Inspektlabs vehicle scanners?",
                 A: ["1. AI-Powered Damage Detection",
                     "2. Flexible hardware formats- Pillars, Box360, WallScan",
-                    "3. Plug-and-play setup",
+                    "3. Plug-and-play setup (especially for Inspekt Pillars)",
                     "4. Compatible with passenger and commercial vehicles",
                     "5. Cloud-connected, API-ready, and supports real-time scanning"]
             },
             {
                 Q: "How much do the Inspektlabs vehicle scanners cost?",
-                A: ["Pricing varies based on configuration and camera setup, number of cameras, and deployment region.", 
+                A: ["Pricing varies based on configuration and camera setup (2 MP to 8 MP), number of cameras, and deployment region.", 
                     "Please contact our team for a customized quote."]
             }
+        ],
+    },
+    "Photo Quality API": {
+        "en": [
+            {
+                Q: "How much does the Photo Quality API cost?",
+                A: ["You can access Inspektlabs' Photo Quality API through the credits you purchase on the platform. Please contact info@inspektlabs.com for more details."]
+            },
+            {
+                Q: "What vehicle types does the Photo Quality API cover?",
+                A: ["Inspektlabs' Photo Quality API is currently limited only to cars, but we are actively working towards enabling it for trucks, buses, and motorbikes soon."]
+            },
+            {
+                Q: "What are the parameters that your Photo Quality API covers?",
+                A: ["Inspektlabs' Photo Quality API identifies picture angles, vehicle type, model & parts, along with also scoring the brightness and bluriness (which determines the usability of the image)"]
+            },
+            {
+                Q: "How many images can I scan with one credit?",
+                A: ["Please contact info@inspektlabs.com for more details."]
+            },
+            {
+                Q: "Can I bundle the Photo Quality API with the damage detection app?",
+                A: ["Yes. Please contact info@inspektlabs.com for more details."]
+            },
+            {
+                Q: "How will I receive the results for the Photo Quality scans?",
+                A: ["The results from the Photo quality API are generated via JSON and can be viewed via your app once the API is integrated successfully"]
+            },
+            {
+                Q: "How do I integrate the Photo Quality API into my business process?",
+                A: ["The Photo Quality API gives instant feedback on inspection photos, checking clarity, framing, and lighting to ensure only usable images are captured. It works within your own app and responds in seconds, allowing users to quickly retake photos if needed."]
+            },
         ],
     }
 }

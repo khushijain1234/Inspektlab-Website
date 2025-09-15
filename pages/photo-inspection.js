@@ -7,11 +7,13 @@ import {
   useCases,
   photoAPIFeatures,
 } from "../const/photo-inspection";
+import ContactUs from "./contact-us";
 
 const PhotoInspection = ({ locale }) => {
   const scrollRef = useRef();
   const featuresScrollRef = useRef();
   const tryProductRef = useRef();
+  const contactUsRef = useRef(null);
   const [imageList, setImageList] = useState(null);
   const [urls, setUrls] = useState("");
   const [results, setResults] = useState(null);
@@ -20,12 +22,20 @@ const PhotoInspection = ({ locale }) => {
   const [file, setFile] = useState(null);
   const [showModal, setShowModal] = useState(null);
   const [showAlert, setShowAlert] = useState(false);
+  const [showContactSection, setShowContactSection] = useState(false);
 
   const handleImageList = (files) => {
     if (files && files[0]) {
       setFile(files[0]);
       setPrevewImage(URL.createObjectURL(files[0]));
     }
+  };
+  const handleScroll = () => {
+    setShowContactSection(true);
+    contactUsRef.current?.scrollIntoView({
+      behavior: "smooth", // smooth scrolling effect
+      block: "center",     // align to the top
+    });
   };
   async function getToken() {
     const res = await fetch("/api/authenticate", { method: "POST" });
@@ -37,8 +47,9 @@ const PhotoInspection = ({ locale }) => {
   function checkAndIncrementAttempts() {
     let attempts = parseInt(localStorage.getItem("uploadAttempts") || "0", 10);
 
-    if (attempts >= 2) {
-      window.location.href = "/contact-us";
+    if (attempts >= 1) {
+      // window.location.href = "/contact-us";
+      handleScroll()
       return false; // stop execution
     }
 
@@ -81,8 +92,9 @@ const PhotoInspection = ({ locale }) => {
       return;
     }
 
-    // if (!checkAndIncrementAttempts()) return;
+    if (!checkAndIncrementAttempts()) return;
     setFile(null);
+    setLoading(true);
     const tokenRes = await fetch("/api/authenticate", { method: "POST" });
     const tokenData = await tokenRes.json();
 
@@ -101,14 +113,16 @@ const PhotoInspection = ({ locale }) => {
     });
 
     const data = await res.json();
-    setResults(data);
+    formatData(data);
     setShowModal("url");
+    setLoading(false);
   };
 
   // 🔹 Handle File submission
   const handleFileSubmit = async () => {
-    // if (!checkAndIncrementAttempts()) return;
+    if (!checkAndIncrementAttempts()) return;
     setUrls("");
+    setLoading(true);
     const tokenRes = await fetch("/api/authenticate", { method: "POST" });
     const tokenData = await tokenRes.json();
 
@@ -127,8 +141,9 @@ const PhotoInspection = ({ locale }) => {
     });
 
     const data = await res.json();
-    setResults(data);
+    formatData(data);
     setShowModal("file");
+    setLoading(false);
   };
 
   const scroll = (direction) => {
@@ -142,7 +157,37 @@ const PhotoInspection = ({ locale }) => {
       container.scrollBy({ left: cardWidth, behavior: "smooth" });
     }
   };
+  const formatData = (data) =>{
+    console.log(data,"dattt")
+    const imgKey = Object.keys(data.q_score)[0];
 
+    // Extract that object
+    const qData = data.q_score[imgKey];
+
+    // Merge custom_section + selected top-level fields
+    let importantValues = {
+      ...qData.custom_section,
+      license_reading: qData.license_reading,
+      make: qData.make,
+      model: qData.model,
+      vehicle_type: qData.vehicle_type
+    };
+
+    importantValues = Object.fromEntries(
+      Object.entries(importantValues).map(([key, value]) => [
+        key,
+        value === "" || value === null || value === undefined ? "null" : value
+      ])
+    );
+
+    setResults(importantValues);
+  }
+
+  const prettifyKey = (key) => {
+    return key
+      .replace(/_/g, " ")       // replace underscores with spaces
+      .replace(/\b\w/g, (c) => c.toUpperCase()); // capitalize each word
+  };
   const scrollFeatures = (direction) => {
     const container = featuresScrollRef.current;
     const cardWidth =
@@ -207,7 +252,7 @@ const PhotoInspection = ({ locale }) => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.mainContainer}>
       <main className={styles.main}>
         {/* Featured Section */}
         <section className={styles.featured}>
@@ -215,9 +260,14 @@ const PhotoInspection = ({ locale }) => {
             <div className={styles.resultsGrid}>
               <div className={styles.showResults}>
                 <h2>View Results</h2>
-                <pre className={styles.text}>
-                  {JSON.stringify(results, null, 2)}
-                </pre>
+                <div className={styles.text}>
+                  {Object.entries(results).map(([key, value]) => (
+                    <div key={key} className={styles.resultItem}>
+                      <span className={styles.key}>{prettifyKey(key)}</span>
+                      <span className={styles.value}>{String(value)}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
               <div className={styles.contactUsSection}>
                 <h2>Original Image</h2>
@@ -268,8 +318,8 @@ const PhotoInspection = ({ locale }) => {
                   <span className={styles.titleHighlights}>API</span>
                 </h1>
                 <p className={styles.featuredText}>
-                  Get real-time feedback on vehicle image to improve damage
-                  documentation accuracy and reduce assessment errors
+                  Ensure only the best vehicle photos with Inspektlabs' Photo Quality API that delivers instant feedback on photo clarity, framing,
+                  and lighting. Integrate the API seamlessly with your own app for real-time recapture suggestions.
                 </p>
               </div>
               <div className={styles.photoQualityBg}>
@@ -282,7 +332,7 @@ const PhotoInspection = ({ locale }) => {
               </div>
               <div className={styles.uploadSection}>
                 <h3>
-                  Upload the image & get real time feedback on car inspection
+                  Upload images & get real-time feedback on picture quality
                 </h3>
                 <div>
                   <input
@@ -326,10 +376,14 @@ const PhotoInspection = ({ locale }) => {
                 )}
                 {urls.length > 0 && (
                   <div
-                    className={`${styles.submitButton} ${styles.active}`}
-                    onClick={handleUrlSubmit}
+                  className={`${styles.submitButton} ${loading ? styles.disabled : styles.active}`}
+                  onClick={!loading ? handleUrlSubmit : undefined}
                   >
-                    Submit
+                  {loading ? (
+                  <span className={styles.loader}></span>
+                  ) : (
+                    "Submit"
+                  )}
                   </div>
                 )}
                 {previewImage && (
@@ -346,10 +400,14 @@ const PhotoInspection = ({ locale }) => {
                       className={styles.uploadedImage}
                     />
                     <div
-                      className={styles.submitButton}
-                      onClick={handleFileSubmit}
+                      className={`${styles.submitButton} ${loading ? styles.disabled : styles.active}`}
+                      onClick={!loading ? handleFileSubmit : undefined}
                     >
-                      Submit
+                      {loading ? (
+                        <span className={styles.loader}></span>
+                      ) : (
+                        "Submit"
+                      )}
                     </div>
                   </div>
                 )}
@@ -406,12 +464,14 @@ const PhotoInspection = ({ locale }) => {
               {featureData.map((data, index) => {
                 return (
                   <div className={styles.featureCard}>
-                    <Image
-                      src={`/img/${data.img}`}
-                      alt={data.title}
-                      width={200}
-                      height={180}
-                    />
+                    <div className={styles.featureCardImage}>
+                      <Image
+                        src={`/img/${data.img}`}
+                        alt={data.title}
+                        layout="fill"
+                        objectFit="contain"
+                      />
+                    </div>
                     <p className={styles.featureCardHeading}>{data.title}</p>
                     <p className={styles.featureCardText}>{data.text}</p>
                   </div>
@@ -584,6 +644,10 @@ const PhotoInspection = ({ locale }) => {
             </div>
           </div>
         </section>
+        
+        {showContactSection && <section className={styles.redirectToContactUsSection} ref={contactUsRef}>
+          <ContactUs locale={'en'} formClassName={styles.contactFormContainer} mainClassName={styles.contactUsMain} featuredClassName={styles.contactUsFeatured}/>
+        </section>}
 
         <section className={styles.faqSectionContainer}>
           <div className={styles.faqSection}>
@@ -592,7 +656,7 @@ const PhotoInspection = ({ locale }) => {
             </div>
             <div className={styles.questionContainer}>
               <div className={styles.faqGrid}>
-                {questions["General"][locale].map((item, index) => (
+                {questions["Photo Quality API"][locale].map((item, index) => (
                   <QuestionSection keyIndex={index} que={item.Q} ans={item.A} />
                 ))}
               </div>

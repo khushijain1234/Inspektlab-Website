@@ -5,7 +5,7 @@ import styles from '../styles/ContactUs.module.css';
 import { mailFormat } from '../const/shared';
 import language from '../languages/contact-us.json'
 
-export default function ContactUs({locale}) {
+export default function ContactUs({locale, formClassName="", mainClassName="", featuredClassName=""}) {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
@@ -70,16 +70,16 @@ export default function ContactUs({locale}) {
       />
 
       {/* Main Body */}
-      <main className={styles.main}>
+      <main className={`${styles.main} ${mainClassName || ""}`}>
         {/* Featured Section */}
-        <section className={styles.featured}>
+        <section className={featuredClassName || styles.featured}>
           <h1>{language["Contact Us"][locale]}</h1>
           <p>
             {language["Get in touch"][locale]}
           </p>
         </section>
 
-        <section className={styles.formContainer}>
+        <section className={`${styles.formContainer} ${formClassName || ""}`}>
           <form className={styles.contactForm} onSubmit={handleSubmit}>
             <h2>{language["Submit Your Query"][locale]}</h2>
             <input

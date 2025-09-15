@@ -142,7 +142,6 @@ console.log(productFeatures.length, openIndex,"heyy")
       <main className={styles.main}>
         {/* Featured Section */}
         <section className={styles.featured}>
-          <div className={styles.featuredVideo}>
           <video
             autoPlay
             muted
@@ -155,7 +154,6 @@ console.log(productFeatures.length, openIndex,"heyy")
             <source src='/img/home.mp4' type='video/mp4' />
             Your browser does not support the video tag.
           </video>
-          </div>
           <div className={styles.grid}>
             <div className={styles.gridItem}>
               <h1 className={styles.featuredTitle}>
@@ -485,7 +483,7 @@ console.log(productFeatures.length, openIndex,"heyy")
           <div className={styles.mapContainer}>
               <div className={styles.mapWrapper}>
                 <Image
-                  src='/img/map.svg'
+                  src='/img/presence-map.svg'
                   layout='fill'
                   objectFit='contain'
                   objectPosition='center'
