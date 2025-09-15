@@ -103,12 +103,12 @@ export default function ContactUs({locale, formClassName="", mainClassName="", f
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
-            <ReCAPTCHA
+            {/* <ReCAPTCHA
               ref={recaptchaRef}
               size='invisible'
               sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
               onChange={handleRecaptchaChange}
-            />
+            /> */}
             {valid ? (
               loading ? (
                 <button className={styles.submitBtn}>
