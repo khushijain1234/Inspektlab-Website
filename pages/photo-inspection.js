@@ -419,9 +419,9 @@ const PhotoInspection = ({ locale }) => {
                 />
               </div>
               <div className={styles.uploadSection}>
-                <h3>
+                <h2>
                   Upload images & get real-time feedback on picture quality
-                </h3>
+                </h2>
                 <div>
                   <input
                     type="file"
@@ -639,6 +639,7 @@ const PhotoInspection = ({ locale }) => {
                 <Image
                   className={styles.carImg}
                   src={"/img/car-img.svg"}
+                  alt="Car Image"
                   width={400}
                   height={250}
                 />
@@ -652,6 +653,7 @@ const PhotoInspection = ({ locale }) => {
                   <Image
                     className={styles.whiteTruck}
                     src={"/img/white-truck.svg"}
+                    alt="White Truck"
                     width={350}
                     height={230}
                   />
@@ -664,6 +666,7 @@ const PhotoInspection = ({ locale }) => {
                   <Image
                     className={styles.whiteTruck}
                     src={"/img/bike.svg"}
+                    alt="Bike"
                     width={350}
                     height={200}
                   />

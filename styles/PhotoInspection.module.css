@@ -218,7 +218,7 @@ color: var(--white);
 }
 
 
-.uploadSection h3,.uploadSection p,.dragndrop{
+.uploadSection h2,.uploadSection p,.dragndrop{
   font-size: 20px;
   line-height: 24px;
   font-weight: 500;
@@ -241,8 +241,8 @@ color: var(--white);
 }
 
 .uploadSection p{
-  color: #7785A7;
-  ;
+  /* color: #7785A7; */
+  color: #4e4d4d;
 }
 .submitButton {
   display: inline-flex;
