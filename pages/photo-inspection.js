@@ -582,7 +582,7 @@ const PhotoInspection = ({ locale }) => {
                 alt="mobile"
               />
             </div> */}
-            <div className={styles.useCasesCarouselContainer}>
+            {/* <div className={styles.useCasesCarouselContainer}>
               <div className={`${styles.nav} ${styles.navLeft}`}>
                 <Image
                   src={"/img/nav-left.svg"}
@@ -620,7 +620,7 @@ const PhotoInspection = ({ locale }) => {
                   onClick={() => scroll("right")}
                 />
               </div>
-            </div>
+            </div> */}
             <div
               className={styles.documentationButton}
               onClick={onClickGoToProduct}
