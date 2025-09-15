@@ -909,7 +909,7 @@ margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   gap: 3em;
 }
 
@@ -917,7 +917,7 @@ margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* two equal-width columns */
   gap: 10px; /* spacing between columns and rows */
-  width: 100%;
+  width: 95%;
   max-width: 100%;
   padding: 0 20px;
   column-gap: 100px;
@@ -1181,6 +1181,7 @@ margin-top: 30px;
   
   .questionContainer{
     width: 100%;
+    align-items: center;
   }
   .questionModal{
     height: 100px;
