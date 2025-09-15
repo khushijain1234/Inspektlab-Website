@@ -412,7 +412,7 @@ const PhotoInspection = ({ locale }) => {
               </div>
               <div className={styles.photoQualityBg}>
                 <Image
-                  src="/img/photo-quality-bg-image.png"
+                  src="/img/photo-api-bg-img.png"
                   alt="Outlined car"
                   layout="fill"
                   objectFit="contain"
