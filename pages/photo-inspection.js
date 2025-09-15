@@ -47,7 +47,7 @@ const PhotoInspection = ({ locale }) => {
   function checkAndIncrementAttempts() {
     let attempts = parseInt(localStorage.getItem("uploadAttempts") || "0", 10);
 
-    if (attempts >= 1) {
+    if (attempts >= 2) {
       // window.location.href = "/contact-us";
       handleScroll()
       return false; // stop execution
@@ -95,24 +95,68 @@ const PhotoInspection = ({ locale }) => {
     if (!checkAndIncrementAttempts()) return;
     setFile(null);
     setLoading(true);
-    const tokenRes = await fetch("/api/authenticate", { method: "POST" });
-    const tokenData = await tokenRes.json();
+    // const tokenRes = await fetch("/api/authenticate", { method: "POST" });
+    // const tokenData = await tokenRes.json();
 
-    const res = await fetch("/api/qscore-url", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${tokenData.refresh_token}`, // token from authenticate
+    // const res = await fetch("/api/qscore-url", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     Authorization: `Bearer ${tokenData.refresh_token}`, // token from authenticate
+    //   },
+    //   body: JSON.stringify({
+    //     urls: [urls], // state variable holding user input URL
+    //     session: tokenData.session,
+    //     type: "urls",
+    //     photo_tag: "F",
+    //   }),
+    // });
+
+    // const data = await res.json();
+    const data={
+      "img_mapping": {
+          "in482320250915083542-1.jpg": "https://inspektlabs-eu.s3.amazonaws.com/qscore_1222/2025/09/in482320250915083542/original/in482320250915083542-1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWCBSHU66ECWP77MC%2F20250915%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20250915T083548Z&X-Amz-Expires=604799&X-Amz-SignedHeaders=host&X-Amz-Signature=f07c86ddccd271dbf834248b40017200b84bacb9f494179e1efec41047c6cdea"
       },
-      body: JSON.stringify({
-        urls: [urls], // state variable holding user input URL
-        session: tokenData.session,
-        type: "urls",
-        photo_tag: "F",
-      }),
-    });
-
-    const data = await res.json();
+      "original_img_mapping": {},
+      "q_score": {
+          "in482320250915083542-1.jpg": {
+              "angle": "NA",
+              "blur_score": 4,
+              "car_type": {
+                  "car_type": "hatchback",
+                  "vehicle_type": "car"
+              },
+              "color": "",
+              "custom_section": {
+                  "VIN": "",
+                  "abs_light_on": 0,
+                  "airbag_light_on": 0,
+                  "all_markers_visible": 0,
+                  "check_engine_light_on": 0,
+                  "engine_on": 0,
+                  "hood_open": 0,
+                  "indicator_light_on": 0,
+                  "mileage": 0,
+                  "mileage_km": "",
+                  "odometer_ocr_quality_ok": 0,
+                  "odometer_reading": "",
+                  "plate_engraved_chassis": 0,
+                  "quality_vin": 0,
+                  "tailgate_open": 0
+              },
+              "license_reading": "",
+              "license_reading_status": [],
+              "luma_score": 3,
+              "make": "",
+              "model": "",
+              "odometer_reading_status": [],
+              "parts_detected": [],
+              "vehicle_type": "",
+              "vin_reading_status": []
+          }
+      },
+      "status": "success"
+  }
     formatData(data);
     setShowModal("url");
     setLoading(false);
@@ -123,24 +167,68 @@ const PhotoInspection = ({ locale }) => {
     if (!checkAndIncrementAttempts()) return;
     setUrls("");
     setLoading(true);
-    const tokenRes = await fetch("/api/authenticate", { method: "POST" });
-    const tokenData = await tokenRes.json();
+    // const tokenRes = await fetch("/api/authenticate", { method: "POST" });
+    // const tokenData = await tokenRes.json();
 
-    const formData = new FormData();
-    formData.append("session", tokenData.session);
-    formData.append("type", "file");
-    formData.append("photo_tag", "F");
-    formData.append("file", file);
+    // const formData = new FormData();
+    // formData.append("session", tokenData.session);
+    // formData.append("type", "file");
+    // formData.append("photo_tag", "F");
+    // formData.append("file", file);
 
-    const res = await fetch("/api/qscore-file", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${tokenData.refresh_token}`,
+    // const res = await fetch("/api/qscore-file", {
+    //   method: "POST",
+    //   headers: {
+    //     Authorization: `Bearer ${tokenData.refresh_token}`,
+    //   },
+    //   body: formData,
+    // });
+
+    // const data = await res.json();
+    const data={
+      "img_mapping": {
+          "in482320250915083542-1.jpg": "https://inspektlabs-eu.s3.amazonaws.com/qscore_1222/2025/09/in482320250915083542/original/in482320250915083542-1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWCBSHU66ECWP77MC%2F20250915%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20250915T083548Z&X-Amz-Expires=604799&X-Amz-SignedHeaders=host&X-Amz-Signature=f07c86ddccd271dbf834248b40017200b84bacb9f494179e1efec41047c6cdea"
       },
-      body: formData,
-    });
-
-    const data = await res.json();
+      "original_img_mapping": {},
+      "q_score": {
+          "in482320250915083542-1.jpg": {
+              "angle": "NA",
+              "blur_score": 4,
+              "car_type": {
+                  "car_type": "hatchback",
+                  "vehicle_type": "car"
+              },
+              "color": "",
+              "custom_section": {
+                  "VIN": "",
+                  "abs_light_on": 0,
+                  "airbag_light_on": 0,
+                  "all_markers_visible": 0,
+                  "check_engine_light_on": 0,
+                  "engine_on": 0,
+                  "hood_open": 0,
+                  "indicator_light_on": 0,
+                  "mileage": 0,
+                  "mileage_km": "",
+                  "odometer_ocr_quality_ok": 0,
+                  "odometer_reading": "",
+                  "plate_engraved_chassis": 0,
+                  "quality_vin": 0,
+                  "tailgate_open": 0
+              },
+              "license_reading": "",
+              "license_reading_status": [],
+              "luma_score": 3,
+              "make": "",
+              "model": "",
+              "odometer_reading_status": [],
+              "parts_detected": [],
+              "vehicle_type": "",
+              "vin_reading_status": []
+          }
+      },
+      "status": "success"
+  }
     formatData(data);
     setShowModal("file");
     setLoading(false);

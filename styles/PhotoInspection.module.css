@@ -74,7 +74,7 @@
   line-height: 102px;
   font-weight: 600;
   letter-spacing: -4.1px;
-  width: 90%;
+  width: 100%;
   margin-top: 10px;
 }
 
@@ -203,7 +203,7 @@ color: var(--white);
 .uploadSection{
   width: 35.3%;
   max-width: 380px;
-  height: 380px;
+  height: 400px;
   border-radius: 20px;
   background-color: var(--white);
   display: flex;
@@ -371,11 +371,11 @@ background-color: rgb(192, 186, 186);
   font-weight: 600;
   width: 70%;
   margin-top: 25px;
-  /* margin-left: 15%; */
+  margin-left: 5%;
 }
 .featureCardText{
   font-size: 20px;
-  /* margin-left: 15%; */
+  margin-left: 5%;
   line-height: 28px;
   font-weight: 500;
   width: 80%;
@@ -887,6 +887,7 @@ background-color: rgb(192, 186, 186);
   display: flex;
   align-items: start;
   flex-direction: column;
+  margin-left: 20px
 }
 .faqTitleContainer p{
 margin-top: 30px;
