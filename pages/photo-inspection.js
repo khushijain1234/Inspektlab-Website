@@ -288,6 +288,16 @@ const PhotoInspection = ({ locale }) => {
     }
   };
 
+  const handleSelectImage = async (src) => {
+    // Fetch the image and convert it into a File object
+    const response = await fetch(src);
+    const blob = await response.blob();
+    const fileName = src.split("/").pop() || "image.jpg";
+    const fileObj = new File([blob], fileName, { type: blob.type });
+    setFile(fileObj);
+    setPrevewImage(URL.createObjectURL(fileObj));
+  };
+
   const handleClickAnotherImage = () => {
     setShowModal(null);
     setUrls("");
@@ -506,28 +516,32 @@ const PhotoInspection = ({ locale }) => {
                     </p>
                     <div className={styles.inspectionImgExamples}>
                       <Image
-                        src={"/img/inspection-img-example.svg"}
+                        src={"/img/Example Picture1.jpg"}
                         width={50}
                         height={50}
                         alt="inspection img example"
+                        onClick={()=>handleSelectImage("/img/Example Picture1.jpg")}
                       />
                       <Image
-                        src={"/img/inspection-img-example.svg"}
+                        src={"/img/Example Picture2.jpg"}
                         width={50}
                         height={50}
                         alt="inspection img example"
+                        onClick={()=>handleSelectImage("/img/Example Picture2.jpg")}
                       />
                       <Image
-                        src={"/img/inspection-img-example.svg"}
+                        src={"/img/Example Picture3.jpg"}
                         width={50}
                         height={50}
                         alt="inspection img example"
+                        onClick={()=>handleSelectImage("/img/Example Picture3.jpg")}
                       />
                       <Image
-                        src={"/img/inspection-img-example.svg"}
+                        src={"/img/Example Picture4.jpg"}
                         width={50}
                         height={50}
                         alt="inspection img example"
+                        onClick={()=>handleSelectImage("/img/Example Picture4.jpg")}
                       />
                     </div>
                   </>

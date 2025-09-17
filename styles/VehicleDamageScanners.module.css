@@ -24,9 +24,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
     z-index: -1;
-    /* opacity: 0.5; */
     }
 .grid{
     z-index: 1;
@@ -378,6 +377,7 @@
     border-bottom: 1px solid #0B2131;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
     cursor: pointer;
   }
@@ -409,7 +409,7 @@
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.6s ease, opacity 0.3s ease;
+    transition: max-height 0.2s ease, opacity 0.2s ease;
   }
   .viewMoreBtn{
     display: flex;
@@ -455,9 +455,6 @@
         position: static;
         /* background: none; */
         background: linear-gradient(150deg, rgba(56, 67, 184, 1) 0%, rgba(47, 52, 112, 1) 18%, rgb(33, 33, 33) 25%);
-      }
-      .featured > div:first-of-type {
-        display: none !important;
       }
       .mainImg{
         display: none;
@@ -640,6 +637,9 @@
       }
       .faqSection{
         width: 90%;
+      }
+      .faqTitleContainer{
+        width: 100%;
       }
     .faqTitle{
         font-size: 26px;

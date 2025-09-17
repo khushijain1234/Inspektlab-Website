@@ -302,7 +302,13 @@ background-color: rgb(192, 186, 186);
 }
 .inspectionImgExamples img{
   cursor: pointer;
+  border-radius: 5px;
 }
+.inspectionImgExamples img:hover {
+  transform: scale(1.05);            /* slightly zoom in */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25); /* shadow */
+}
+
 .uploadedImage{
   border: 1px solid black;
 }
@@ -762,10 +768,9 @@ background-color: rgb(192, 186, 186);
   display: flex;
   flex-direction: column;
   flex-basis: 30%;
-  flex: 0 0 80%;
+  flex: 0 0 30%;
   overflow: hidden;
   scroll-snap-align: start;
-  max-width: 300px;
   /* border-radius: 3px; */
   border: 1px solid #2B2B2B;
   /* border: solid 1px #eee; */
@@ -1026,10 +1031,11 @@ margin-top: 30px;
   }
   .grid{
     flex-direction: column;
+    align-items: center;
   }
   .gridItem{
     margin-bottom: 2rem;
-    width: 100%;
+    width: 90%;
   }
   .photoQualityBg{
     display: none;
@@ -1149,9 +1155,14 @@ margin-top: 30px;
   }
   .blogCaraouselContent{
     flex-direction: column;
+    width: 100%;
+    align-items: center;
   }
   .blogItem{
     flex: 0 0 auto;
+    border: none;
+      border-bottom: 9px solid #e6ebfa;
+      padding-bottom: 20px;
   }
   .photoAPIFeatureSection{
     width: 100%;
