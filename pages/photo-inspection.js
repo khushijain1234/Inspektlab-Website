@@ -649,11 +649,11 @@ const PhotoInspection = ({ locale }) => {
             <h3 className={styles.vehicleSupportedHeading}>Works Best on</h3>
             <div className={styles.vehiclesSupportedContainer}>
               <div className={styles.carSection}>
-                <h3 className={styles.vehicleName}>Car</h3>
+                <h3 className={styles.carSupporting}>Car</h3>
                 <Image
                   className={styles.carImg}
                   src={"/img/car-img.svg"}
-                  alt="Car Image"
+                  alt="Car Img"
                   width={400}
                   height={250}
                 />
