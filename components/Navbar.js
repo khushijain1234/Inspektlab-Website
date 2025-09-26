@@ -56,7 +56,7 @@ const Navbar = ({ locale }) => {
         },
         {
           name: {
-            en: 'Photo Inspection',
+            en: 'Photo Quality API',
           },
           link: '/photo-inspection',
         },
@@ -117,6 +117,7 @@ const Navbar = ({ locale }) => {
       type: 'link',
       link: '/pricing',
     },
+    { 'name': {en: 'About Us', es: "Sobre nosotros"}, 'type': 'link', 'link': '/about-us'},
     // {
     //   name: { en: 'en', es: 'es', pt: 'pt' },
     //   type: 'dropdown',
