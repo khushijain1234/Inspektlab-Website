@@ -1435,7 +1435,7 @@ margin-top: 30px;
     margin-top: 50px;
   }
   .mainBtn{
-    width: clamp(155px, 20vw, 200px);
+    width: clamp(175px, 20vw, 200px);
   height: clamp(45px, 7vh, 65px);
   }
   .grid {
