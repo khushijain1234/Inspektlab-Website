@@ -88,6 +88,7 @@ const Navbar = ({ locale }) => {
       items: [
         { name: { en: 'Media', es: 'Medios', pt: 'Mídia' }, link: '/media' },
         { name: { en: 'Blog', es: 'Blog', pt: 'Blog' }, link: '/blog' },
+        { name: { en: 'Case Studies' }, link: '/case-studies' },
       ],
     },
     {
