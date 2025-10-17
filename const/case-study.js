@@ -39,7 +39,7 @@ export const caseStudy1 = {
             "This not only reduced the time taken to complete each underwriting cycle but also gave Universal Sompo General Insurance’s team better control and visibility across the workflow."
         ]
     }],
-    testimonialImg: '/img/Clients/Sompo CTO.png',
+    testimonialImg: '/img/Clients/Sompo-CTO.png',
     testimonialText: "Inspektlabs has assisted us in enhancing our inspection process at Universal Sompo General Insurance. Their automated inspection solution provides comprehensive coverage for both cars and motorbikes. With custom workflows designed to handle inspections from any source – be it customer self-inspections, vendor checks, or OEM reviews – their platform has streamlined our process, allowing us to manage inspections more efficiently.",
     impacts: [
         "Since its implementation, Universal Sompo General Insurance has been able to significantly reduce the time taken for underwriting-related inspections and approvals.",
@@ -120,7 +120,7 @@ export const caseStudy2 = {
             { icon: '/img/step-icon5.png', text: "Customer gets a detailed condition report via email within seconds. This report contains images captured, pre-existing damage, and other important details." }
         ]
     }],
-    testimonialImg: '/img/Clients/Holiday Cars CTO.png',
+    testimonialImg: '/img/Clients/Holiday-Cars CTO.png',
     testimonialText: "By leveraging Inspektlabs' technology, HolidayCars.com can deliver detailed inspection reports, allowing customers to use this information as a reference and enjoy a hassle-free rental experience",
     impacts: [
         "Since its implementation, HolidayCars has seen an increase in customer trust and satisfaction, while also receiving fewer complaints from the rental companies listed on its platform.",
