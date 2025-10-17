@@ -283,7 +283,7 @@
 
 .bulletPoint {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 16px;
   font-size: 1.125rem;
   color: #475569;

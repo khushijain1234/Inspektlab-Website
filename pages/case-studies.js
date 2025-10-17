@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from "../styles/CaseStudies.module.css";
 import Link from "next/link";
+import Image from 'next/image';
 
 const CaseStudies = () => {
   const caseStudiesData = [
@@ -8,7 +9,7 @@ const CaseStudies = () => {
       id: 1,
       link: 'caseStudy1',
       company: 'Universal Sompo Group',
-      logo: 'Sompo',
+      logo: 'clients/Univeral-Sompo-Logo.png',
       title: "Optimizing Sompo General's Underwriting Process",
       description: 'Optimizing its underwriting workflow and eliminate delays in the inspection approval process by leveraging the power of AI-powered inspections across all vehicle types.',
       metrics: [
@@ -20,7 +21,7 @@ const CaseStudies = () => {
       id: 2,
       link: 'caseStudy2',
       company: 'HolidayCars',
-      logo: 'HolidayCars',
+      logo: 'clients/holiday-cars-logo.jpeg',
       title: 'Holiday Cars partners with Inspektlabs to secure Customers with the power of AI',
       description: 'Holiday Cars, one of the most trusted Car Rental Aggregators, has partnered with Inspektlabs to empower customers with a solution to track and report pre-existing damage on vehicles they’re renting using the power of AI and computer vision.',
       metrics: [
@@ -32,7 +33,7 @@ const CaseStudies = () => {
       id: 3,
       link: 'caseStudy3',
       company: 'AutoParts Group (APG)',
-      logo: 'APG',
+      logo: 'clients/APG-logo.png',
       title: 'How AutoParts Group automates vehicle inspections using Inspektlabs AI',
       description: 'AutoParts Group, Australia’s leading supplier of automotive collision parts, partnered with Inspektlabs to help automate their vehicle inspection process using Artificial Intelligence and computer vision, resulting in a reduction of inspection time from days to a few minutes.',
       metrics: [
@@ -43,9 +44,9 @@ const CaseStudies = () => {
   ];
 
   const statsData = [
-    { number: '350K+', label: 'Trusted by users across\n70+ leading enterprises' },
-    { number: '2.5x', label: 'Average increase in\nsales performance' },
-    { number: '47%', label: 'Boost in customer\nengagement rates' }
+    { number: '10M+', label: 'Inspections conducted' },
+    { number: '30+', label: 'Countries served' },
+    { number: '$1B+', label: 'Saved in Inspection cost' }
   ];
 
   return (
@@ -53,8 +54,8 @@ const CaseStudies = () => {
       {/* Hero Section */}
       <section className={styles.heroSection}>
         <div className={styles.heroContent}>
-          <h1>Stories of Success and<br />Collaboration</h1>
-          <p>Discover how leading financial institutions across the globe achieved remarkable results with our solutions. Real transformations, measurable impact.</p>
+          <h1>Success stories, delivered by <br />Inspektlabs</h1>
+          <p>Real-life success stories of how businesses across the automotive ecosystem transformed their vehicle inspection process with Inspektlabs’ AI-powered solutions.</p>
         </div>
       </section>
   
@@ -74,7 +75,7 @@ const CaseStudies = () => {
       <section className={styles.container}>
         <div className={styles.sectionHeader}>
           <span className={styles.sectionTag}>Case Studies</span>
-          <h2 className={styles.sectionTitle}>We've helped global financial institutions<br />accelerate their sales performance</h2>
+          <h2 className={styles.sectionTitle}>How AI-driven vehicle inspections transform business operations</h2>
           <p className={styles.sectionSubtitle}>Learn how industry leaders transformed their operations and achieved measurable results with our platform</p>
         </div>
         
@@ -83,7 +84,9 @@ const CaseStudies = () => {
             <Link key={study.id} href={`/case-study/${study.link}`}>
             <a className={styles.caseStudyCard}>
               <div className={styles.cardImageWrapper}>
-                <div className={styles.cardImage}>{study.logo}</div>
+                <div className={styles.cardImage}>
+                  <Image src={`/img/${study.logo}`} alt="Company Logo" layout='fill' objectFit='contain' />
+                </div>
               </div>
               <div className={styles.cardContent}>
                 <div className={styles.cardCompany}>{study.company}</div>
@@ -109,7 +112,7 @@ const CaseStudies = () => {
         <div className={styles.ctaContent}>
           <h2>Ready to Transform Your Business?</h2>
           <p>Join hundreds of leading financial institutions achieving remarkable results with our intelligent sales platform</p>
-          <a href="#" className={styles.ctaButton}>Get Started Today</a>
+          <div className={styles.ctaButton} onClick={() => (window.location.href = '/contact-us')}>Get Started Today</div>
         </div>
       </section>
     </div>

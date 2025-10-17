@@ -113,11 +113,11 @@ export const caseStudy2 = {
         ],
         stepsDescription: "How this works is pretty simple -",
         steps:[
-            { icon: '/img/caseStudyStepIcon1.png', text: "HolidayCars sends you a secure link via email to begin the assessment" },
-            { icon: '/img/caseStudyStepIcon2.png', text: "Link redirects to a web app that will guide the user to capture a 360° view of the vehicle" },
-            { icon: '/img/caseStudyStepIcon3.png', text: "The 360° view captures all damage (small or big) and other important information such as odometer reading, fuel level etc." },
-            { icon: '/img/caseStudyStepIcon4.png', text: "The recorded damage is then sent to Inspektlabs’ proprietary AI model for analysis" },
-            { icon: '/img/caseStudyStepIcon5.png', text: "Customer gets a detailed condition report via email within seconds. This report contains images captured, pre-existing damage, and other important details." }
+            { icon: '/img/step-icon1.png', text: "HolidayCars sends you a secure link via email to begin the assessment" },
+            { icon: '/img/step-icon2.png', text: "Link redirects to a web app that will guide the user to capture a 360° view of the vehicle" },
+            { icon: '/img/step-icon3.png', text: "The 360° view captures all damage (small or big) and other important information such as odometer reading, fuel level etc." },
+            { icon: '/img/step-icon4.png', text: "The recorded damage is then sent to Inspektlabs’ proprietary AI model for analysis" },
+            { icon: '/img/step-icon5.png', text: "Customer gets a detailed condition report via email within seconds. This report contains images captured, pre-existing damage, and other important details." }
         ]
     }],
     testimonialImg: '/img/Clients/Holiday Cars CTO.png',
