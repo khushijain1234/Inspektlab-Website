@@ -78,3 +78,110 @@ export const features = [
         }
     },
 ]
+
+export const photoAPIFeatures = [
+    {
+      img: '/img/productFeature1.png',
+      title: 'Damage Detectionnn',
+      text: 'Detect 21 types of damages across metal, plastic, fiber, glass and rubber parts'
+    },
+    {
+      img: '/img/productFeature2.png',
+      title: 'Fraud Detection',
+      text: 'Specialised fraud detection using photos/videos e.g. old/prior damages, metadata analysis',
+    },
+    {
+      img: '/img/productFeature3.png',
+      title: 'Claim Assessment',
+      text: "Claim estimation & review products customized for each market's repair practices"
+    },
+    {
+      img: '/img/productFeature4.png',
+      title: 'Text Scanning',
+      text: 'Auto-read Odometer, VIN, License plate or any other text on the vehicle'
+    },
+    {
+      img: '/img/productFeature5.png',
+      title: 'Photo & Video Capture App for Vehicle Inspection',
+      text: 'Web apps for high quality photo and video capture by the end customer'
+    },
+    {
+      img: '/img/productFeature6.png',
+      title: 'Real Time Guidance with Vehicle Inspection App',
+      text: 'Real time feedback to customers on quality of captured photos/videos'
+    }
+  ]
+
+export const vehiclesCovered = [
+  {
+    img: '/img/car_on_ellipse.png',
+    imgWidth: 550,
+    imgHeight: 250,
+    label: 'CAR'
+  },
+  {
+    img: '/img/bike-on-ellipse.png',
+    imgWidth: 550,
+    imgHeight: 250,
+    label: 'BIKE'
+  },
+  {
+    img: '/img/white-suv-on-ellipse.png',
+    imgWidth: 550,
+    imgHeight: 250,
+    label: 'SUV'
+  },
+  {
+    img: '/img/suv-on-ellipse.png',
+    imgWidth: 550,
+    imgHeight: 250,
+    label: 'JEEP'
+  },
+  {
+    img: '/img/white-bus-on-ellipse.png',
+    imgWidth: 550,
+    imgHeight: 250,
+    label: 'BUS'
+  },
+  {
+    img: '/img/white-truck-on-ellipse.png',
+    imgWidth: 550,
+    imgHeight: 250,
+    label: 'TRUCK'
+  },
+  {
+    img: '/img/pickupcar-on-ellipse.png',
+    imgWidth: 550,
+    imgHeight: 250,
+    label: 'PICKUPCAR'
+  },
+  {
+    img: '/img/white-hatchback-car-on-ellipse.png',
+    imgWidth: 550,
+    imgHeight: 250,
+    label: 'CAR'
+  },
+]
+export  const coveredDamages = [
+    {
+      type: 'Car',
+      img: '/img/damages-in-car.svg',
+      damages: ['Metal/Plastic/Fibre Parts','Glass Parts','Rubber Parts','Interior Parts'],
+      imgWidth: '180',
+      imgHeight: '88'
+    },
+    {
+      type: 'Motor Bike',
+      img: '/img/damages_in_bike.svg',
+      damages: ['Metal/Plastic/Fibre Parts','Glass Parts','Rubber Parts','Interior Parts'],
+      imgWidth: '150',
+      imgHeight: '90'
+    },
+    {
+      type: 'Heavy Vehicle',
+      img: '/img/damages_in_heavy_vehicles.svg',
+      damages: ['Metal/Plastic/Fibre Parts','Glass Parts','Rubber Parts','Interior Parts'],
+      imgWidth: '135',
+      imgHeight: '90'
+    }
+  ]
