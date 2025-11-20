@@ -4,7 +4,7 @@ import styles from '../styles/DamageDetection.module.css';
 import language from '../languages/damage-detection.json';
 
 import { vehiclesCovered } from '../const/damage-detection';
-import { photoAPIFeatures } from '../const/photo-quality';
+import { photoAPIFeatures } from '../const/photo-inspection';
 import { questions } from '../const/faq';
 import { useEffect, useRef, useState } from 'react';
 
