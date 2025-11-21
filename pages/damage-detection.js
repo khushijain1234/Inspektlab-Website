@@ -16,9 +16,9 @@ export default function FraudDetection({ locale }) {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev === vehiclesCovered.length - 1 ? 0 : prev + 1));
-    }, 2000);
+    }, 5000);
 
-    return () => clearInterval(interval); // Cleanup on unmount
+    return () => clearInterval(interval); 
   }, []);
 
   const QuestionSection = ({keyIndex, que, ans}) => {

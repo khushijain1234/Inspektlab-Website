@@ -170,17 +170,24 @@
   align-items: center;
   width: 60%;
   margin-top: 60px;
+  z-index: 0;
+  overflow: visible;
   /* min-height: 400px; */
 }
 .vehicleMainImg{
   position: absolute;
   top: 0;
+  transform: translateY(30px);
   animation: fadeIn 0.5s ease;
-  z-index: 2;
+  z-index: 20;
+  overflow: visible;
+}
+.vehicleImages :global(div[style*="overflow:hidden"]) {
+  overflow: visible !important;
 }
 .vehicleShadow{
   position: absolute;
-  bottom: 0;
+  bottom: 40px;
   z-index: 1;
 }
 @keyframes fadeIn {
@@ -649,6 +656,9 @@
     }
     .vehicleCoveredSubHeading{
       font-size: 35px;
+    }
+    .vehicleMainImg{
+      transform: translateY(10px);
     }
     .photoAPIFeatureSection{
       width: 100%;
