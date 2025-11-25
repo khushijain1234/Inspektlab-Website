@@ -12,14 +12,33 @@ export default function FraudDetection({ locale }) {
 
   const featuresScrollRef = useRef();
   const [currentIndex, setCurrentIndex] = useState(3);
+  const isPaused = useRef(false);
+  const lastTimeRef = useRef(0);
+
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev === vehiclesCovered.length - 1 ? 0 : prev + 1));
-    }, 5000);
+    let frame;
 
-    return () => clearInterval(interval); 
-  }, []);
+    const tick = (timestamp) => {
+      if (isPaused.current) {
+        lastTimeRef.current = timestamp;   // reset timestamp so no jump happens
+      } else {
+        if (timestamp - lastTimeRef.current >= 2500) {
+          setCurrentIndex((prev) =>
+            prev === vehiclesCovered.length - 1 ? 0 : prev + 1
+          );
+          lastTimeRef.current = timestamp;
+        }
+      }
+
+      frame = requestAnimationFrame(tick);
+    };
+
+    frame = requestAnimationFrame(tick);
+
+    return () => cancelAnimationFrame(frame);
+  }, [vehiclesCovered.length]);
+
 
   const QuestionSection = ({keyIndex, que, ans}) => {
     const [isOpen, setIsOpen] = useState(false)
@@ -111,8 +130,8 @@ export default function FraudDetection({ locale }) {
           <div className={styles.vehicleCoveredSubSection}>
             <h2 className={styles.vehicleCoveredHeading}>Types of vehicles covered</h2>
             <h1 className={styles.vehicleCoveredSubHeading}>{vehiclesCovered[currentIndex].label}</h1>
-            <div className={styles.vehicleImagesSection}>
               <div className={styles.vehicleImages}>
+                <div key={currentIndex} className={styles.vehicleMainImgWrapper} onMouseEnter={() => (isPaused.current = true)} onMouseLeave={() => (isPaused.current = false)}>
                 <Image 
                   src={vehiclesCovered[currentIndex].img} 
                   alt={vehiclesCovered[currentIndex].label}
@@ -120,8 +139,7 @@ export default function FraudDetection({ locale }) {
                   height={vehiclesCovered[currentIndex].imgHeight}
                   className={styles.vehicleMainImg}
                 />
-                <Image src={'/img/Ellipse.png'}  width={700} height={50} alt="shadow" className={styles.vehicleShadow}/>
-              </div>
+                </div>
             </div>
             <div className={styles.carouselControls}>
               <button

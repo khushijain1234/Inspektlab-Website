@@ -114,52 +114,46 @@ export const photoAPIFeatures = [
 
 export const vehiclesCovered = [
   {
-    img: '/img/car_on_ellipse.png',
-    imgWidth: 550,
-    imgHeight: 250,
+    img: '/img/car-on-shadow.png',
+    imgWidth: 650,
+    imgHeight: 300,
     label: 'CAR'
   },
   {
-    img: '/img/bike-on-ellipse.png',
-    imgWidth: 550,
-    imgHeight: 250,
+    img: '/img/bike-on-shadow.png',
+    imgWidth: 650,
+    imgHeight: 300,
     label: 'BIKE'
   },
   {
-    img: '/img/white-suv-on-ellipse.png',
-    imgWidth: 550,
-    imgHeight: 250,
-    label: 'SUV'
-  },
-  {
-    img: '/img/suv-on-ellipse.png',
-    imgWidth: 550,
-    imgHeight: 250,
-    label: 'JEEP'
-  },
-  {
-    img: '/img/white-bus-on-ellipse.png',
-    imgWidth: 550,
-    imgHeight: 250,
+    img: '/img/bus-on-shadow.png',
+    imgWidth: 650,
+    imgHeight: 300,
     label: 'BUS'
   },
   {
-    img: '/img/white-truck-on-ellipse.png',
-    imgWidth: 550,
-    imgHeight: 250,
+    img: '/img/suv-on-shadow.png',
+    imgWidth: 650,
+    imgHeight: 300,
+    label: 'SUV'
+  },
+  {
+    img: '/img/truck-on-shadow.png',
+    imgWidth: 650,
+    imgHeight: 300,
     label: 'TRUCK'
   },
   {
-    img: '/img/pickupcar-on-ellipse.png',
-    imgWidth: 550,
-    imgHeight: 250,
-    label: 'PICKUPCAR'
+    img: '/img/jeep-on-shadow.png',
+    imgWidth: 650,
+    imgHeight: 300,
+    label: 'JEEP'
   },
   {
-    img: '/img/white-hatchback-car-on-ellipse.png',
-    imgWidth: 550,
-    imgHeight: 250,
-    label: 'CAR'
+    img: '/img/pickupcar-on-shadow.png',
+    imgWidth: 650,
+    imgHeight: 300,
+    label: 'PICKUPCAR'
   },
 ]
 export  const coveredDamages = [

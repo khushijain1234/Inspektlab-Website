@@ -1,750 +1,745 @@
 .container {
-    display: flex;
-    margin-top: 70px;
+  display: flex;
+  margin-top: 70px;
 }
 
 .main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .featured {
-    width: 100%;
-    padding: 5rem;
-    /* background: 
-    linear-gradient(to right, rgba(34, 43, 144, 1), rgba(7, 9, 14, 1)),
-    linear-gradient(to bottom, rgb(34, 43, 144) 0%, rgba(8, 8, 8, 1) 30%); */
-    background-blend-mode: overlay;
-    background: 
-  radial-gradient(farthest-corner at 40px 40px,
-    rgba(58, 68, 187, 1) 0%,
-    rgba(63, 76, 224, 1) 20%,
-    rgba(42, 41, 70, 1) 35%,
-    rgba(34, 32, 35, 1) 42%,
-    rgba(34, 32, 35, 1) 100%
-  );
-    color: var(--white);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  width: 100%;
+  padding: 5rem;
+  /* background: 
+  linear-gradient(to right, rgba(34, 43, 144, 1), rgba(7, 9, 14, 1)),
+  linear-gradient(to bottom, rgb(34, 43, 144) 0%, rgba(8, 8, 8, 1) 30%); */
+  background-blend-mode: overlay;
+  background: 
+radial-gradient(farthest-corner at 40px 40px,
+  rgba(58, 68, 187, 1) 0%,
+  rgba(63, 76, 224, 1) 20%,
+  rgba(42, 41, 70, 1) 35%,
+  rgba(34, 32, 35, 1) 42%,
+  rgba(34, 32, 35, 1) 100%
+);
+  color: var(--white);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .featuredVideo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: auto;
 }
 
 .featuredVideo video {
-    width: 50%;
+  width: 50%;
 }
 
 .featuredContent{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
 }
 
 .featuredContent img {
-    filter: invert(1);
+  filter: invert(1);
 }
 
 .featuredTitle {
-  font-size: clamp(36px, 6vw, 80px);
-  line-height: clamp(48px, 7vw, 102.4px);
-  letter-spacing: clamp(-2px, -0.4vw, -4.1px);
-  font-weight: 600;
-  padding: 20px 0;
-  width: 80%;
+font-size: clamp(36px, 6vw, 80px);
+line-height: clamp(48px, 7vw, 102.4px);
+letter-spacing: clamp(-2px, -0.4vw, -4.1px);
+font-weight: 600;
+padding: 20px 0;
+width: 80%;
 }
 .featuredText {
-    font-size: 18.2px;
-    line-height: 34.56px;
-    font-weight: 400;
-    width: 80%;
-    margin-bottom: 70px;
+  font-size: 18.2px;
+  line-height: 34.56px;
+  font-weight: 400;
+  width: 80%;
+  margin-bottom: 70px;
 }
 
 .btnContainer {
-    display: flex;
-    width: 80%;
-    gap: 25px;
-  }
-  .mainBtn{
-    width: 172px;
-    height: 61px;
-    border-radius: 100px;
-    background-color: #195DFF;
-    color: var(--white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
+  display: flex;
+  width: 80%;
+  gap: 25px;
+}
+.mainBtn{
+  width: 172px;
+  height: 61px;
+  border-radius: 100px;
+  background-color: #195DFF;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
 
 .features {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 6rem;
-    gap: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem;
+  gap: 60px;
 }
 
 .featureVideo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: auto;
 }
 .damageData{
-    margin-top: 0px;
-    display: flex;
-    width: 100%;
-    background-color: #EDF2FF;
+  margin-top: 0px;
+  display: flex;
+  width: 100%;
+  background-color: #EDF2FF;
 }
 .damageDataImg{
-    position: relative;
-    height: auto;
-    aspect-ratio: 16/9;
-    width: 100%;
+  position: relative;
+  height: auto;
+  aspect-ratio: 16/9;
+  width: 100%;
 }
 .vehicleSupportedHeading{
-  font-size: 85px;
-  line-height: 95px;
-  letter-spacing: -3.46px;
-  font-weight: 500;
-  text-align: left;
-  width: 80%;
-  margin-bottom: 40px;
+font-size: 85px;
+line-height: 95px;
+letter-spacing: -3.46px;
+font-weight: 500;
+text-align: left;
+width: 80%;
+margin-bottom: 40px;
 }
 .vehicleCoveredSection{
-  width: 100%;
-  padding: 5rem;
-  background: radial-gradient(
-    closest-side,
-    rgba(56, 68, 191, 1) 0%,
-    rgba(53, 64, 178, 1) 20%,
-    rgba(41, 47, 111, 1) 35%,
-    rgba(39, 45, 96, 1) 42%,
-    rgba(27, 28, 30, 1) 100%
-  );
-  background-blend-mode: overlay;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  /* min-height: 600px; */
+width: 100%;
+padding: 5rem;
+background: radial-gradient(
+  closest-side,
+  rgba(56, 68, 191, 1) 0%,
+  rgba(53, 64, 178, 1) 20%,
+  rgba(41, 47, 111, 1) 35%,
+  rgba(39, 45, 96, 1) 42%,
+  rgba(27, 28, 30, 1) 100%
+);
+background-blend-mode: overlay;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+/* min-height: 600px; */
 }
 .vehicleCoveredSubSection{
-  width: 85%;
+width: 85%;
 }
 .vehicleCoveredHeading {
-  text-align: left;
-  font-size: clamp(32px, 5vw, 64px);
-  line-height: clamp(40px, 6vw, 95px);
-  font-weight: 500;
+text-align: left;
+font-size: clamp(32px, 5vw, 64px);
+line-height: clamp(40px, 6vw, 95px);
+font-weight: 500;
 }
 .vehicleCoveredSubHeading {
-  font-size: clamp(36px, 6vw, 75px);
-  line-height: clamp(50px, 7vw, 95px);
-  font-weight: 600;
+font-size: clamp(36px, 6vw, 75px);
+line-height: clamp(50px, 7vw, 95px);
+font-weight: 600;
 }
 .vehicleImagesSection{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* margin: 3rem 0; */
+display: flex;
+align-items: center;
+justify-content: center;
+/* margin: 3rem 0; */
 }
-.vehicleImages{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 60%;
-  margin-top: 60px;
-  z-index: 0;
-  overflow: visible;
-  /* min-height: 400px; */
+.vehicleImages {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+margin-top: 30px;
+height: 350px;
+z-index: 0;
 }
-.vehicleMainImg{
-  position: absolute;
-  top: 0;
-  transform: translateY(30px);
-  animation: fadeIn 0.5s ease;
-  z-index: 20;
-  overflow: visible;
+
+.vehicleMainImgWrapper {
+position: absolute;
+top: 0;
+animation: slideIn 0.6s ease;
+z-index: 20;
 }
-.vehicleImages :global(div[style*="overflow:hidden"]) {
-  overflow: visible !important;
+
+@keyframes slideIn {
+from {
+  opacity: 0;
+  transform: translateX(-40px);  /* comes from LEFT */
 }
-.vehicleShadow{
-  position: absolute;
-  bottom: 40px;
-  z-index: 1;
+to {
+  opacity: 1;
+  transform: translateX(0);
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
+
+.vehicleMainImg {
+overflow: visible;
+}
+
 .carouselControls{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 2rem;
 }
 .navArrow{
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background-color: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  color: white;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-  padding: 0;
+width: 48px;
+height: 48px;
+border-radius: 50%;
+background-color: transparent;
+border: 2px solid rgba(255, 255, 255, 0.5);
+color: white;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all 0.3s ease;
+padding: 0;
 }
 .navArrow:hover{
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: white;
-  transform: scale(1.1);
+background-color: rgba(255, 255, 255, 0.1);
+border-color: white;
+transform: scale(1.1);
 }
 .navArrow:active{
-  transform: scale(0.95);
+transform: scale(0.95);
 }
 .dotsContainer{
-  display: flex;
-  gap: 1rem;
-  align-items: center;
+display: flex;
+gap: 1rem;
+align-items: center;
 }
 .controlDot{
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.4);
-  border: 2px solid transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  padding: 0;
+width: 16px;
+height: 16px;
+border-radius: 50%;
+background-color: rgba(255, 255, 255, 0.4);
+border: 2px solid transparent;
+cursor: pointer;
+transition: all 0.3s ease;
+padding: 0;
 }
 .controlDot:hover{
-  background-color: rgba(255, 255, 255, 0.6);
-  transform: scale(1.1);
+background-color: rgba(255, 255, 255, 0.6);
+transform: scale(1.1);
 }
 .controlDot:active{
-  background-color: white;
-  border-color: rgba(56, 68, 191, 1);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+background-color: white;
+border-color: rgba(56, 68, 191, 1);
+box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 .coveredDamagesSection{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .coveredDamagesContainer{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .coveredDamagesHeading {
-  font-size: clamp(38px, 6.5vw, 85.4px);
-  line-height: clamp(50px, 7vw, 95.04px);
-  letter-spacing: clamp(-1.5px, -0.35vw, -3.46px);
-  font-weight: 500;
-  width: 100%;
-  text-align: left;
-  margin-bottom: 30px;
+font-size: clamp(38px, 6.5vw, 85.4px);
+line-height: clamp(50px, 7vw, 95.04px);
+letter-spacing: clamp(-1.5px, -0.35vw, -3.46px);
+font-weight: 500;
+width: 100%;
+text-align: left;
+margin-bottom: 30px;
 }
 .damagesSection{
-    display: flex;
-    gap: 50px;
-    margin-top: 30px;
-    width: 100%;
+  display: flex;
+  gap: 50px;
+  margin-top: 30px;
+  width: 100%;
 }
 .damage{
-    border: 1px solid #000000;
-    width: 33.3%;
-    height: 450px;
+  border: 1px solid #000000;
+  width: 33.3%;
+  height: 450px;
 }
 
 .damageTypeHeading{
-    width: 100%;
-    height: 75px;
-    background-color: #000000;
-    color: white;
-    padding-left: 20px;
-    font-size: 24px;
-    line-height: 95px;
-    position: relative;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  height: 75px;
+  background-color: #000000;
+  color: white;
+  padding-left: 20px;
+  font-size: 24px;
+  line-height: 95px;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 .damageTypeImg{
-    position: absolute;
-    top: 20px;
-    right: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 .damageContent{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: 20px;
-    margin-top: 30px;
-    color: #000000;
-    font-size: 24px;
-    line-height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20px;
+  margin-top: 30px;
+  color: #000000;
+  font-size: 24px;
+  line-height: 75px;
 }
 .moreContentImg{
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .photoAPIFeatureSection{
-  display: flex;
-  margin-top: 30px;
-  justify-content: center;
-  align-items: center;
+display: flex;
+margin-top: 30px;
+justify-content: center;
+align-items: center;
 }
 
 .photoAPIFeatureContainer{
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center    
+width: 80%;
+display: flex;
+flex-direction: column;
+justify-content: center    
 }
 
 .blogCaraouselContainer {
-  position: relative;
-  background-color: var(--white);
-  display: flex;
-  width: 90%;
+position: relative;
+background-color: var(--white);
+display: flex;
+width: 90%;
 }
 
 .blogCaraouselContent{
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  transition: transform 10s ease-in-out;
-  gap: 30px;
+display: flex;
+overflow-x: auto;
+scroll-snap-type: x mandatory;
+scroll-behavior: smooth;
+transition: transform 10s ease-in-out;
+gap: 30px;
 }
 
 .blogCaraouselContent::-webkit-scrollbar {
-  display: none;
+display: none;
 }
 .blogCaraouselContent {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+-ms-overflow-style: none;
+scrollbar-width: none;
 }
 
 .blogItem {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 30%;
-  flex: 0 0 30%;
-  overflow: hidden;
-  scroll-snap-align: start;
-  /* border-radius: 3px; */
-  border: 1px solid #2B2B2B;
-  /* border: solid 1px #eee; */
-  text-align: left;
-  transition: box-shadow 0.6s ease-out;
-  background: var(--white);
+display: flex;
+flex-direction: column;
+flex-basis: 30%;
+flex: 0 0 30%;
+overflow: hidden;
+scroll-snap-align: start;
+/* border-radius: 3px; */
+border: 1px solid #2B2B2B;
+/* border: solid 1px #eee; */
+text-align: left;
+transition: box-shadow 0.6s ease-out;
+background: var(--white);
 }
 
 .blogItem:hover {
-  box-shadow: 1px 8px 20px grey;
-  transition: box-shadow 0.6s ease-in;
+box-shadow: 1px 8px 20px grey;
+transition: box-shadow 0.6s ease-in;
 }
 
 .blogContent {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+padding: 20px;
+display: flex;
+flex-direction: column;
+gap: 20px;
 }
 
 .blogImg {
-  position: relative;
-  height: 200px;
-  width: 100%;
+position: relative;
+height: 200px;
+width: 100%;
 }
 
 .blogImg img {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
 }
 
 .blogTag {
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1.5;
-  letter-spacing: 0.24px;
-  color: var(--blue-bg);
-  text-transform: uppercase;
+font-size: 12px;
+font-weight: 600;
+line-height: 1.5;
+letter-spacing: 0.24px;
+color: var(--blue-bg);
+text-transform: uppercase;
 }
 
 .blogTitle {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1.5;
-  letter-spacing: 0.36px;
-  color: var(--black-bg);
+font-size: 18px;
+font-weight: bold;
+line-height: 1.5;
+letter-spacing: 0.36px;
+color: var(--black-bg);
 }
 
 .blogText {
-  font-size: 15px;
-  line-height: 1.6em;
-  letter-spacing: 0.3;
-  color: #313131;
-  /* display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden; */
+font-size: 15px;
+line-height: 1.6em;
+letter-spacing: 0.3;
+color: #313131;
+/* display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden; */
 }
 
 .nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  cursor: pointer;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+z-index: 1;
+cursor: pointer;
 }
 
 .navLeft {
-  left: -5rem; /* adjust as needed based on carousel width */
+left: -5rem; /* adjust as needed based on carousel width */
 }
 
 .navRight {
-  right: -5rem;
+right: -5rem;
 }
-  .faqSectionContainer{
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .faqSection {
-    width: 80%;
-    /* flex: 1; */
-    display: flex;
+.faqSectionContainer{
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.faqSection {
+  width: 80%;
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 4rem; */
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.faqTitleContainer{
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin-left: 20px
+}
+.faqTitleContainer p{
+margin-top: 30px;
+}
+.faqTitle {
+  font-size: clamp(38px, 6.7vw, 86px);
+  line-height: clamp(50px, 7vw, 95px);
+  letter-spacing: clamp(-1.5px, -0.35vw, -3.46px);
+  font-weight: 500;
+  text-align: left;
+}
+.faqSubTitle{
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.questionContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 3em;
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* two equal-width columns */
+  gap: 10px; /* spacing between columns and rows */
+  width: 95%;
+  max-width: 100%;
+  padding: 0 20px;
+  column-gap: 100px;
+}
+.questionIndex{
+  color: rgba(25, 93, 255, 1);
+  font-size: 24px;
+  line-height: 100%;
+  font-weight: 500;
+  /* font-family: Montserrat; */
+
+}
+.allQuestionContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* column-count: 2; */
+  /* align-items: flex-start; */
+  /* width: 900px; */
+  /* gap: 1em; */
+}
+
+.questionModal{
+  width: 100%;
+  height: 140px;
+  padding: 16px 0px 30px 0px;
+  /* background-color: #FAFAFA; */
+  border-bottom: 1px solid #0B2131;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+}
+.openModal{
+  height: auto;
+}
+.question{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  gap: 30px;
+}
+
+.question p{
+  /* font-family: Montserrat; */
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #27272A;
+  width: 100%;
+}
+
+.answer{
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease, opacity 0.3s ease;
+}
+.viewMoreBtn{
+  display: flex;
+  white-space: nowrap;
+  flex-grow: 0;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 20px;
+  width: auto;
+  margin: 0px 30px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  margin-top: 10px;
+  color: black;
+  border: 1px solid black;
+  height: 61px;
+  border-radius: 50px;
+}
+.answer p{
+  /* font-family: Montserrat; */
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #27272A;
+  width: 80%;
+  margin-top: 15px;
+}
+
+.open{
+  max-height: 400px;
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .featured{
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* padding: 4rem; */
-    gap: 50px;
-    margin-bottom: 50px;
-  }
-  .faqTitleContainer{
-    width: 100%;
-    display: flex;
+    padding: 0rem;
     align-items: start;
+    gap: 20px;
+    background: 
+    linear-gradient(to bottom, rgb(34, 43, 144) 0%, rgba(8, 8, 8, 1) 50%);
+    background-blend-mode: overlay;
+    /* width: 100%; */
+  }
+  .featuredContent{
+    width: 100%;
+    align-items: start;
+    padding: 2rem;
+  }
+  .featuredTitle, .coveredDamagesHeading {
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    width: 100%;
+  }
+
+  .featuredText{
+    font-size: 20px;
+    line-height: 33px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    width: 100%;
+  }
+  .featuredVideo{
+    width: 100%;
+  }
+  .featuredVideo video{
+    width: 100%;
+  }
+  .btnContainer{
+    width: 100%;
+    justify-content: center;
+  }
+  .damageDataImg{
+    height: auto;
+  aspect-ratio: auto;
+  min-height: 300px;
+  }
+  .damagesSection{
     flex-direction: column;
-    margin-left: 20px
   }
-  .faqTitleContainer p{
-  margin-top: 30px;
+  .damage{
+    width: 100%;
   }
-  .faqTitle {
-    font-size: clamp(38px, 6.7vw, 86px);
-    line-height: clamp(50px, 7vw, 95px);
-    letter-spacing: clamp(-1.5px, -0.35vw, -3.46px);
-    font-weight: 500;
-    text-align: left;
+  .nav{
+    display: none;
+  }
+  .vehicleCoveredSection{
+    padding: 1rem;
+  }
+  .vehicleCoveredSubSection{
+    width: 95%;
+  }
+  .vehicleCoveredHeading{
+    font-size: 30px;
+  }
+  .vehicleCoveredSubHeading{
+    font-size: 35px;
+  }
+  .vehicleImages{
+    height: 200px;
+  }
+  .photoAPIFeatureSection{
+    width: 100%;
+  }
+  .photoAPIFeatureContainer{
+    width: 90%;
+  }
+  .vehicleSupportedHeading{
+    font-size: 24px;
+    line-height: 37px;
+    letter-spacing: 0px;
+    font-weight: 600;
+  }
+  .blogCaraouselContent{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .blogItem{
+    flex: 0 0 auto;
+    border: none;
+      border-bottom: 9px solid #e6ebfa;
+      padding-bottom: 20px;
+  }
+  .nav{
+    display: none;
+  }
+  .damageDetectionFeaturesContainer{
+    width: 100%;
+  }
+  .damageDetectionFeaturesContent{
+    flex-direction: column;
+  }
+  .damageDetectionCardItem{
+    flex: 0 0 auto;
+    border: none;
+    border-bottom: 9px solid #e6ebfa;
+    padding-bottom: 20px;
+  }
+  .faqSectionContainer{
+    width: 100%;
+    max-width: 100%;
+    margin-top: 40px;
+  }
+  .faqSection{
+    width: 90%;
+  }
+  .faqTitle{
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    width: 80%;
   }
   .faqSubTitle{
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* font-weight: 400; */
   }
   
   .questionContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-    gap: 3em;
+    width: 100%;
+    align-items: center;
   }
-  
-  .faqGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* two equal-width columns */
-    gap: 10px; /* spacing between columns and rows */
-    width: 95%;
-    max-width: 100%;
-    padding: 0 20px;
-    column-gap: 100px;
+  .questionModal{
+    height: 100px;
   }
   .questionIndex{
-    color: rgba(25, 93, 255, 1);
-    font-size: 24px;
-    line-height: 100%;
-    font-weight: 500;
-    /* font-family: Montserrat; */
-  
-  }
-  .allQuestionContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* column-count: 2; */
-    /* align-items: flex-start; */
-    /* width: 900px; */
-    /* gap: 1em; */
-  }
-  
-  .questionModal{
-    width: 100%;
-    height: 140px;
-    padding: 16px 0px 30px 0px;
-    /* background-color: #FAFAFA; */
-    border-bottom: 1px solid #0B2131;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    cursor: pointer;
+    font-size: 20px;
   }
   .openModal{
     height: auto;
   }
-  .question{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px;
-    gap: 30px;
+  .faqGrid{
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    /* padding: 0px 10px; */
   }
-  
   .question p{
-    /* font-family: Montserrat; */
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 100%;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #27272A;
-    width: 100%;
-  }
-  
-  .answer{
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.6s ease, opacity 0.3s ease;
-  }
-  .viewMoreBtn{
-    display: flex;
-    white-space: nowrap;
-    flex-grow: 0;
-    font-size: 15px;
-    font-weight: 600;
-    padding: 14px 20px;
-    width: auto;
-    margin: 0px 30px;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0;
-    margin-top: 10px;
-    color: black;
-    border: 1px solid black;
-    height: 61px;
-    border-radius: 50px;
+    font-size: 16px;
   }
   .answer p{
-    /* font-family: Montserrat; */
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 100%;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #27272A;
-    width: 80%;
-    margin-top: 15px;
+    font-size: 15px;
   }
-  
   .open{
-    max-height: 400px;
-    opacity: 1;
+    padding-bottom: 12px;
   }
-
-  @media (max-width: 1024px) {
-    .featured{
-      flex-direction: column;
-      padding: 0rem;
-      align-items: start;
-      gap: 20px;
-      background: 
-      linear-gradient(to bottom, rgb(34, 43, 144) 0%, rgba(8, 8, 8, 1) 50%);
-      background-blend-mode: overlay;
-      /* width: 100%; */
-    }
-    .featuredContent{
-      width: 100%;
-      align-items: start;
-      padding: 2rem;
-    }
-    .featuredTitle, .coveredDamagesHeading {
-      font-size: 35px;
-      line-height: 45px;
-      letter-spacing: 2px;
-      font-weight: 600;
-      width: 100%;
-    }
-  
-    .featuredText{
-      font-size: 20px;
-      line-height: 33px;
-      font-weight: 400;
-      letter-spacing: 0px;
-      width: 100%;
-    }
-    .featuredVideo{
-      width: 100%;
-    }
-    .featuredVideo video{
-      width: 100%;
-    }
-    .btnContainer{
-      width: 100%;
-      justify-content: center;
-    }
-    .damageDataImg{
-      height: auto;
-    aspect-ratio: auto;
-    min-height: 300px;
-    }
-    .damagesSection{
-      flex-direction: column;
-    }
-    .damage{
-      width: 100%;
-    }
-    .nav{
-      display: none;
-    }
-    .vehicleCoveredSection{
-      padding: 1rem;
-    }
-    .vehicleCoveredSubSection{
-      width: 95%;
-    }
-    .vehicleCoveredHeading{
-      font-size: 30px;
-    }
-    .vehicleCoveredSubHeading{
-      font-size: 35px;
-    }
-    .vehicleMainImg{
-      transform: translateY(10px);
-    }
-    .photoAPIFeatureSection{
-      width: 100%;
-    }
-    .photoAPIFeatureContainer{
-      width: 90%;
-    }
-    .vehicleSupportedHeading{
-      font-size: 24px;
-      line-height: 37px;
-      letter-spacing: 0px;
-      font-weight: 600;
-    }
-    .blogCaraouselContent{
-      flex-direction: column;
-      width: 100%;
-      align-items: center;
-    }
-    .blogItem{
-      flex: 0 0 auto;
-      border: none;
-        border-bottom: 9px solid #e6ebfa;
-        padding-bottom: 20px;
-    }
-    .nav{
-      display: none;
-    }
-    .damageDetectionFeaturesContainer{
-      width: 100%;
-    }
-    .damageDetectionFeaturesContent{
-      flex-direction: column;
-    }
-    .damageDetectionCardItem{
-      flex: 0 0 auto;
-      border: none;
-      border-bottom: 9px solid #e6ebfa;
-      padding-bottom: 20px;
-    }
-    .faqSectionContainer{
-      width: 100%;
-      max-width: 100%;
-      margin-top: 40px;
-    }
-    .faqSection{
-      width: 90%;
-    }
-    .faqTitle{
-      font-size: 30px;
-      line-height: 40px;
-      letter-spacing: 2px;
-      width: 80%;
-    }
-    .faqSubTitle{
-      font-size: 20px;
-      line-height: 30px;
-      /* font-weight: 400; */
-    }
-    
-    .questionContainer{
-      width: 100%;
-      align-items: center;
-    }
-    .questionModal{
-      height: 100px;
-    }
-    .questionIndex{
-      font-size: 20px;
-    }
-    .openModal{
-      height: auto;
-    }
-    .faqGrid{
-      grid-template-columns: 1fr;
-      column-gap: 0;
-      /* padding: 0px 10px; */
-    }
-    .question p{
-      font-size: 16px;
-    }
-    .answer p{
-      font-size: 15px;
-    }
-    .open{
-      padding-bottom: 12px;
-    }
-  }
+}
 
 
