@@ -12,32 +12,39 @@ export default function FraudDetection({ locale }) {
 
   const featuresScrollRef = useRef();
   const [currentIndex, setCurrentIndex] = useState(3);
+  const [animKey, setAnimKey] = useState(0);
   const isPaused = useRef(false);
   const lastTimeRef = useRef(0);
 
+  const triggerAnimation = () => {
+    setAnimKey(prev => prev + 1);
+  };
+  
+  const goNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % vehiclesCovered.length);
+    triggerAnimation();
+  };
+  
+  const goPrev = () => {
+    setCurrentIndex((prev) =>
+      (prev - 1 + vehiclesCovered.length) % vehiclesCovered.length
+    );
+    triggerAnimation();
+  };
 
   useEffect(() => {
-    let frame;
-
-    const tick = (timestamp) => {
-      if (isPaused.current) {
-        lastTimeRef.current = timestamp;   // reset timestamp so no jump happens
-      } else {
-        if (timestamp - lastTimeRef.current >= 2500) {
-          setCurrentIndex((prev) =>
-            prev === vehiclesCovered.length - 1 ? 0 : prev + 1
-          );
-          lastTimeRef.current = timestamp;
-        }
+    let last = performance.now();
+  
+    const animate = (now) => {
+      if (!isPaused.current && now - last > 2400) {
+        goNext();
+        last = now;
       }
-
-      frame = requestAnimationFrame(tick);
+      requestAnimationFrame(animate);
     };
-
-    frame = requestAnimationFrame(tick);
-
-    return () => cancelAnimationFrame(frame);
-  }, [vehiclesCovered.length]);
+  
+    requestAnimationFrame(animate);
+  }, []);
 
 
   const QuestionSection = ({keyIndex, que, ans}) => {
@@ -131,12 +138,13 @@ export default function FraudDetection({ locale }) {
             <h2 className={styles.vehicleCoveredHeading}>Types of vehicles covered</h2>
             <h1 className={styles.vehicleCoveredSubHeading}>{vehiclesCovered[currentIndex].label}</h1>
               <div className={styles.vehicleImages}>
-                <div key={currentIndex} className={styles.vehicleMainImgWrapper} onMouseEnter={() => (isPaused.current = true)} onMouseLeave={() => (isPaused.current = false)}>
+                <div className={styles.vehicleMainImgWrapper} key={animKey}>
                 <Image 
                   src={vehiclesCovered[currentIndex].img} 
                   alt={vehiclesCovered[currentIndex].label}
-                  width={vehiclesCovered[currentIndex].imgWidth}
-                  height={vehiclesCovered[currentIndex].imgHeight}
+                  layout='fill' 
+                  objectFit='contain' 
+                  objectPosition='center'
                   className={styles.vehicleMainImg}
                 />
                 </div>
