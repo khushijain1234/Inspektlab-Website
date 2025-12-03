@@ -118,3 +118,53 @@ export const features = [
         "img": "video-inspection.svg"
     }
 ]
+export const fraudDetectionFeatures = [
+    {
+        title: 'Real time feedback to customers on quality of captured photos/videos',
+        text: 'Flags previously damaged areas to prevent duplicate claims.',
+        img: 'fd-usecase-img1.svg',
+        mainImg: 'Real time feedback customers.svg',
+    },
+    {
+        title: 'Complete Asset Coverage',
+        text: 'Ensures all vehicle sections are captured in photos/videos.',
+        img: 'fd-usecase-img2.svg',
+        mainImg: 'Complete Asset coverage.svg',
+    },
+    {
+        title: 'Metadata Analysis',
+        text: 'Reads GPS, timestamps, and other data to detect fraud.',
+        img: 'fd-usecase-img3.svg',
+        mainImg: 'Metadata Analysis.svg',
+    },
+    {
+        title: 'Sticker Detection',
+        text: 'Identifies stickers used to hide scratches or dents',
+        img: 'fd-usecase-img4.svg',
+        mainImg: 'Sticker Detection.svg',
+    },
+    {
+        title: 'Damage Cause Validation',
+        text: 'Predicts whether damage is from hail, collision, or external impact',
+        img: 'fd-usecase-img5.svg',
+        mainImg: 'Use for damage cause validation.svg',
+    },
+    {
+        title: 'Footstep Counting',
+        text: 'Counts footsteps to prevent multiple vehicles being used for a claim.',
+        img: 'fd-usecase-img6.svg',
+        mainImg: 'Footstep Counting.svg',
+    },
+    {
+        title: 'Video Inspection Compliance',
+        text: 'Flags cases where the vehicle moves out of frame during video capture.',
+        img: 'fd-usecase-img7.svg',
+        mainImg: 'Video Inspection Compliance.svg',
+    },
+    {
+        title: 'Picture-in-picture detection',
+        text: 'Detects cases where someone tries to submit fake images using picture/videos displayed on a screen',
+        img: 'fd-usecase-img8.svg',
+        mainImg: 'Picture-in-picture detection.png',
+    },
+]
