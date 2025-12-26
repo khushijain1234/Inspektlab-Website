@@ -121,7 +121,7 @@ export default function ClaimEstimation({locale}) {
                                 return(
                                     <div className={styles.featureCard} key={idx}>
                                         <Image src={feature.img} alt={feature.title} width={237} height={161} />
-                                        <h4 className={styles.featureCardTitle}>{feature.title}</h4>
+                                        <h3 className={styles.featureCardTitle}>{feature.title}</h3>
                                         <p className={styles.featureCardText}>{feature.text}</p>
                                     </div>
                                 )
@@ -157,7 +157,7 @@ export default function ClaimEstimation({locale}) {
                             {existingSystemIntegrationPoints.map((point,idx)=>{
                                 return(
                                     <div key={idx}>
-                                        <h4>{point.title}</h4>
+                                        <h3>{point.title}</h3>
                                         <div className={styles.subPointsSection}>
                                             {point.subpoints.map((subpoint,i)=>{
                                                 return(

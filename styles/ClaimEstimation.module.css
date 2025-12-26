@@ -77,7 +77,8 @@
   }
   .inspectionResultsCard{
     width: 170px;
-    height: 160px;
+    aspect-ratio: 17/16;
+    height: auto;
     border-radius: 12px;
     background-color: white;
     color: black;
@@ -245,7 +246,7 @@
     color: white;
     padding: 10rem 0rem;
 }
-.pointsSection h4{
+.pointsSection h3{
     font-size: 32px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -742,7 +743,7 @@
         width: 85%;
         gap: 14px;
     }
-    .pointsSection h4{
+    .pointsSection h3{
         font-size: 24px;
     }
     .subPointsSection{
