@@ -5,7 +5,7 @@ import language from '../languages/claim-estimation.json'
 
 import { questions } from '../const/faq'
 import { estimationList, estimationList2, reviewList, pointersList,featuresList,claimLists,existingSystemIntegrationPoints,stats, contactSection } from '../const/claim-estimation'
-import { photoAPIFeatures } from '../const/photo-quality'
+import { photoAPIFeatures } from '../const/photo-inspection'
 import { useState, useRef } from 'react'
 
 export default function ClaimEstimation({locale}) {
