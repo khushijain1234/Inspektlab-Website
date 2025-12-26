@@ -179,7 +179,7 @@
     /* justify-content: space-around; */
 }
 .featureCard{
-    width: 305px;
+    width: 25%;
     height: 350px;
     border-radius: 16px;
     border: 1px solid #1E6CFF;
