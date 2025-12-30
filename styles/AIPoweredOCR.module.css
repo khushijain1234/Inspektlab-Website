@@ -1,0 +1,973 @@
+.container {
+    display: flex;
+    margin-top: 70px;
+  }
+  
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .featured {
+    padding: 5rem;
+    /* background: radial-gradient(ellipse at bottom right in hsl shorter hue,
+      rgba(58, 68, 187, 1) 0%,
+      rgba(63, 76, 224, 1) 20%,
+      rgba(42, 41, 70, 1) 40%,
+      rgba(34, 32, 35, 1) 50%,
+      rgba(34, 32, 35, 1) 100%
+    ); */
+    background-blend-mode: overlay;
+    color: white;
+    display: flex;
+    background-color: rgba(34, 32, 35, 1);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .grid {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .fraudDetectionBg {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    margin-top: 8%;
+  }
+  .fraudDetectionBg img{
+    width: 100%;
+    height: 100%;
+  }
+  .featuredTitle {
+    font-size: 62px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-weight: 700;
+    padding: 20px 0;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .featuredText {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0%;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .mainBtn, .requestDemoBtn {
+    width: 371px;
+    height: 56px;
+    border-radius: 100px;
+    background-color: #195DFF;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    gap: 10px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    margin-top: 4rem;
+  }
+  
+  .mainBtn:hover {
+    opacity: 0.9;
+  }
+  
+  /* How It Helps Section */
+  .howItHelpsSection {
+    background: white;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .howItHelpsContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sectionTitle {
+    font-size: 62px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 50px;
+  }
+  .requestDemoBtn{
+    width: 270px; 
+    height: 61px;
+    margin-top: 4rem;
+  }
+  
+  .howItHelpsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+  
+  .helpCard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0px;
+    /* background: white; */
+    border-radius: 12px;
+  }
+  
+  .helpIcon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .helpText {
+    font-size: 18px;
+    line-height: 1.6;
+    /* color: #313131; */
+  }
+  
+  /* Capabilities Section */
+  .claimEstimationFeaturesSection{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.claimEstimationFeaturesContent{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.featureSectionText{
+  text-align: left;
+  width: 100%;
+}
+
+.featuresContainer{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+}
+.featureCard{
+    width: 30%;
+    height: 382px;
+    border-radius: 16px;
+    border: 1px solid #4353FF;
+    box-shadow: 0px 4px 4px 0px #0000000D;
+    /* padding: 16px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.featureCard img{
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.featureCardContent{
+  padding: 16px;
+}
+.featureCardTitle{
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.featureCardText{
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0%;
+}
+  .fraudDetectionFeaturesSection {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 70px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fraudDetectionFeatures {
+    width: 80%;
+  }
+  
+  .fraudDetectionFeaturesTitle {
+    font-size: 85.4px;
+    font-weight: 500;
+    line-height: 95.04px;
+    letter-spacing: -3.46px;
+  }
+  
+  .fraudDetectionFeatureContainer {
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+  }
+  
+  .fraudDetectionFeatureList {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 20px;
+  }
+  
+  .productFeature {
+    display: flex;
+    cursor: pointer;
+    padding: 25px;
+    gap: 10%;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.38);
+  }
+  
+  .activeDiv {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  
+  .productFeatureContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+  }
+  
+  .productFeatureTitleContainer {
+    display: flex;
+    gap: 20%;
+  }
+  
+  .innerImg {
+    display: none;
+  }
+  
+  .productFeatureTitle {
+    width: 70%;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1);
+  }
+  
+  .productFeatureTextWrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease, opacity 0.3s ease;
+  }
+  
+  .productFeatureText {
+    width: 85%;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .activeTitle {
+    color: rgba(25, 93, 255, 1);
+  }
+  
+  .imgSection {
+    flex: 1;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  
+  /* Use Cases Grid Section */
+  .useCasesGridSection {
+    background: white;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .useCasesGridContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .useCasesSubtitle {
+    font-size: 24px;
+    line-height: 36px;
+    color: #313131;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .useCasesGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  
+  .useCaseCard {
+    background: #F5F5F5;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .useCaseImg {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .useCaseImg img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .useCaseTitle {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #000;
+  }
+  
+  /* Stats Section */
+  .statsSection {
+    /* background: linear-gradient(180deg, 
+      rgba(2, 3, 8, 1) 0%,
+      rgba(18, 22, 68, 1) 40%,
+      rgba(37, 45, 140, 1) 100%); */
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .statsContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .statsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    width: 100%;
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+  .statHeading{
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-weight: 600;
+  }
+  .statItem {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .statValue {
+    font-size: 88px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+  
+  .statLabel {
+    font-size: 20px;
+    line-height: 1.4;
+    font-size: 500;
+    width: 80%;
+    font-weight: lighter;
+  }
+  
+  .statsTitle {
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 40px;
+  }
+
+  .contactSection{
+    margin-top: 100px;
+    margin-bottom: 70px;
+    display: flex;
+    gap: 50px;
+  }
+  .contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .contacts p{
+    font-size: 18px;
+    line-height: 26px;
+  }
+  
+  /* Related Features Section */
+  .photoAPIFeatureSection{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .photoAPIFeatureContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center    
+  }
+  .fraudDetectionFeaturesTitle{
+    font-size: 85.4px;
+    font-weight: 500;
+    line-height: 95.04px;
+    letter-spacing: -3.46px;
+  }
+  
+  .blogCaraouselContainer {
+    position: relative;
+    background-color: var(--white);
+    display: flex;
+    width: 90%;
+    margin-top: 50px;
+  }
+  
+  .blogCaraouselContent{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    transition: transform 10s ease-in-out;
+    gap: 30px;
+  }
+  
+  .blogCaraouselContent::-webkit-scrollbar {
+    display: none;
+  }
+  .blogCaraouselContent {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .blogItem {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    flex: 0 0 30%;
+    overflow: hidden;
+    scroll-snap-align: start;
+    /* border-radius: 3px; */
+    border: 1px solid #2B2B2B;
+    /* border: solid 1px #eee; */
+    text-align: left;
+    transition: box-shadow 0.6s ease-out;
+    background: var(--white);
+  }
+  
+  .blogItem:hover {
+    box-shadow: 1px 8px 20px grey;
+    transition: box-shadow 0.6s ease-in;
+  }
+  
+  .blogContent {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .blogImg {
+    position: relative;
+    height: 200px;
+    width: 100%;
+  }
+  
+  .blogImg img {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  
+  .blogTag {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.24px;
+    color: var(--blue-bg);
+    text-transform: uppercase;
+  }
+  
+  .blogTitle {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0.36px;
+    color: var(--black-bg);
+  }
+  
+  .blogText {
+    font-size: 15px;
+    line-height: 1.6em;
+    letter-spacing: 0.3;
+    color: #313131;
+    /* display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden; */
+  }
+  .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .navLeft {
+    left: -5rem; /* adjust as needed based on carousel width */
+  }
+  
+  .navRight {
+    right: -5rem;
+  }  
+
+  /* FAQ Section */
+  .faqSectionContainer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .faqSection {
+    width: 80%;
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 4rem; */
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+  .faqTitleContainer{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-left: 20px
+  }
+  .faqTitleContainer p{
+  margin-top: 30px;
+  }
+  .faqTitle{
+    font-size: 86px;
+    line-height: 95px;
+    letter-spacing: -3.46px;
+    font-weight: 500;
+    text-align: left;
+  }
+  .faqSubTitle{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+  }
+  
+  .questionContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 3em;
+  }
+  
+  .faqGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* two equal-width columns */
+    gap: 10px; /* spacing between columns and rows */
+    width: 95%;
+    max-width: 100%;
+    padding: 0 20px;
+    column-gap: 100px;
+  }
+  .questionIndex{
+    color: rgba(25, 93, 255, 1);
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 500;
+    /* font-family: Montserrat; */
+  
+  }
+  .allQuestionContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* column-count: 2; */
+    /* align-items: flex-start; */
+    /* width: 900px; */
+    /* gap: 1em; */
+  }
+  
+  .questionModal{
+    width: 100%;
+    height: 140px;
+    padding: 16px 0px 30px 0px;
+    /* background-color: #FAFAFA; */
+    border-bottom: 1px solid #0B2131;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+  }
+  .openModal{
+    height: auto;
+  }
+  .question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    gap: 30px;
+  }
+  
+  .question p{
+    /* font-family: Montserrat; */
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 100%;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #27272A;
+    width: 100%;
+  }
+  
+  .answer{
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease, opacity 0.3s ease;
+  }
+  .viewMoreBtn{
+    display: flex;
+    white-space: nowrap;
+    flex-grow: 0;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 14px 20px;
+    width: auto;
+    margin: 0px 30px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 10px;
+    color: black;
+    border: 1px solid black;
+    height: 61px;
+    border-radius: 50px;
+  }
+  .answer p{
+    /* font-family: Montserrat; */
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #27272A;
+    width: 80%;
+    margin-top: 15px;
+  }
+  
+  .open{
+    max-height: 400px;
+    opacity: 1;
+  }
+  .btnBlue,
+  .btnTransparent {
+    display: flex;
+    height: 46px;
+    white-space: nowrap;
+    flex-grow: 0;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 14px 20px;
+    width: auto;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btnBlue {
+    margin-left: 0;
+    color: var(--white);
+    border: solid 1px var(--blue-bg);
+    background-color: var(--blue-bg);
+  }
+  
+  .btnTransparent {
+    border: solid 1px var(--white);
+  }
+  
+  .btnBlue:hover,
+  .btnTransparent:hover {
+    opacity: 0.9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .grid {
+      width: 100%;
+      gap: 0.2rem;
+    }
+  
+    .featured {
+      padding: 2rem 1rem;
+      flex-direction: column;
+    }
+  
+    .fraudDetectionBg {
+      width: 100%;
+      height: 250px;
+    }
+  
+    .featuredTitle {
+      font-size: 36px;
+      line-height: 44px;
+      letter-spacing: 0px;
+      width: 100%;
+    }
+  
+    .featuredText {
+      font-size: 20px;
+      line-height: 30px;
+      width: 100%;
+    }
+  
+    .mainBtn {
+      margin-bottom: 30px;
+    }
+  
+    .howItHelpsContainer {
+      width: 95%;
+    }
+  
+    .sectionTitle {
+      font-size: 30px;
+      line-height: 46px;
+      letter-spacing: 0px;
+      margin-bottom: 0px;
+    }
+  
+    .howItHelpsGrid {
+      grid-template-columns: 1fr;
+      gap: 0px;
+    }
+    .helpCard{
+      flex-direction: row;
+    }
+    .photoAPIFeatureSection{
+      width: 100%;
+    }
+    .photoAPIFeatureContainer{
+      width: 90%;
+    }
+    .fraudDetectionFeaturesTitle{
+      font-size: 30px;
+      line-height: 46px;
+      letter-spacing: 0px;
+    }
+    .blogCaraouselContent{
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+    .blogItem{
+      flex: 0 0 auto;
+      border: none;
+        border-bottom: 9px solid #e6ebfa;
+        padding-bottom: 20px;
+    }
+
+    .nav{
+      display: none;
+    }
+  
+    .fraudDetectionFeatures {
+      width: 90%;
+    }
+  
+    .fraudDetectionFeaturesTitle {
+      font-size: 30px;
+      line-height: 46px;
+      letter-spacing: 0px;
+    }
+  
+    .imgSection {
+      display: none;
+    }
+  
+    .fraudDetectionFeatureList {
+      width: 100%;
+    }
+  
+    .productFeature {
+      display: inline;
+      gap: 5%;
+      padding: 10px;
+    }
+    .claimEstimationFeaturesContent{
+      width: 90%;
+    }
+    .featureCard{
+      width: 100%;
+    }
+    .productFeatureTitleContainer {
+      gap: 5%;
+    }
+  
+    .productFeatureContent {
+      width: 100%;
+    }
+  
+    .productFeatureTitle {
+      width: 85%;
+      font-size: 18px;
+    }
+  
+    .innerImg {
+      display: inline;
+    }
+  
+    .useCasesGridContainer {
+      width: 95%;
+    }
+  
+    .useCasesGrid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    .statsContainer{
+      width: 90%;
+    }
+    .statsGrid{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 20px;
+    }
+    .statItem{
+      gap: 20px;
+    }
+    .statValue{
+      font-size: 44px;
+      font-weight: 600;
+    }
+    .statLabel{
+      width: 100%;
+      font-size: 18px;
+    }
+    .statsTitle{
+      font-size: 24px;
+    }
+    .contactSection{
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .faqSectionContainer{
+      width: 100%;
+      max-width: 100%;
+      margin-top: 0px;
+    }
+    .faqSection{
+      width: 90%;
+    }
+    .faqTitle{
+      font-size: 26px;
+      line-height: 40px;
+      letter-spacing: 2px;
+      width: 80%;
+    }
+    .faqSubTitle{
+      font-size: 20px;
+      line-height: 30px;
+      /* font-weight: 400; */
+    }
+    
+    .questionContainer{
+      width: 100%;
+      align-items: center;
+    }
+    .questionModal{
+      height: 100px;
+    }
+    .questionIndex{
+      font-size: 20px;
+    }
+    .openModal{
+      height: auto;
+    }
+    .faqGrid{
+      grid-template-columns: 1fr;
+      column-gap: 0;
+      /* padding: 0px 10px; */
+    }
+    .question p{
+      font-size: 16px;
+    }
+    .answer p{
+      font-size: 15px;
+    }
+    .open{
+      padding-bottom: 12px;
+    }
+  
+    .btnBlue,
+    .btnTransparent {
+      flex: 1;
+      margin-left: 10px;
+    }
+  
+    
+  }

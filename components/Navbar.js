@@ -65,6 +65,12 @@ const Navbar = ({ locale }) => {
             en: 'Vehicle Damage Scanners',
           },
           link: '/vehicle-damage-scanners'
+        },
+        {
+          name: {
+            en: 'AI powered OCR',
+          },
+          link: '/ai-powered-ocr'
         }
       ],
     },

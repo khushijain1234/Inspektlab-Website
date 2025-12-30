@@ -695,13 +695,13 @@ export const questions = {
                 Q: "Why should you choose Inspektlabs vehicle scanners?",
                 A: ["1. AI-Powered Damage Detection",
                     "2. Flexible hardware formats- Pillars, Box360, WallScan",
-                    "3. Plug-and-play setup (especially for Inspekt Pillars)",
+                    "3. Plug-and-play setup",
                     "4. Compatible with passenger and commercial vehicles",
                     "5. Cloud-connected, API-ready, and supports real-time scanning"]
             },
             {
                 Q: "How much do the Inspektlabs vehicle scanners cost?",
-                A: ["Pricing varies based on configuration and camera setup (2 MP to 8 MP), number of cameras, and deployment region.", 
+                A: ["Pricing varies based on configuration and camera setup, number of cameras, and deployment region.", 
                     "Please contact our team for a customized quote."]
             }
         ],
@@ -737,5 +737,33 @@ export const questions = {
                 A: ["The Photo Quality API gives instant feedback on inspection photos, checking clarity, framing, and lighting to ensure only usable images are captured. It works within your own app and responds in seconds, allowing users to quickly retake photos if needed."]
             },
         ],
+    },
+    "Vehicle OCR": {
+        "en": [
+            {
+                Q: "What is AI vehicle inspection OCR?",
+                A: ["AI vehicle inspection OCR (Optical Character Recognition) automatically reads VIN numbers, odometer readings, and license plates from vehicle photos using computer vision. Inspektlabs' AI car inspection technology extracts text instantly with 95%+ accuracy, eliminating manual data entry and reducing errors in insurance, rental, fleet, and sales operations."]
+            },
+            {
+                Q: "How accurate is AI car inspection for reading VINs and odometers?",
+                A: ["AI car inspection OCR achieves up to 95% accuracy in reading VINs, odometer displays, and license plates from smartphone photos. The system validates VIN format automatically, handles various lighting conditions and angles, and flags uncertain readings for manual verification, ensuring reliable text extraction across millions of vehicle inspections."]
+            },
+            {
+                Q: "Can AI vehicle inspection detect both damage and read text?",
+                A: ["Yes. Our AI vehicle inspection platform combines OCR text reading with damage detection in a single workflow. One photo capture extracts VIN, odometer, and license plate data while simultaneously detecting damage across 163 vehicle parts, providing complete automated vehicle assessment in seconds."]
+            },
+            {
+                Q: "What vehicle information can AI car inspection OCR extract?",
+                A: ["AI car inspection OCR automatically reads VIN (from dashboard, doorframe, windshield), odometer/mileage (digital and analog displays), license plate numbers, registration document text, and dashboard indicator information. The system processes text from photos instantly, populating inspection records without manual typing."]
+            },
+            {
+                Q: "Does OCR work with both smartphone and fixed camera inspections?",
+                A: ["Yes. AI vehicle inspection OCR works with smartphone-captured photos through our mobile app and with fixed camera installations at depot locations. Both methods deliver instant text extraction with up to 95% accuracy, integrating seamlessly with damage detection for comprehensive automated vehicle inspections."]
+            },
+            {
+                Q: "How does AI vehicle inspection OCR prevent fraud?",
+                A: ["AI car inspection OCR validates VIN format automatically, flags mileage discrepancies when compared to previous inspections, detects tampered or altered odometer displays, and verifies vehicle identity matches inspection records, preventing odometer fraud, VIN cloning, and vehicle switching scams in insurance and rental operations."]
+            }
+        ]
     }
 }
