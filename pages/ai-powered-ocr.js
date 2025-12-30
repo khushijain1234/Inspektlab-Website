@@ -3,7 +3,7 @@ import styles from '../styles/AIPoweredOCR.module.css'
 
 import { howItHelpsFeatures, stats, featuresList, contactSection } from '../const/ai-powered-ocr'
 import { questions } from '../const/faq'
-import { photoAPIFeatures } from '../const/photo-quality'
+import { photoAPIFeatures } from '../const/photo-inspection'
 import { useRef, useState } from 'react'
 
 export default function AIPoweredOCR({locale}) {
