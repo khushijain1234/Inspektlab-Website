@@ -1,36 +1,60 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import SEO from '../components/SEO'
 import styles from '../styles/PhotoVideoCapture.module.css'
 import language from '../languages/photo-video-capture.json'
 import { questions } from '../const/faq'
+import { photoAPIFeatures } from '../const/photo-inspection'
+import { stats, contactSection } from '../const/ai-powered-ocr'
+import { featuresList, smartPhoneFeatures, howItWorksHeadings, howItWorksPoints } from '../const/photo-video-capture'
 
 
 export default function PhotoVideoCapture({locale}) {
 
-    const [mobile, setMobile] = useState(false)
+    const featuresScrollRef = useRef(null);
 
-    const QuestionSection = ({que, ans}) => {
-        const [isOpen, setIsOpen] = useState(false)
-        
-        return(
-            <div className={styles.questionModal} onClick={()=>setIsOpen(!isOpen)}>
-                <div className={styles.question}>
-                    <p>{que}</p>
-                    <Image src="/img/downArrow.png" alt="FAQ" width={12} height={6} objectFit='contain'/>
-                </div>
-                <div className={`${styles.answer} ${isOpen ? styles.open : ""}`}>
-                    {ans.map((item, index)=><p key={index}>{item}</p>)}
-                </div>
+    const QuestionSection = ({ keyIndex, que, ans }) => {
+        const [isOpen, setIsOpen] = useState(false);
+    
+        return (
+          <div
+            className={`${styles.questionModal} ${isOpen ? styles.openModal : ""}`}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <p className={styles.questionIndex}>
+              {String(keyIndex + 1).padStart(2, "0")}
+            </p>
+            <div className={styles.question}>
+              <p>{que}</p>
+              <Image
+                src={isOpen ? "/img/shrink-icon.svg" : "/img/expand-icon.svg"}
+                alt="FAQ"
+                width={36}
+                height={36}
+                objectFit="contain"
+              />
             </div>
-        )
-    }
+            <div className={`${styles.answer} ${isOpen ? styles.open : ""}`}>
+              {ans.map((item, index) => (
+                <p key={index}>{item}</p>
+              ))}
+            </div>
+          </div>
+        );
+      };
 
-    useEffect(() =>  {
-        setMobile(window.innerWidth < 1025)
-        window.addEventListener('resize', () => setMobile(window.innerWidth < 1025))
-        return () => window.removeEventListener('resize', () => setMobile(window.innerWidth < 1025))
-    }, [])
+    const scrollFeatures = (direction) => {
+        const container = featuresScrollRef.current;
+        const cardWidth =
+          container.querySelector(`.${styles.blogItem}`).offsetWidth + 20;
+    
+        if (direction === "left") {
+          container.scrollBy({ left: -cardWidth, behavior: "smooth" });
+        } else {
+          container.scrollBy({ left: cardWidth, behavior: "smooth" });
+        }
+      };
+
 
     return (
         <div className={styles.container}>
@@ -49,74 +73,210 @@ export default function PhotoVideoCapture({locale}) {
 
                 {/* Featured Section */}
                 <section className={styles.featured}>
-                    <Image src="/img/photo-video-capture.svg" alt="Photo & Video Capture" width={100} height={100} />
-                    <h1 className={styles.featuredTitle}>{language["Photo & Video Capture App for Vehicle Inspection"][locale]}</h1>
-                    <p className={styles.featuredText}>{language["Browser and native apps for guided photo/video capture"][locale]}</p>
-                    <a href="#main" className={styles.actionBtn}>{language["Here is how it works"][locale]} &nbsp;&nbsp;<i className="fas fa-chevron-down"></i></a>
+                <div className={styles.grid}>
+                    <h1 className={styles.featuredTitle}>
+                    Automate Vehicle Inspections using your smartphone
+                    </h1>
+                    <p className={styles.featuredText}>
+                        Record pictures/videos of a vehicle with your smartphone camera and get a detailed condition report within seconds
+                    </p>
+                    <div
+                            className={styles.mainBtn}
+                            onClick={() => (window.location.href = '/contact-us')}
+                        >
+                            Request a Demo
+                            <Image src='/img/call.png' alt="Call" width={24} height={24} className={styles.callImg}/>
+                        </div>
+                </div>
+
+                <div className={styles.fraudDetectionBg}>
+                    <Image
+                    src="/img/photo video capture.png"
+                    alt="Vehicle OCR"
+                    layout="fill"
+                    objectFit="contain"
+                    objectPosition="center"
+                    />
+                </div>
                 </section>
 
-                {/* Features Section */}
-                <section id="main" className={styles.features}>
-                    <div className={styles.mainFeature}>
-                        <Image src="/img/browser-based.svg" alt="Browser Based" width={300} height={300} />
-                        <h2 className={styles.featureTitle}>{language["Inspektlabs offers browser"][locale]}</h2>
-                        <p className={styles.featureText}>{language["The process does not require any app"][locale]}<br/>{language["Here is how it works"][locale]}:</p>
-                    </div>
-
-                    <div className={styles.stepsContainer}>
-                        
-                        {/* Step 1 */}
-                        <div className={styles.stepImage}>
-                            <Image src="/img/get-secure-link.png" alt="Claim Assessment" layout="fill" objectFit="contain" />
+                {/* Capabilities Section */}
+                <section className={styles.claimEstimationFeaturesSection}>
+                    <div className={styles.claimEstimationFeaturesContent}>
+                        <p className={styles.featureSectionText}>Capabilities</p>
+                        <h2 className={styles.featureSectionTitle}>Plug and Play Vehicle Inspection Solution for your smartphone</h2>
+                        <div className={styles.featuresContainer}>
+                            {featuresList.map((feature,idx)=>{
+                                return(
+                                    <div className={styles.featureCard} key={idx}>
+                                        <Image src={feature.img} alt={feature.title} width={237} height={211} />
+                                        <div className={styles.featureCardContent}>
+                                            <h3 className={styles.featureCardTitle}>{feature.title}</h3>
+                                            <p className={styles.featureCardText}>{feature.text}</p>
+                                        </div>
+                                    </div>
+                                )
+                            })}
                         </div>
-                        <div className={styles.stepText}>
-                            <span>01</span>
-                            <h3>{language["Get Secure Link to Claim Assesment"][locale]}</h3>
-                            <p>{language["SMS"][locale]}</p>
-                        </div>
-
-                        {/* Step 2 */}
-                        { mobile && <div className={styles.stepImage}>
-                            <Image src="/img/capture-photo-video.png" alt="Capture Photo Video" layout="fill" objectFit="contain" />
-                        </div> }
-                        <div className={styles.stepText}>
-                            <span>02</span>
-                            <h3>{language["Capture Photos"][locale]}</h3>
-                            <p>{language["On opening the link"][locale]}</p>
-                        </div>
-                        { !mobile && <div className={styles.stepImage}>
-                            <Image src="/img/capture-photo-video.png" alt="Capture Photo Video" layout="fill" objectFit="contain" />
-                        </div> }
-                        
-                        {/* Step 3 */}
-                        <div className={styles.stepImage}>
-                            <Image src="/img/footage-analyzed-through-ai.png" alt="Footage Analyzed through AI" layout="fill" objectFit="contain" />
-                        </div>
-                        <div className={styles.stepText}>
-                            <span>03</span>
-                            <h3>{language["Footage is analyzed through AI Inspection"][locale]}</h3>
-                            <p>{language["The footage is then analyzed"][locale]}</p>
-                        </div>
-
+                    </div>                
+                </section>
+                <section className={styles.allFeaturesSection}>
+                    <div className={styles.featuresImage}>
+                    <Image
+                        src="/img/How-it-works.png"
+                        alt="How it works"
+                        layout="fill"
+                        objectFit="contain"
+                        objectPosition="center"
+                        className={styles.howItWorksImg}
+                    />
                     </div>
                 </section>
+                <section className={styles.allFeaturesMobileSection}>
+                    <div className={styles.allFeaturesMobileSectionContent}>
+                        <h2>How it works</h2>
+                        <p>AI- powered claim assessment automation generates instant estimates in seconds, eliminating manual calculations and reducing claim costs by 30% - 40%</p>
+                        <div className={styles.featureHeadings}>
+                            {howItWorksHeadings.map((data,idx)=>
+                            <div className={styles.featureHeading} key={idx}>{data.text}</div>
+                            )}
+                        </div>
+                        <div className={styles.downArrowImg}>
+                            <Image src='/img/down-arrow.png' width={30} height={100} alt="down Arrow" />
+                        </div>
+                        <div className={styles.howItWorksPointsContainer}>
+                            {howItWorksPoints.map((data,idx) =>{
+                                return (
+                                    <div key={idx} className={styles.howItWorksPoints}>
+                                        <Image src={data.img} alt={data.text} width={24} height={24} />
+                                        <p>{data.text}</p>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
+                </section>
+                <section className={styles.smartPhoneFeaturesSection}>
+                    <div className={styles.smartPhoneFeaturesContent}>
+                        <h2 className={styles.smartPhoneFeatureSectionTitle}>Why choose smartphone-powered inspection?</h2>
+                        <div className={styles.smartPhoneFeaturesContainer}>
+                            {
+                                smartPhoneFeatures.map((feature)=>{
+                                    return(
+                                        <div className={styles.features}>
+                                            <Image src={feature.img} alt={feature.text} width={58} height={48} />
+                                            <p>{feature.text}</p>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
+                </section>
+
+                <section className={styles.photoAPIFeatureSection}>
+                    <div className={styles.photoAPIFeatureContainer}>
+                        <h2 className={styles.fraudDetectionFeaturesTitle}>Also Check Out</h2>
+                        <div className={styles.blogCaraouselContainer}>
+                        <div className={`${styles.nav} ${styles.navLeft}`}>
+                            <Image
+                            src={"/img/nav-left.svg"}
+                            width={50}
+                            height={50}
+                            alt="nav-left"
+                            onClick={() => scrollFeatures("left")}
+                            />
+                        </div>
+                        <div
+                            className={styles.blogCaraouselContent}
+                            ref={featuresScrollRef}
+                        >
+                            {photoAPIFeatures.map((post) => (
+                            <div className={styles.blogItem} key={post.id}>
+                                <div className={styles.blogImg}>
+                                <Image
+                                    src={post.img}
+                                    layout="fill"
+                                    objectFit="cover"
+                                    objectPosition="center"
+                                    alt={post.title}
+                                />
+                                </div>
+                                <div className={styles.blogContent}>
+                                <p className={styles.blogTitle}>{post.title}</p>
+                                <p className={styles.blogText}>{post.text}</p>
+                                </div>
+                            </div>
+                            ))}
+                        </div>
+                        <div className={`${styles.nav} ${styles.navRight}`}>
+                            <Image
+                            src={"/img/nav-right.svg"}
+                            width={50}
+                            height={50}
+                            alt="nav-right"
+                            onClick={() => scrollFeatures("right")}
+                            />
+                        </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className={styles.statsSection}>
+                    <div className={styles.statsContainer}>
+                        <p className={styles.statHeading}>Trusted by Leading Insurers Worldwide</p>
+                        <p className={styles.statLabel}>We provide the best solutions and assisstance for cars</p>
+                        <div className={styles.statsGrid}>
+                        {stats.map((stat, index) => (
+                            <div key={index} className={styles.statItem}>
+                            <h3 className={styles.statValue}>{stat.value}</h3>
+                            <p className={styles.statLabel}>{stat.label}</p>
+                            </div>
+                        ))}
+                        </div>
+
+                        <h2 className={styles.statsTitle}>
+                        Ready to Reduce Claim Costs and Eliminate Frauds?
+                        </h2>
+
+                        <div className={styles.requestDemoBtn} onClick={() => (window.location.href = '/contact-us')}>
+                            Request a Demo
+                            <Image src='/img/demand video.png' alt="Call" width={24} height={24} className={styles.callImg}/>
+                        </div>
+                        <div className={styles.contactSection}>
+                            {contactSection.map((item,idx)=>(
+                                <div className={styles.contacts} key={idx}>
+                                    <Image src={item.img} alt={item.label} width={44} height={44} />
+                                    <p>{item.label}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
                 {/* FAQ Section */}
-                <section className={styles.faqSection}>
-                    <Image src="/img/faq-icon.svg" alt="FAQ" width={100} height={100} objectFit='contain'/>
-                    <h1 className={styles.mainHeading}>{language["Frequently Asked Questions"][locale]}</h1>
+                <section className={styles.faqSectionContainer}>
+                <div className={styles.faqSection}>
+                    <div className={styles.faqTitleContainer}>
+                    <h2 className={styles.faqTitle}>Commonly asked questions</h2>
+                    </div>
                     <div className={styles.questionContainer}>
-                        <div className={styles.allQuestionContainer}>
-                            {questions["Photo and Video Capture"][locale].map((item, index)=><QuestionSection key={index} que={item.Q} ans={item.A}/>)}
-                        </div>
+                    <div className={styles.faqGrid}>
+                        {questions["Photo and Video Capture"][locale].map((item, index) => (
+                        <QuestionSection keyIndex={index} que={item.Q} ans={item.A} />
+                        ))}
+                    </div>
                     </div>
                     <div
-                        className={styles.btnBlue}
-                        style={{width: "100px"}}
-                        onClick={() => (window.location.href = '/faq')}
+                    className={styles.viewMoreBtn}
+                    style={{ width: "200px" }}
+                    onClick={() => (window.location.href = "/faq")}
                     >
-                        {language['Read More'][locale]}
+                    View More
                     </div>
+                </div>
                 </section>
+
             </main>
         </div>
     );
