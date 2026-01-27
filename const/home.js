@@ -74,24 +74,25 @@ export const companies=[
 ];
 export const productFeatures = [
   {
-    title: 'Assess Vehicle Damage within seconds',
+    title: 'Generate Inspection Reports within Seconds',
     text: 'Our Proprietary AI is trained to detect 21 types of damages on all vehicle types and generate a detailed report in just a few seconds',
     img: 'vehicle-damage.svg',
     mainImg: 'Assess-vehicle-damage-within-seconds.svg',
     link: '/damage-detection'
   },
   {
-    title: 'Real time fraud detection',
+    title: 'Real-time fraud detection',
     text: 'Avoid real time fraud during vehicle inspections with Inspektlab\'s Real time Fraud Detection',
     img: 'real-time-fraud.svg',
     mainImg: 'Real time fraud detection.svg',
     link: '/fraud-detection'
   },
   {
-    title: "Analyze Your vehicle's image quality",
+    title: "Analyse your vehicle's image quality",
     text: "Get a detailed report about the quality of your vehicle's images in less than 2 seconds with real time improvement feedback",
     img: 'vehicle-quality.svg',
     mainImg: "Analyze Your vehicle’s image quality.svg",
+    link: '/photo-quality'
   },
   {
     title: 'Automate Inspections with Fixed Cameras',
@@ -101,14 +102,14 @@ export const productFeatures = [
     link: '/vehicle-damage-scanners'
   },
   {
-    title: 'Generate Claim Estimates in seconds',
+    title: 'Claim Estimates, calculated in seconds',
     text: 'We detect damages, take repair vs replace decisions on car parts and integrate with incredible sources of part and labour costs to estimate $ claim value for vehicles',
     img: 'fixed-cameras.svg',
     mainImg: 'Generate Claim Estimates in seconds.svg',
     link: '/claim-estimation'
   },
   {
-    title: 'Auto-Scan important information',
+    title: 'Auto-scan important information',
     text: 'Automatically capture critical information like odometer reading, VIN, License plate number and more',
     img: 'claim-estimates.svg',
     mainImg: 'Auto-scan-important-information.svg',
@@ -118,23 +119,23 @@ export const productFeatures = [
 export const usersCard = [
  {
   cardImg: 'Insurers.svg',
-  userType: 'Insurers',
-  text: 'Run remote inspection and generate detailed assessment reports with $ estimate on a range of vehicles'
+  userType: 'Insurance',
+  text: 'Automate claims with instant damage assessment'
  },
  {
   cardImg: 'fleetmanagement.svg',
   userType: 'Fleet Management',
-  text: 'Automate inspection with fixed camera/smartphone inspection to track of the before vs after condition of your vehicles'
+  text: 'Track vehicle condition before/after trips'
  },
  {
   cardImg: 'Car rentals.svg',
   userType: 'Car Rentals',
-  text: 'Easily run pre-inspection and post-journey assessment to save, time, money, and efforts for you and your customers'
+  text: 'Eliminate checkout delays with automated inspections'
  },
  {
   cardImg: 'Vehicle Re-marketing.svg',
-  userType: 'Vehicle Re-marketing',
-  text: 'Automate condition reports, build buyers trust, and sell used vehicles faster, with Inspection data you can trust'
+  userType: 'Vehicle Remarketing',
+  text: 'Build trust with AI-verified condition reports'
  }
 ]
 export const features = [

@@ -150,14 +150,14 @@ console.log(productFeatures.length, openIndex,"heyy")
             playsInline
             className={styles.myVideo}
           >
-            <source src='/img/home.webm' type='video/webm' />
-            <source src='/img/home.mp4' type='video/mp4' />
+            <source src='/img/Inspekltabs Video.webm' type='video/webm' />
+            <source src='/img/Inspekltabs Video.mp4' type='video/mp4' />
             Your browser does not support the video tag.
           </video>
           <div className={styles.grid}>
             <div className={styles.gridItem}>
               <h1 className={styles.featuredTitle}>
-                  Automate Inspections with-<span className={styles.titleHighlights}>AI</span>
+                <span className={styles.titleHighlights}>AI</span>-Powered Vehicle Damage Inspection Solutions
               </h1>
               <p className={styles.featuredText}>
                 {language['featureText'][locale]}
@@ -199,10 +199,10 @@ console.log(productFeatures.length, openIndex,"heyy")
         <section className={styles.productsSection}>
             <div className={styles.products} ref={tryProductRef}>
               <h2 className={styles.productsTitle}>
-                Our Products
+                Transform Vehicle Inspections with AI Technology
               </h2>
               <p className={styles.productsText}>
-                Eliminate the need for physical inspections with Inspektlabs' "AI-powered" Vehicle Damage Inspection solutions. Get a detailed inspection report within a few minutes
+                Inspektlabs delivers AI-powered vehicle inspection solutions that reduce inspection time from hours to seconds. Our technology detects damage across 163 vehicle parts with 95-99% accuracy.
               </p>
               <div className={styles.productsContainer}>
                 <div className={styles.productFeatureList}>
@@ -250,8 +250,8 @@ console.log(productFeatures.length, openIndex,"heyy")
 
         <section className={styles.targetAudienceSection}>
           <div className={styles.targetAudienceDiv}>
-            <h3 className={styles.targetAudienceTitle}>Who should use Inspektlabs</h3>
-            <p className={styles.targetAudienceText}>{language['featureText'][locale]}</p>
+            <h2 className={styles.targetAudienceTitle}>AI-Powered Vehicle Inspection for Every Industry</h2>
+            <p className={styles.targetAudienceText}>Whether you manage insurance claims, rental fleets, or vehicle remarketing, Inspektlabs adapts to your workflow. Simply capture photos or 360° videos - our AI handles the rest.</p>
 
             <div className={styles.targetAudienceContainer}>
             {usersCard.map((card) => (
@@ -280,7 +280,7 @@ console.log(productFeatures.length, openIndex,"heyy")
         <section className={styles.testimonialSection}>
           <div className={styles.testimonialSubSection}>
             <div className={styles.testimonialsTitleContainer}>
-              <h3 className={styles.testimonialsTitle}>What our clients say</h3>
+              <h2 className={styles.testimonialsTitle}>Why Leading Brands Trust Inspektlabs</h2>
               <p className={styles.testimonialsSubtitle}>Hear directly from our partners</p>
             </div>
             <div className={styles.testimonialsContainer}>
@@ -381,27 +381,25 @@ console.log(productFeatures.length, openIndex,"heyy")
         <section className={styles.achievementSection}>
           <div className={styles.achievementSubSection}>
             <div className={styles.achievementHeadingContainer}>
-              <h3 className={styles.achievementHeading}>Our achievements</h3>
+              <h2 className={styles.achievementHeading}>Our achievements</h2>
               <p className={styles.achievementSubHeading}>Our success says everything about our digital vehicle inspection</p>
             </div>
             <div className={styles.statisticsContainer}>
               <div className={styles.statisticsContent}>
-                <h1 className={styles.statisticsFigure}>10M+</h1>
+                <h3 className={styles.statisticsFigure}>10M+</h3>
                 <p className={styles.statisticsText}>Inspections Conducted</p>
               </div>
               <div className={styles.statisticsContent}>
-                <h1 className={styles.statisticsFigure}>30+</h1>
-                <p className={styles.statisticsText}>Trusted in countries</p>
+                <h3 className={styles.statisticsFigure}>30+</h3>
+                <p className={styles.statisticsText}>Countries</p>
               </div>
               <div className={styles.statisticsContent}>
-                <h1 className={styles.statisticsFigure}>$1B+</h1>
+                <h3 className={styles.statisticsFigure}>$1B+</h3>
                 <p className={styles.statisticsText}>saved in Inspection costs</p>
               </div>
             </div>
             <div>
-              <p className={styles.statisticsDescription}>"Damage assessment car valuation, claim value estimate, odometer-VIN reading etc.</p>
-              <br/>
-              <p className={styles.statisticsDescription}>Any customer can capture 360 video of a car using our guidance system on a smartphone, and within a few second, we respond back with an inspection report e.g. dent on front door, $claim value etc.</p>
+              <p className={styles.statisticsDescription}>Any customer can capture a 360° video of a vehicle using our guidance system on a smartphone, and we will deliver a comprehensive inspection report including damage details, $ claim value etc. within seconds.</p>
             </div> 
           </div>
         </section>
@@ -410,7 +408,7 @@ console.log(productFeatures.length, openIndex,"heyy")
         <section className={styles.faqSectionContainer}>
           <div className={styles.faqSection}>
             <div className={styles.faqTitleContainer}>
-              <h1 className={styles.testimonialsTitle}>Commonly asked questions</h1>
+              <h2 className={styles.testimonialsTitle}>Frequently Asked Questions About Our Vehicle Damage Inspection Solutions</h2>
             </div>
             <div className={styles.questionContainer}>
                     <div className={styles.faqGrid}>
@@ -479,7 +477,7 @@ console.log(productFeatures.length, openIndex,"heyy")
 
         {/* Map Section */}
         <section className={styles.mapSection}>
-          <h1 className={styles.mapSectionHeading}>Our Presence</h1>
+          <h2 className={styles.mapSectionHeading}>Our Presence</h2>
           <div className={styles.mapContainer}>
               <div className={styles.mapWrapper}>
                 <Image
