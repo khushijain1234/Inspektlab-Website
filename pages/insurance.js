@@ -1,11 +1,73 @@
 import Image from 'next/image'
 import SEO from '../components/SEO'
 import styles from '../styles/Insurance.module.css'
-
-import { features } from '../const/insurance'
+import { testimonials } from '../const/home'
+import { 
+    workflowIssues, 
+    builtForList, 
+    stats, 
+    capabilities 
+} from '../const/insurance'
+import { questions } from '../const/faq'
 import language from '../languages/insurance.json'
+import { useState,useRef,useEffect } from 'react'
 
 export default function Insurance({locale}) {
+
+  const [posts, setPosts] = useState([]);
+  const [testimonial, setTestimonial] = useState({});
+
+  const scrollRef = useRef();
+
+
+  const init = async () => {
+    setTestimonial(testimonials[0]);
+    const res = await fetch(`/api/posts`);
+    const data = await res.json();
+    setPosts(data.posts);
+  };
+
+  useEffect(() => init(), []);
+  const scroll = (direction) => {
+    const container = scrollRef.current;
+    const cardWidth = container.querySelector(`.${styles.blogItem}`).offsetWidth + 20; // Include margin/padding
+
+    if (direction === 'left') {
+      container.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+    } else {
+      container.scrollBy({ left: cardWidth, behavior: 'smooth' });
+    }
+  };
+    const QuestionSection = ({ keyIndex, que, ans }) => {
+        const [isOpen, setIsOpen] = useState(false);
+    
+        return (
+          <div
+            className={`${styles.questionModal} ${isOpen ? styles.openModal : ""}`}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <p className={styles.questionIndex}>
+              {String(keyIndex + 1).padStart(2, "0")}
+            </p>
+            <div className={styles.question}>
+              <p>{que}</p>
+              <Image
+                src={isOpen ? "/img/shrink-icon.svg" : "/img/expand-icon.svg"}
+                alt="FAQ"
+                width={36}
+                height={36}
+                objectFit="contain"
+              />
+            </div>
+            <div className={`${styles.answer} ${isOpen ? styles.open : ""}`}>
+              {ans.map((item, index) => (
+                <p key={index}>{item}</p>
+              ))}
+            </div>
+          </div>
+        );
+      };
+
     return (
         <div className={styles.container}>
 
@@ -13,67 +75,215 @@ export default function Insurance({locale}) {
                 title={language["seo title"][locale]}
                 description={language["seo desc"][locale]}
                 image="https://inspektlabs.com/img/car.png"
-                url="https://inspektlabs.com/"
+                url="https://inspektlabs.com/insurance"
                 keywords={language["seo keywords"][locale]}
                 page="insurance"
             />
 
-            {/* Main Body */}
             <main className={styles.main}>
 
-                {/* Featured Section */}
-                <section className={styles.featured}>
-                    <Image src="/img/insurance.svg" alt="Insurance" width={150} height={150} />
-                    <h1 className={styles.featuredTitle}>{language["Car Inspection for Insurance"][locale]}</h1>
-                    <p className={styles.featuredText}>{language["Motor insurers can use Inspektlabs"][locale]}</p>
-                </section>
+            {/* Hero Section */}
+            <section className={styles.heroSection}>
+                <div className={styles.heroContent}>
+                    <h1 className={styles.heroTitle}>A Smarter Alternative to Manual Inspections</h1>
+                    <p className={styles.heroText}>
+                    From damage detection to reporting, Inspektlabs automates the entire inspection process across the accident management space. Save hours per inspection and improve accuracy across operations.
+                    </p>
+                    <div
+                        className={styles.heroBtn}
+                        onClick={() => (window.location.href = '/contact-us')}
+                    >
+                        Request a Demo
+                        <Image src='/img/arrow right white.png' alt="Arrow" width={20} height={20} />
+                    </div>
+                </div>
+                <div className={styles.heroImageSection}>
+                    <Image 
+                        src='/img/manual inspection hero.png' 
+                        alt='Manual Inspection Hero' 
+                        layout='fill' 
+                        objectFit='contain' 
+                        objectPosition='center'
+                        fetchpriority="high"
+                    />
+                </div>
+            </section>
 
-                {/* Featured Video Section */}
-                {/* <section className={styles.featureVideo}>
-                    <video type="video/mp4" src="/img/demo.mp4" autoPlay muted loop></video>
-                </section> */}
-
-                {/* Features Section */}
-                <section className={styles.features}>
-                    <h2>{language["Inspektlabs automates inspection"][locale]}</h2>
-
-                    <div className={styles.feature}>
-                        { features.map(f => (
-                            <div key={f.name[locale]}>
-                                <div><Image src={`/img/${f.img}`} alt={f.name[locale]} width={80} height={80} /></div>
-                                <p>{f.name[locale]}</p>
+            {/* Why Manual Inspection Issues Section */}
+            <section className={styles.workflowSection}>
+                <div className={styles.workflowContent}>
+                    <h2 className={styles.sectionHeading}>
+                        Why Manual Inspection are holding back your workflow
+                    </h2>
+                    <div className={styles.workflowGrid}>
+                        {workflowIssues.map((issue, idx) => (
+                            <div className={styles.workflowCard} key={idx}>
+                                <div className={styles.workflowIcon}>
+                                    <Image 
+                                        src={issue.icon} 
+                                        alt={issue.title} 
+                                        width={70} 
+                                        height={65} 
+                                    />
+                                </div>
+                                <h3 className={styles.workflowCardTitle}>{issue.title}</h3>
+                                <hr className={styles.workflowCardLine} />
                             </div>
-                        )) }
+                        ))}
                     </div>
+                    <p className={styles.automationText}>
+                        These inefficiencies add up to significant costs and lost opportunities
+                    </p>
+                </div>
+            </section>
 
-                    <p>{language["We have experience in integrating"][locale]}</p>
-                </section>
+            {/* Built For Section */}
+            <section className={styles.builtForSection}>
+                <div className={styles.builtForContent}>
+                    <p className={styles.capabilitiesHeading}>CAPABILITIES</p>
+                    <h2 className={styles.sectionHeading}>
+                        Built for insurers and repair networks
+                    </h2>
+                    <div className={styles.builtForGrid}>
+                        {builtForList.map((item, idx) => (
+                            <div className={styles.builtForCard} key={idx}>
+                                <div className={styles.builtForIcon}>
+                                    <Image 
+                                        src={item.icon} 
+                                        alt={item.title} 
+                                        width={159} 
+                                        height={158} 
+                                    />
+                                </div>
+                                <h3 className={styles.builtForCardTitle}>{item.title}</h3>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
-                {/* Workflow Section */}
-                <section className={styles.flow}>
-                    <div><Image src="/img/fnol-workflow.svg" alt="FNOL Workflow" layout="fill" objectFit="cover" /></div>
-                    <div><Image src="/img/claim-estimation-workflow.svg" alt="Claim Estimation Workflow" layout="fill" objectFit="cover" /></div>
-                </section>
+            {/* Stats Section */}
+            <section className={styles.statsSection}>
+                <div className={styles.statsContainer}>
+                    <h2 className={styles.statsTitle}>
+                        How we improve your operational efficiency
+                    </h2>
+                    <div className={styles.statsGrid}>
+                        {stats.map((stat, index) => (
+                            <div key={index} className={styles.statItem}>
+                                <h3 className={styles.statValue}>{stat.value}</h3>
+                                <p className={styles.statLabel}>{stat.label}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
-                {/* Case Studies */}
-                {/* <section className={styles.caseSection}>
-                    <h2 className={styles.caseSectionTitle}>Case Studies</h2>
+            {/* Capabilities Section */}
+            <section className={styles.capabilitiesSection}>
+                <div className={styles.capabilitiesContent}>
+                    <h2 className={styles.sectionHeading}>
+                    Our Capabilities
+                    </h2>
+                    <p className={styles.capabilitiesSubtitle}>Discover how InspektLabs streamlines car rental inspection and management with cutting-edge solutions.</p>
+                    <div className={styles.capabilitiesGrid}>
+                        {capabilities.map((capability, idx) => (
+                            <div className={styles.capabilityCard} key={idx}>
+                                <div className={styles.capabilityIcon}>
+                                    <Image 
+                                        src={capability.icon} 
+                                        alt={capability.title} 
+                                        width={170} 
+                                        height={120} 
+                                    />
+                                </div>
+                                <div className={styles.capabilityContent}>
+                                    <h3 className={styles.capabilityTitle}>{capability.title}</h3>
+                                    <p className={styles.capabilityText}>{capability.text}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Blog Section */}
+            <section className={styles.blogSection}>
+                <p className={styles.capabilitiesHeading}> INDUSTRY INSIGHTS</p>
+                <div className={styles.blogContainer}>
+                    <h2 className={styles.sectionHeading}>Industry-specific blogs
+                    </h2>
+                    <p className={styles.capabilitiesSubtitle}>Stay updated with the latest trends, best practices and insights from the automotive inspection industry.</p>
                     
-                    <div className={styles.caseContainer}>
-                        <div className={styles.case}>
-                            <h3>Case Study 1</h3>
-                            <p>Capture a 360° video or 8-10 photos of a vehicle on a smartphone</p>
-                            <Link href="/" target="_blank" rel="noreferrer"><a className={styles.caseAction}>Read More</a></Link>
+                    <div className={styles.blogCaraouselContainer}>
+                        <div className={`${styles.nav} ${styles.navLeft}`}>
+                        <Image src={"/img/nav-left.svg"} width={50} height={50} alt="nav-left" onClick={() => scroll("left")}/>
                         </div>
-                        <div className={styles.case}>
-                            <h3>Case Study 2</h3>
-                            <p>Capture a 360° video or 8-10 photos of a vehicle on a smartphone</p>
-                            <Link href="/" target="_blank" rel="noreferrer"><a className={styles.caseAction}>Read More</a></Link>
+                        <div className={styles.blogCaraouselContent} ref={scrollRef}>
+                        {posts.map((post) => (
+                        <div className={styles.blogItem} key={post.id}>
+                            <div className={styles.blogImg}>
+                            <Image
+                                src={post.feature_image}
+                                layout='fill'
+                                objectFit='cover'
+                                objectPosition='center'
+                                alt={post.title}
+                            />
+                            </div>
+                            <div className={styles.blogContent}>
+                            {post.primary_tag && (
+                                <a href={post.primary_tag.url} className={styles.blogTag}>
+                                {post.primary_tag.name}
+                                </a>
+                            )}
+                            <p className={styles.blogTitle}>{post.title}</p>
+                            <p className={styles.blogText}>{post.excerpt}</p>
+                            <a
+                                href={post.url}
+                                className={styles.blogAction}
+                                title={post.title}
+                            >
+                                Read More
+                                <span className='sr-only'>about {post.title}</span>{' '}
+                                <i className='fas fa-chevron-right'></i>
+                            </a>
+                            </div>
+                            </div>
+                        ))}
+                        </div>
+                        <div className={`${styles.nav} ${styles.navRight}`}>
+                        <Image src={"/img/nav-right.svg"} width={50} height={50} alt="nav-right" onClick={() => scroll("right")}/>
                         </div>
                     </div>
-                </section> */}
-                
+                </div>
+            </section>
+
+            {/* FAQ Section */}
+            <section className={styles.faqSectionContainer}>
+                <div className={styles.faqSection}>
+                    <div className={styles.faqTitleContainer}>
+                    <h2 className={styles.faqTitle}>Commonly asked questions</h2>
+                    </div>
+                    <div className={styles.questionContainer}>
+                    <div className={styles.faqGrid}>
+                        {questions["Insurance"][locale].map((item, index) => (
+                        <QuestionSection keyIndex={index} que={item.Q} ans={item.A} />
+                        ))}
+                    </div>
+                    </div>
+                    <div
+                    className={styles.viewMoreBtn}
+                    style={{ width: "200px" }}
+                    onClick={() => (window.location.href = "/faq")}
+                    >
+                    View More
+                    </div>
+                </div>
+                </section>
+
             </main>
+
         </div>
     )
 }
