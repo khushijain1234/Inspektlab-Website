@@ -2,6 +2,26 @@ export const questions = {
     "General": {
         "en" : [
             {
+                Q: "What is AI-powered vehicle inspection and how does it work?",
+                A: ["AI-powered vehicle inspection uses computer vision and machine learning algorithms to automatically analyze photos and videos of vehicles, detecting damage, verifying authenticity, and generating detailed inspection reports. Inspektlabs' AI is trained on over 30 million real-world images to identify 21 types of damage across 163 vehicle parts with 95-99% accuracy. Users simply capture images using a smartphone, and the AI delivers a complete inspection report within seconds."]
+            },
+            {
+                Q: "How accurate is AI-powered vehicle inspection compared to manual inspections?",
+                A: ["Inspektlabs' AI-powered vehicle inspection achieves 95-99% accuracy, often detecting micro-damages and scratches that human inspectors miss. The technology is trained on 30M+ images of real-world damage scenarios and has been validated by leading automotive brands like BMW, DEKRA, and Liberty Insurance. Unlike manual inspections that vary by inspector experience, AI provides consistent, objective assessments every time."]
+            },
+            {
+                Q: "Can AI-powered vehicle inspection detect fraud and photo manipulation?",
+                A: ["Yes. Inspektlabs includes real-time fraud detection capabilities that identify digitally altered images, duplicate photos, poor quality submissions, and attempts to conceal prior damage. The system flags suspicious patterns and ensures only authentic, high-quality images are used for damage assessment, protecting businesses from fraudulent claims."]
+            },
+            {
+                Q: "What industries benefit most from AI-powered vehicle inspection?",
+                A: ["AI-powered vehicle inspection is ideal for insurance companies (claims processing), fleet management companies (condition tracking), car rental businesses (pre/post-trip inspections), vehicle remarketing (condition reports), leasing companies (return inspections), and automotive repair networks (damage estimation). Any business that conducts vehicle inspections at scale can reduce costs and improve efficiency with AI automation."]
+            },
+            {
+                Q: "How long does it take to implement an AI-powered vehicle inspection?",
+                A: ["Inspektlabs can be deployed within days, not months. The solution requires no additional hardware—it works with standard smartphones and existing cameras. Most clients complete integration within 1-2 weeks, including API setup, staff training, and workflow customization. A free trial with up to 100 inspections is available to test the technology before full deployment."]
+            },
+            {
                 Q: "How much does a vehicle inspection cost?",
                 A: ["Manual inspections can cost car owners anywhere between $50-$200, while it costs a company $60,000-$70,000 anually for a full-time inspector.", "Inspektlabs AI allows you to achieve the same in just a few dollars."]
             },
@@ -201,6 +221,22 @@ export const questions = {
     },
     "Damage Detection": {
         "en": [
+            {
+                Q: "What is an AI-powered vehicle damage inspection?",
+                A: ["AI-powered vehicle damage inspection uses computer vision to automatically analyze vehicle photos and videos, detecting damage across 163 parts with 95-99% accuracy. Inspektlabs' AI identifies scratches, dents, cracks, and micro-damages in seconds, eliminating the need for manual inspections."]
+            },
+            {
+                Q: "How accurate is car damage detection with AI?",
+                A: ["Inspektlabs achieves 95-99% accuracy, trained on 30M+ real-world images. The AI detects 21 damage types across 42 exterior parts, including micro-damages that human inspectors often miss. It's validated by leading brands like BMW, DEKRA, and Liberty Insurance."]
+            },
+            {
+                Q: "Can AI detect prior damage and prevent insurance fraud?",
+                A: ["Yes. Inspektlabs includes real-time fraud detection that identifies digitally altered images, concealed prior damage, duplicate photos, and suspicious patterns. This protects insurance companies and rental businesses from fraudulent claims."]
+            },
+            {
+                Q: "What industries use AI vehicle damage inspection?",
+                A: ["Insurance companies (claims processing), fleet management (condition tracking), car rentals (pre/post-trip inspections), vehicle remarketing (condition reports), dealerships (trade-in assessments), and repair networks (damage estimation) all benefit from automated AI inspections."]
+            },
             {
                 Q: "Do you have a support desk to fix issues?",
                 A: ["Yes. We have a 24x7 support desk to address and fix any issues you are facing with our product. You can raise a JIRA ticket or directly email us to flag your issues."]
@@ -602,6 +638,22 @@ export const questions = {
     "Fraud Detection": {
         "en": [
             {
+                Q: "How does AI detect vehicle insurance fraud?",
+                A: ["AI vehicle fraud detection analyzes photos and videos for fraud indicators including prior damage, missing vehicle sections, stickers hiding damage, metadata anomalies, and photo manipulation. Inspektlabs uses computer vision to identify old vs new damage, verify GPS/timestamps, detect repainting, and flag suspicious patterns in real-time."]
+            },
+            {
+                Q: "Can AI detect prior damage on vehicles?",
+                A: ["Yes. Inspektlabs AI detects old or prior damage by analyzing visual patterns, paint consistency, repair marks, and damage characteristics. It distinguishes between new damage from a recent incident and pre-existing damage that may be fraudulently claimed as new."]
+            },
+            {
+                Q: "What types of auto insurance scams can AI detect?",
+                A: ["AI detects prior damage concealment, incomplete vehicle coverage, sticker-hidden damages, photo/video manipulation, metadata tampering, vehicle switching scams (footstep counting), false damage cause claims, repaint fraud, and staged accident scams. The system provides real-time alerts for high-probability fraud cases before claim approval."]
+            },
+            {
+                Q: "How does Inspektlabs verify VIN and prevent vehicle switching?",
+                A: ["Inspektlabs AI automatically reads and verifies VIN and license plate information to confirm vehicle identity. The system uses footstep counting to detect if multiple vehicles are being photographed during a single inspection, preventing vehicle switching fraud."]
+            },
+            {
                 Q: "Do you have a support desk to fix issues?",
                 A: ["Yes. We have a 24x7 support desk to address and fix any issues you are facing with our product. You can raise a JIRA ticket or directly email us to flag your issues."]
             },
@@ -658,6 +710,22 @@ export const questions = {
     "Fixed Camera": {
         "en": [
             {
+                Q: "What are AI-powered vehicle scanners and how do they work?",
+                A: ["AI-powered vehicle scanners are fixed camera systems that automatically capture 360° vehicle images as cars drive through. The vehicle inspection tool uses high-resolution imaging with controlled lighting to detect damage across 163 parts without manual steps. ANPR technology links scans to the right vehicle, and AI analyzes images in real-time to generate instant damage reports."]
+            },
+            {
+                Q: "How is vehicle inspection using scanners different from smartphone inspections?",
+                A: ["Vehicle inspection using scanners is fully automated - vehicles drive through at speed with no human interaction needed. Scanners provide consistent lighting, capture all angles simultaneously, and process up to 120 vehicles per hour. This is ideal for high-volume operations like fleet check-ins, rental returns, and logistics hubs where smartphone inspections would be too slow."]
+            },
+            {
+                Q: "What types of damage can AI-powered vehicle scanners detect?",
+                A: ["AI-powered vehicle scanners detect scratches, dents, cracks, chips, broken parts, missing components, and prior damage across 163 vehicle parts. Optional modules add zebra lighting for hidden dent detection, underbody scanning for undercarriage damage, and tire tread analysis for safety compliance - providing complete 360° inspection coverage."]
+            },
+            {
+                Q: "Which industries use vehicle inspection tools with fixed camera scanners?",
+                A: ["Fleet management companies, car rental businesses, logistics hubs, vehicle auction centers, auto remarketing firms, and automotive repair networks use this vehicle inspection tool. Any operation requiring high-volume, consistent vehicle inspections benefits from automated scanning that eliminates manual steps and prevents disputes with timestamped documentation."]
+            },
+            {
                 Q: "Which vehicle scanner should I choose between the Inspekt Pillars, Box360, and WallScan?",
                 A: ["Inspekt Pillars: Ideal for both commercial and passenger vehicles, from compact cars to 26-feet box trucks. It’s a plug-and-play, drive-through scanner requiring minimal installation effort.", 
                     "Inspekt Box360: Best suited for use cases where the requirement is for extremely accurate inspections. It offers 360° inspections in a compact setup (7 x 4.5 x 3.5 meters) with controlled lighting. Ideal for all types of passenger vehicles, from compact hatchbacks to minivans.", 
@@ -708,6 +776,30 @@ export const questions = {
     },
     "Photo Quality API": {
         "en": [
+            {
+                Q: "What is a Photo Quality API for AI vehicle inspection?",
+                A: ["A Photo Quality API validates image quality in real-time during AI vehicle inspection workflows, checking clarity, lighting, angles, and completeness. Inspektlabs' API ensures photos meet standards for accurate complete car assessments by providing instant feedback that guides users to capture proper images before submission—preventing retakes and improving inspection accuracy."]
+            },
+            {
+                Q: "How does Photo Quality API improve complete car assessments?",
+                A: ["Photo Quality API ensures complete car assessments receive high-quality photos by validating blur, brightness, angle, and coverage in real-time. The API catches quality issues during AI vehicle inspection capture, prompting immediate recapture rather than discovering problems after submission—reducing rework by 60% and accelerating assessment completion."]
+            },
+            {
+                Q: "What quality checks does the API perform for AI vehicle inspection?",
+                A: ["The Photo Quality API checks six dimensions: blur score (0-5 scale), brightness levels, angle detection (which parts captured), part identification (bumper, fender, hood), vehicle make/model recognition, and completeness (missing sections). These validations ensure AI vehicle inspection receives optimal photos for accurate complete car assessments."]
+            },
+            {
+                Q: "Can Photo Quality API integrate with existing vehicle inspection apps?",
+                A: ["Yes. Photo Quality API integrates via REST API into any AI vehicle inspection application within hours. Upload photos through drag-and-drop or automated workflows, receive instant JSON responses with quality scores and specific recommendations—seamlessly fitting into existing complete car assessments processes without disruption."]
+            },
+            {
+                Q: "Does Photo Quality API work for all vehicle types?",
+                A: ["Photo Quality API currently supports cars for AI vehicle inspection and complete car assessments, with heavy vehicles and motorcycles coming soon. The API automatically adapts quality validation based on detected vehicle type, ensuring appropriate standards for accurate damage detection across different vehicle categories."]
+            },
+            {
+                Q: "How does real-time feedback prevent photo retakes?",
+                A: ["Real-time feedback from Photo Quality API guides users during AI vehicle inspection to capture proper photos immediately. Instead of discovering quality issues after submission during complete car assessments, users receive instant alerts about blur, lighting, or missing angles—allowing immediate correction and eliminating costly retakes that delay inspections."]
+            },
             {
                 Q: "How much does the Photo Quality API cost?",
                 A: ["You can access Inspektlabs' Photo Quality API through the credits you purchase on the platform. Please contact info@inspektlabs.com for more details."]
@@ -763,6 +855,30 @@ export const questions = {
             {
                 Q: "How does AI vehicle inspection OCR prevent fraud?",
                 A: ["AI car inspection OCR validates VIN format automatically, flags mileage discrepancies when compared to previous inspections, detects tampered or altered odometer displays, and verifies vehicle identity matches inspection records, preventing odometer fraud, VIN cloning, and vehicle switching scams in insurance and rental operations."]
+            }
+        ]
+    },
+    "Insurance": {
+        "en": [
+            {
+                Q: "What is AI car insurance and how does it work?",
+                A: ["AI car insurance uses computer vision and machine learning to automate vehicle damage assessment and claims processing. Inspektlabs' AI car insurance platform analyzes photos from first notice of loss through settlement, detecting damage, estimating costs, and flagging fraud, reducing manual work by 80% while maintaining 90% accuracy in damage detection."]
+            },
+            {
+                Q: "How does first notice of loss (FNOL) automation improve claims?",
+                A: ["First notice of loss automation allows customers to report claims instantly via SMS or email link, capturing damage photos through guided smartphone apps. FNOL automation eliminates phone queues, accelerates claim acknowledgment from hours to minutes, and provides immediate damage assessment, improving customer satisfaction while reducing operational costs by 70%."]
+            },
+            {
+                Q: "What is insurance claim automation and what does it cover?",
+                A: ["Insurance claim automation uses AI to handle the entire claims lifecycle: FNOL processing, damage detection, repair cost estimation, fraud detection, and claim review. AI claims technology automates tasks that traditionally require manual efforts from adjusters, estimators, and fraud investigators, and processes claims 70% faster while reducing costs and catching fraud before payout."]
+            },
+            {
+                Q: "How does AI detect insurance fraud in claims?",
+                A: ["Inspektlabs ' AI car insurance solution detects fraud by identifying prior damage, photo manipulation, metadata tampering, vehicle switching, and suspicious damage patterns. The system flags claims with concealed pre-existing damage, inflated repair estimates, or inconsistencies between reported incidents and actual damage, reducing fraudulent payouts by 40%."]
+            },
+            {
+                Q: "Does AI car insurance replace human adjusters completely?",
+                A: ["No. AI car insurance automates routine claims (60-70% of total volume), allowing adjusters to focus on complex cases requiring human judgment. The AI handles straightforward damage assessment, first notice of loss processing, and fraud screening, while escalating complicated claims, total losses, and high-value cases to experienced adjusters for final review."]
             }
         ]
     }
