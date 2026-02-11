@@ -86,6 +86,12 @@ const Navbar = ({ locale }) => {
           name: { en: 'Insurance', es: 'Seguro', pt: 'Seguros' },
           link: '/insurance',
         },
+        {
+          name: {
+            en: 'Car Rental/Leasing',
+          },
+          link: '/car-rental',
+        },
       ],
     },
     {

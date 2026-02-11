@@ -881,5 +881,33 @@ export const questions = {
                 A: ["No. AI car insurance automates routine claims (60-70% of total volume), allowing adjusters to focus on complex cases requiring human judgment. The AI handles straightforward damage assessment, first notice of loss processing, and fraud screening, while escalating complicated claims, total losses, and high-value cases to experienced adjusters for final review."]
             }
         ]
+    },
+    "Car Rental": {
+        "en": [
+            {
+                Q: "What is car rental inspection software?",
+                A: ["Car rental inspection software automates vehicle condition documentation at check-in and check-out using AI car damage detection. Inspektlabs' solution generates comprehensive vehicle condition reports in seconds through smartphone-based customer self-inspections, eliminating manual walkarounds and reducing disputes with transparent, timestamped damage documentation."]
+            },
+            {
+                Q: "How does AI car damage detection work for rentals?",
+                A: ["AI car damage detection analyzes vehicle photos or videos captured via smartphone, identifying scratches, dents, cracks, and prior damage across 163 vehicle parts with 95-99% accuracy. The system creates comprehensive vehicle condition reports instantly, comparing pre-rental and post-rental conditions to identify new damage and prevent false damage claims."]
+            },
+            {
+                Q: "What's included in a comprehensive vehicle condition report?",
+                A: ["A comprehensive vehicle condition report includes annotated photos of all damage, AI car damage detection findings for 163 parts, damage severity ratings, VIN and odometer verification, fuel level, cleanliness status, GPS timestamp, and side-by-side comparison with previous inspections. All of this is formatted as a PDF for customer sharing and record-keeping."]
+            },
+            {
+                Q: "Can customers do their own rental car inspections?",
+                A: ["Yes. Our car rental inspection software enables complete car assessments through guided customer self-service. Customers receive an SMS/email link, use their smartphone to photograph the vehicle following app guidance, and receive a comprehensive vehicle condition report instantly, eliminating counter wait times and improving rental experience."]
+            },
+            {
+                Q: "How does automated inspection reduce rental car disputes?",
+                A: ['Automated complete car assessments with AI car damage detection create transparent, objective documentation that both parties accept. Timestamped comprehensive vehicle condition reports with photos eliminate "he said/she said" disputes, reduce fraudulent damage claims by 60-70%, and provide clear evidence for legitimate charges, thereby protecting revenue while maintaining customer satisfaction.']
+            },
+            {
+                Q: "Does car rental inspection software integrate with existing systems?",
+                A: ['Yes. Our solution integrates with major rental management platforms (Thermeon, Bluebird, TSD Rental, custom systems) via API within 24-48 hours. The car rental inspection software pushes comprehensive vehicle condition reports directly into your workflow, automatically linking inspections to reservations and updating damage records in real-time.']
+            }
+        ]
     }
 }
