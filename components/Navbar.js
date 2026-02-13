@@ -92,6 +92,12 @@ const Navbar = ({ locale }) => {
           },
           link: '/car-rental',
         },
+        {
+          name: {
+            en: 'Vehicle Remarketing',
+          },
+          link: '/vehicle-remarketing'
+        }
       ],
     },
     {

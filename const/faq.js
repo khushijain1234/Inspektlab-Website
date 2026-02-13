@@ -909,5 +909,33 @@ export const questions = {
                 A: ['Yes. Our solution integrates with major rental management platforms (Thermeon, Bluebird, TSD Rental, custom systems) via API within 24-48 hours. The car rental inspection software pushes comprehensive vehicle condition reports directly into your workflow, automatically linking inspections to reservations and updating damage records in real-time.']
             }
         ]
+    },
+    "Vehicle Remarketing": {
+        "en": [
+            {
+                Q: "What is a used car inspection and why is it important?",
+                A: ["A used car inspection is a detailed assessment of a vehicle's condition, documenting damage, prior repairs, and overall quality. Automated used car inspection using AI provides comprehensive vehicle condition reports in minutes, building buyer trust, reducing disputes, and accelerating sales by providing transparent documentation of the vehicle's actual state."]
+            },
+            {
+                Q: "How accurate is AI-powered used car inspection?",
+                A: ["AI-powered used car inspection achieves 95-99% accuracy, detecting 21 damage types across 163 vehicle parts. The technology identifies scratches, dents, cracks, prior repairs, and micro-damages that manual inspections often miss, providing comprehensive vehicle condition reports that are consistent and objective."]
+            },
+            {
+                Q: "What's included in a comprehensive vehicle condition report?",
+                A: ["A comprehensive vehicle condition report includes annotated images of all damage, part-by-part condition assessment (163 parts), prior damage identification, severity ratings, repair cost estimates, VIN verification, odometer reading, and vehicle specifications. All of this is formatted in a professional PDF for buyer review."]
+            },
+            {
+                Q: "Who benefits from automated used car inspection?",
+                A: ["Car dealerships (trade-in evaluations, lot listings), online marketplaces, auction houses, vehicle remarketing companies, fleet operators selling used vehicles, and private sellers all benefit from automated used car inspection that creates professional comprehensive vehicle condition reports quickly and affordably."]
+            },
+            {
+                Q: "How long does an automated used car inspection take?",
+                A: ['Automated used car inspection takes 2-5 minutes from photo capture to comprehensive vehicle condition report delivery. Simply photograph the vehicle or record a 360° video, and AI analyzes the images instantly when compared to traditional manual inspections that require 30-60 minutes and scheduled appointments.']
+            },
+            {
+                Q: "Can used car inspection reports be shared with potential buyers?",
+                A: ['Yes. Comprehensive vehicle condition reports generate as professional PDFs that can be shared via email, listed on vehicle marketplace pages, or printed for in-person showings. Transparent used car inspection reports increase buyer confidence, reduce negotiation time, and differentiate listings from competitors without condition documentation.']
+            }
+        ]
     }
 }
