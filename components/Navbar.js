@@ -97,6 +97,12 @@ const Navbar = ({ locale }) => {
             en: 'Vehicle Remarketing',
           },
           link: '/vehicle-remarketing'
+        },
+        {
+          name: {
+            en: 'Fleet Management',
+          },
+          link: '/fleet-management'
         }
       ],
     },

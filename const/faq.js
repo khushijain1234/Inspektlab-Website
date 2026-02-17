@@ -937,5 +937,33 @@ export const questions = {
                 A: ['Yes. Comprehensive vehicle condition reports generate as professional PDFs that can be shared via email, listed on vehicle marketplace pages, or printed for in-person showings. Transparent used car inspection reports increase buyer confidence, reduce negotiation time, and differentiate listings from competitors without condition documentation.']
             }
         ]
+    },
+    "Fleet Management": {
+        "en": [
+            {
+                Q: "What is vehicle fleet management software with AI inspection?",
+                A: ["Vehicle fleet management software with AI inspection automates daily vehicle condition assessments using computer vision. Inspektlabs' digital vehicle inspection software detects damage across 163 parts, tracks condition over time, and generates instant reports, thereby eliminating manual inspections that consume 30+ minutes per vehicle and reducing inspection costs by 98%."]
+            },
+            {
+                Q: "How does a fleet inspection app work?",
+                A: ["A fleet inspection app guides drivers through smartphone-based vehicle photo or video capture. The AI analyzes images in real-time, detecting damage, verifying VIN and odometer, and generating comprehensive condition reports instantly. The fleet inspection app works online or offline, syncing data when connected to your vehicle fleet management software system."]
+            },
+            {
+                Q: "What's better for fleet inspections: damage scanners or mobile app?",
+                A: ["Vehicle Damage scanners suit centralized depot operations with high daily volume (up to 120 vehicles/hour), requiring zero driver effort as vehicles drive through. Mobile fleet inspection app works best for distributed operations, remote drivers, or smaller fleets needing flexibility. Both options use the same AI for consistent accuracy and integrate with digital vehicle inspection software."]
+            },
+            {
+                Q: "How does digital vehicle inspection software reduce fleet costs?",
+                A: ["Digital vehicle inspection software cuts inspection labor costs by 98%, reduces vehicle turnaround time by 70%, prevents disputes with timestamped documentation, enables predictive maintenance to avoid breakdowns, and provides evidence for insurance and warranty claims, saving thousands per vehicle annually in a typical fleet operation."]
+            },
+            {
+                Q: "Can fleet inspection software integrate with existing systems?",
+                A: ['Yes. Our vehicle fleet management software integrates with existing fleet management platforms, telematics systems, and maintenance software via API. Digital vehicle inspection software connects seamlessly with fleet operations tools, pushing inspection data, damage alerts, and condition reports directly into your current workflows within 24-48 hours.']
+            },
+            {
+                Q: "Does the fleet inspection app work for different vehicle types?",
+                A: ['Yes. The fleet inspection app and digital vehicle inspection software support cars, vans, SUVs, light trucks, and commercial vehicles. The AI adapts to different vehicle types automatically, ensuring accurate damage detection across 163 parts regardless of vehicle size or configuration in your fleet.']
+            }
+        ]
     }
 }
