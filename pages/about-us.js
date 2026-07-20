@@ -13,7 +13,6 @@ import {
     journeys,
     events,
 } from '../const/about-us'
-import ContactUsCTA from '../components/ContactUsCTA'
 
 
 export default function AboutUs({ locale }) {
@@ -234,9 +233,15 @@ useEffect(() => {
                     <span className={styles.hiringTag}>Careers</span>
                     <h2>We&apos;re Hiring</h2>
                     <p>Join a team building inspection infrastructure that some of the world’s largest enterprises depend on. Be part of a fast-growing company at the intersection of AI, automation, and mobility.</p>
-                    <ContactUsCTA as="div" cluster="about-us" location="inline" className={styles.hiringButton}>
+                    <div
+                        className={styles.hiringButton}
+                        onClick={() => (window.location.href = '/contact-us')}
+                    >
+                        Contact Us
+                    </div>
+                    {/* <ContactUsCTA as="div" cluster="about-us" location="inline" className={styles.hiringButton}>
                         View Open Roles →
-                    </ContactUsCTA>
+                    </ContactUsCTA> */}
                 </section>
 
             </main>
